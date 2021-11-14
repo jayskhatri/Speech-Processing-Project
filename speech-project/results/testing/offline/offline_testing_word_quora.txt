@@ -1,0 +1,112 @@
+--------------------------------------------* Word quora *--------------------------------------------------------
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/quora/rec_41.txt <---------
+observation seq obtained -- 32	31	11	32	31	20	11	32	20	13	20	13	13	13	18	18	17	22	19	20	19	21	21	21	21	17	23	22	17	17	17	22	22	22	9	
+---> Word calendar ----- P(Obs/Model) : 1.02263e-230
+---> Word close ----- P(Obs/Model) : 1.61183e-170
+---> Word down ----- P(Obs/Model) : 5.0025e-066
+---> Word exit ----- P(Obs/Model) : 4.95302e-178
+---> Word faculties ----- P(Obs/Model) : 4.88328e-056
+---> Word github ----- P(Obs/Model) : 6.66869e-298
+---> Word history ----- P(Obs/Model) : 2.20453e-164
+---> Word jobs ----- P(Obs/Model) : 3.09371e-161
+---> Word open ----- P(Obs/Model) : 1.93682e-250
+---> Word outlook ----- P(Obs/Model) : 3.56116e-050
+---> Word payments ----- P(Obs/Model) : 1.28527e-208
+---> Word portal ----- P(Obs/Model) : 4.68883e-157
+---> Word quora ----- P(Obs/Model) : 9.23146e-047
+---> Word search ----- P(Obs/Model) : 1.08278e-188
+---> Word up ----- P(Obs/Model) : 4.88555e-170
+---> Word video ----- P(Obs/Model) : 0
+Predicted utterance: quora
+Actual utterance: quora
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/quora/rec_42.txt <---------
+observation seq obtained -- 31	32	31	31	32	24	20	11	32	13	13	23	23	20	18	18	18	7	19	19	21	17	21	17	17	17	17	17	24	17	24	24	24	24	9	
+---> Word calendar ----- P(Obs/Model) : 0
+---> Word close ----- P(Obs/Model) : 1.02002e-138
+---> Word down ----- P(Obs/Model) : 1.50596e-066
+---> Word exit ----- P(Obs/Model) : 5.59199e-127
+---> Word faculties ----- P(Obs/Model) : 2.11386e-056
+---> Word github ----- P(Obs/Model) : 6.0833e-105
+---> Word history ----- P(Obs/Model) : 1.19208e-123
+---> Word jobs ----- P(Obs/Model) : 2.69836e-103
+---> Word open ----- P(Obs/Model) : 8.91143e-280
+---> Word outlook ----- P(Obs/Model) : 9.44264e-077
+---> Word payments ----- P(Obs/Model) : 3.06959e-073
+---> Word portal ----- P(Obs/Model) : 5.11849e-132
+---> Word quora ----- P(Obs/Model) : 1.63866e-049
+---> Word search ----- P(Obs/Model) : 1.50784e-103
+---> Word up ----- P(Obs/Model) : 1.69772e-109
+---> Word video ----- P(Obs/Model) : 4.23161e-181
+Predicted utterance: quora
+Actual utterance: quora
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/quora/rec_43.txt <---------
+observation seq obtained -- 31	31	11	32	32	24	20	32	32	23	13	8	13	8	8	18	18	22	8	8	8	19	21	21	21	22	23	23	17	24	23	23	23	23	9	
+---> Word calendar ----- P(Obs/Model) : 2.98268e-245
+---> Word close ----- P(Obs/Model) : 3.11724e-139
+---> Word down ----- P(Obs/Model) : 5.57947e-066
+---> Word exit ----- P(Obs/Model) : 8.2697e-138
+---> Word faculties ----- P(Obs/Model) : 7.84566e-047
+---> Word github ----- P(Obs/Model) : 6.94978e-185
+---> Word history ----- P(Obs/Model) : 6.35218e-137
+---> Word jobs ----- P(Obs/Model) : 1.1189e-134
+---> Word open ----- P(Obs/Model) : 3.85183e-241
+---> Word outlook ----- P(Obs/Model) : 2.13237e-048
+---> Word payments ----- P(Obs/Model) : 2.81238e-112
+---> Word portal ----- P(Obs/Model) : 1.5854e-123
+---> Word quora ----- P(Obs/Model) : 7.85422e-049
+---> Word search ----- P(Obs/Model) : 7.50591e-109
+---> Word up ----- P(Obs/Model) : 3.32935e-142
+---> Word video ----- P(Obs/Model) : 1.36465e-205
+Predicted utterance: faculties
+Actual utterance: quora
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/quora/rec_44.txt <---------
+observation seq obtained -- 30	11	10	10	10	12	11	11	13	9	9	13	13	14	19	18	17	21	20	19	20	21	21	21	21	21	22	21	17	17	22	22	22	24	9	
+---> Word calendar ----- P(Obs/Model) : 1.35987e-310
+---> Word close ----- P(Obs/Model) : 1.95185e-250
+---> Word down ----- P(Obs/Model) : 1.06907e-067
+---> Word exit ----- P(Obs/Model) : 6.96984e-265
+---> Word faculties ----- P(Obs/Model) : 5.17108e-062
+---> Word github ----- P(Obs/Model) : 0
+---> Word history ----- P(Obs/Model) : 5.23672e-253
+---> Word jobs ----- P(Obs/Model) : 1.36001e-249
+---> Word open ----- P(Obs/Model) : 5.00338e-192
+---> Word outlook ----- P(Obs/Model) : 3.5214e-068
+---> Word payments ----- P(Obs/Model) : 1.64869e-182
+---> Word portal ----- P(Obs/Model) : 3.39481e-261
+---> Word quora ----- P(Obs/Model) : 1.61702e-049
+---> Word search ----- P(Obs/Model) : 2.51919e-198
+---> Word up ----- P(Obs/Model) : 1.53813e-257
+---> Word video ----- P(Obs/Model) : 0
+Predicted utterance: quora
+Actual utterance: quora
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/quora/rec_45.txt <---------
+observation seq obtained -- 11	11	23	10	24	10	11	8	13	13	13	13	13	13	13	17	17	19	19	19	18	21	21	21	21	17	17	17	17	22	22	24	24	24	9	
+---> Word calendar ----- P(Obs/Model) : 7.39823e-315
+---> Word close ----- P(Obs/Model) : 2.52675e-163
+---> Word down ----- P(Obs/Model) : 1.64479e-065
+---> Word exit ----- P(Obs/Model) : 1.6867e-174
+---> Word faculties ----- P(Obs/Model) : 1.14769e-061
+---> Word github ----- P(Obs/Model) : 1.79689e-217
+---> Word history ----- P(Obs/Model) : 1.19643e-173
+---> Word jobs ----- P(Obs/Model) : 9.52221e-161
+---> Word open ----- P(Obs/Model) : 3.25917e-187
+---> Word outlook ----- P(Obs/Model) : 2.01317e-057
+---> Word payments ----- P(Obs/Model) : 3.96682e-126
+---> Word portal ----- P(Obs/Model) : 7.23979e-164
+---> Word quora ----- P(Obs/Model) : 7.51836e-044
+---> Word search ----- P(Obs/Model) : 6.51376e-143
+---> Word up ----- P(Obs/Model) : 2.57621e-161
+---> Word video ----- P(Obs/Model) : 2.47033e-323
+Predicted utterance: quora
+Actual utterance: quora
+Accuracy for the digit quora is : 40.000000 

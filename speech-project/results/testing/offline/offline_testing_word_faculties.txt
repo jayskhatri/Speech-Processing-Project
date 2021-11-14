@@ -1,0 +1,112 @@
+--------------------------------------------* Word faculties *--------------------------------------------------------
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/faculties/rec_41.txt <---------
+observation seq obtained -- 11	31	32	24	32	12	31	19	8	8	8	30	30	8	8	4	4	8	7	30	4	8	1	1	1	30	29	9	10	30	30	30	23	29	9	
+---> Word calendar ----- P(Obs/Model) : 6.11409e-162
+---> Word close ----- P(Obs/Model) : 2.01451e-157
+---> Word down ----- P(Obs/Model) : 6.35375e-135
+---> Word exit ----- P(Obs/Model) : 3.224e-067
+---> Word faculties ----- P(Obs/Model) : 5.98796e-038
+---> Word github ----- P(Obs/Model) : 2.42456e-041
+---> Word history ----- P(Obs/Model) : 7.43527e-042
+---> Word jobs ----- P(Obs/Model) : 2.25369e-163
+---> Word open ----- P(Obs/Model) : 3.212e-316
+---> Word outlook ----- P(Obs/Model) : 1.78088e-188
+---> Word payments ----- P(Obs/Model) : 8.40398e-036
+---> Word portal ----- P(Obs/Model) : 4.21973e-162
+---> Word quora ----- P(Obs/Model) : 8.9269e-200
+---> Word search ----- P(Obs/Model) : 5.99327e-112
+---> Word up ----- P(Obs/Model) : 1.33261e-145
+---> Word video ----- P(Obs/Model) : 1.25945e-128
+Predicted utterance: payments
+Actual utterance: faculties
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/faculties/rec_42.txt <---------
+observation seq obtained -- 31	32	24	32	11	32	8	8	30	23	30	8	8	20	30	8	30	30	30	8	8	30	30	30	14	9	13	13	7	9	10	23	30	30	9	
+---> Word calendar ----- P(Obs/Model) : 1.50262e-067
+---> Word close ----- P(Obs/Model) : 1.5235e-051
+---> Word down ----- P(Obs/Model) : 7.28905e-047
+---> Word exit ----- P(Obs/Model) : 8.66137e-038
+---> Word faculties ----- P(Obs/Model) : 6.63436e-037
+---> Word github ----- P(Obs/Model) : 3.5816e-039
+---> Word history ----- P(Obs/Model) : 1.39635e-042
+---> Word jobs ----- P(Obs/Model) : 7.23729e-061
+---> Word open ----- P(Obs/Model) : 7.07307e-093
+---> Word outlook ----- P(Obs/Model) : 1.73702e-039
+---> Word payments ----- P(Obs/Model) : 5.43637e-035
+---> Word portal ----- P(Obs/Model) : 4.67726e-067
+---> Word quora ----- P(Obs/Model) : 4.62325e-054
+---> Word search ----- P(Obs/Model) : 8.09971e-041
+---> Word up ----- P(Obs/Model) : 2.80403e-051
+---> Word video ----- P(Obs/Model) : 2.62804e-056
+Predicted utterance: payments
+Actual utterance: faculties
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/faculties/rec_43.txt <---------
+observation seq obtained -- 24	32	11	32	32	8	8	8	30	30	8	8	20	20	4	8	30	30	9	8	8	2	2	1	7	19	13	23	30	23	9	23	23	23	9	
+---> Word calendar ----- P(Obs/Model) : 3.61576e-096
+---> Word close ----- P(Obs/Model) : 1.14805e-078
+---> Word down ----- P(Obs/Model) : 3.9575e-082
+---> Word exit ----- P(Obs/Model) : 1.11909e-045
+---> Word faculties ----- P(Obs/Model) : 8.40801e-037
+---> Word github ----- P(Obs/Model) : 1.96334e-042
+---> Word history ----- P(Obs/Model) : 3.25103e-054
+---> Word jobs ----- P(Obs/Model) : 9.57185e-082
+---> Word open ----- P(Obs/Model) : 9.18945e-116
+---> Word outlook ----- P(Obs/Model) : 1.77647e-072
+---> Word payments ----- P(Obs/Model) : 2.97499e-046
+---> Word portal ----- P(Obs/Model) : 7.44617e-098
+---> Word quora ----- P(Obs/Model) : 4.87301e-081
+---> Word search ----- P(Obs/Model) : 9.01434e-060
+---> Word up ----- P(Obs/Model) : 4.69133e-140
+---> Word video ----- P(Obs/Model) : 3.39625e-077
+Predicted utterance: faculties
+Actual utterance: faculties
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/faculties/rec_44.txt <---------
+observation seq obtained -- 11	31	32	24	32	12	31	4	10	10	23	23	24	20	24	23	23	8	8	30	30	23	8	8	8	8	8	30	30	30	4	8	2	2	30	
+---> Word calendar ----- P(Obs/Model) : 2.83405e-126
+---> Word close ----- P(Obs/Model) : 3.00437e-075
+---> Word down ----- P(Obs/Model) : 9.07092e-054
+---> Word exit ----- P(Obs/Model) : 3.36459e-066
+---> Word faculties ----- P(Obs/Model) : 3.47201e-035
+---> Word github ----- P(Obs/Model) : 9.50765e-049
+---> Word history ----- P(Obs/Model) : 6.9305e-045
+---> Word jobs ----- P(Obs/Model) : 9.76503e-072
+---> Word open ----- P(Obs/Model) : 1.00015e-170
+---> Word outlook ----- P(Obs/Model) : 2.84997e-053
+---> Word payments ----- P(Obs/Model) : 7.94227e-065
+---> Word portal ----- P(Obs/Model) : 2.22593e-045
+---> Word quora ----- P(Obs/Model) : 1.04881e-052
+---> Word search ----- P(Obs/Model) : 6.91733e-063
+---> Word up ----- P(Obs/Model) : 3.24827e-109
+---> Word video ----- P(Obs/Model) : 2.81019e-035
+Predicted utterance: faculties
+Actual utterance: faculties
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/faculties/rec_45.txt <---------
+observation seq obtained -- 14	14	22	24	22	22	23	23	8	8	30	30	21	8	8	8	30	30	30	30	7	29	29	2	29	29	30	30	30	9	9	30	30	20	9	
+---> Word calendar ----- P(Obs/Model) : 5.34499e-163
+---> Word close ----- P(Obs/Model) : 3.59129e-114
+---> Word down ----- P(Obs/Model) : 6.67766e-063
+---> Word exit ----- P(Obs/Model) : 2.89927e-074
+---> Word faculties ----- P(Obs/Model) : 3.49746e-037
+---> Word github ----- P(Obs/Model) : 1.54791e-109
+---> Word history ----- P(Obs/Model) : 5.67813e-096
+---> Word jobs ----- P(Obs/Model) : 5.28507e-199
+---> Word open ----- P(Obs/Model) : 2.46168e-208
+---> Word outlook ----- P(Obs/Model) : 3.10189e-176
+---> Word payments ----- P(Obs/Model) : 2.28126e-136
+---> Word portal ----- P(Obs/Model) : 1.39556e-127
+---> Word quora ----- P(Obs/Model) : 2.89861e-174
+---> Word search ----- P(Obs/Model) : 1.55534e-286
+---> Word up ----- P(Obs/Model) : 5.41322e-122
+---> Word video ----- P(Obs/Model) : 1.90025e-178
+Predicted utterance: faculties
+Actual utterance: faculties
+Accuracy for the digit faculties is : 30.000000 

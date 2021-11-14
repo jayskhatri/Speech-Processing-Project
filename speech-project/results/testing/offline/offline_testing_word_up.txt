@@ -1,0 +1,112 @@
+--------------------------------------------* Word up *--------------------------------------------------------
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/up/rec_41.txt <---------
+observation seq obtained -- 32	10	11	30	29	9	30	11	12	12	20	12	11	20	17	17	17	18	13	13	13	17	13	14	14	14	14	10	11	20	19	9	14	10	9	
+---> Word calendar ----- P(Obs/Model) : 1.5409e-146
+---> Word close ----- P(Obs/Model) : 3.16776e-045
+---> Word down ----- P(Obs/Model) : 3.43303e-050
+---> Word exit ----- P(Obs/Model) : 2.56223e-090
+---> Word faculties ----- P(Obs/Model) : 2.8355e-062
+---> Word github ----- P(Obs/Model) : 3.71524e-049
+---> Word history ----- P(Obs/Model) : 1.80769e-046
+---> Word jobs ----- P(Obs/Model) : 2.74256e-070
+---> Word open ----- P(Obs/Model) : 5.04524e-075
+---> Word outlook ----- P(Obs/Model) : 1.4307e-081
+---> Word payments ----- P(Obs/Model) : 7.23353e-190
+---> Word portal ----- P(Obs/Model) : 4.3079e-063
+---> Word quora ----- P(Obs/Model) : 3.13687e-075
+---> Word search ----- P(Obs/Model) : 1.35494e-079
+---> Word up ----- P(Obs/Model) : 2.52596e-050
+---> Word video ----- P(Obs/Model) : 9.10689e-118
+Predicted utterance: close
+Actual utterance: up
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/up/rec_42.txt <---------
+observation seq obtained -- 12	24	30	12	11	11	30	31	17	10	11	22	13	17	17	17	18	18	13	13	17	17	13	17	17	14	10	10	10	23	13	23	10	9	9	
+---> Word calendar ----- P(Obs/Model) : 1.55416e-179
+---> Word close ----- P(Obs/Model) : 4.08565e-044
+---> Word down ----- P(Obs/Model) : 8.51232e-042
+---> Word exit ----- P(Obs/Model) : 9.33809e-059
+---> Word faculties ----- P(Obs/Model) : 7.71242e-058
+---> Word github ----- P(Obs/Model) : 3.48268e-060
+---> Word history ----- P(Obs/Model) : 6.07643e-047
+---> Word jobs ----- P(Obs/Model) : 8.66382e-048
+---> Word open ----- P(Obs/Model) : 1.63621e-099
+---> Word outlook ----- P(Obs/Model) : 1.72519e-044
+---> Word payments ----- P(Obs/Model) : 1.30668e-123
+---> Word portal ----- P(Obs/Model) : 1.68618e-053
+---> Word quora ----- P(Obs/Model) : 2.995e-049
+---> Word search ----- P(Obs/Model) : 3.376e-080
+---> Word up ----- P(Obs/Model) : 9.76287e-033
+---> Word video ----- P(Obs/Model) : 2.46999e-137
+Predicted utterance: up
+Actual utterance: up
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/up/rec_43.txt <---------
+observation seq obtained -- 23	11	30	12	11	11	23	11	17	14	11	12	18	17	18	17	18	13	17	17	17	13	17	17	17	10	14	20	8	9	14	14	10	11	9	
+---> Word calendar ----- P(Obs/Model) : 6.21984e-226
+---> Word close ----- P(Obs/Model) : 8.71807e-042
+---> Word down ----- P(Obs/Model) : 5.4869e-039
+---> Word exit ----- P(Obs/Model) : 1.14409e-065
+---> Word faculties ----- P(Obs/Model) : 5.48604e-062
+---> Word github ----- P(Obs/Model) : 6.89632e-058
+---> Word history ----- P(Obs/Model) : 3.43875e-047
+---> Word jobs ----- P(Obs/Model) : 1.67911e-043
+---> Word open ----- P(Obs/Model) : 1.23631e-092
+---> Word outlook ----- P(Obs/Model) : 6.66722e-052
+---> Word payments ----- P(Obs/Model) : 2.41052e-178
+---> Word portal ----- P(Obs/Model) : 1.39644e-057
+---> Word quora ----- P(Obs/Model) : 1.51514e-047
+---> Word search ----- P(Obs/Model) : 2.75383e-055
+---> Word up ----- P(Obs/Model) : 3.10104e-030
+---> Word video ----- P(Obs/Model) : 3.09612e-147
+Predicted utterance: up
+Actual utterance: up
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/up/rec_44.txt <---------
+observation seq obtained -- 12	11	23	11	12	12	12	11	12	12	23	30	11	18	18	17	17	13	9	13	17	13	17	17	14	14	13	23	14	7	19	13	23	22	9	
+---> Word calendar ----- P(Obs/Model) : 1.96789e-110
+---> Word close ----- P(Obs/Model) : 2.18448e-041
+---> Word down ----- P(Obs/Model) : 9.36914e-037
+---> Word exit ----- P(Obs/Model) : 1.10053e-054
+---> Word faculties ----- P(Obs/Model) : 1.2918e-058
+---> Word github ----- P(Obs/Model) : 2.98713e-073
+---> Word history ----- P(Obs/Model) : 4.81348e-042
+---> Word jobs ----- P(Obs/Model) : 9.80176e-042
+---> Word open ----- P(Obs/Model) : 4.67995e-071
+---> Word outlook ----- P(Obs/Model) : 3.95501e-046
+---> Word payments ----- P(Obs/Model) : 5.51984e-167
+---> Word portal ----- P(Obs/Model) : 9.0897e-076
+---> Word quora ----- P(Obs/Model) : 3.98604e-041
+---> Word search ----- P(Obs/Model) : 5.40373e-073
+---> Word up ----- P(Obs/Model) : 1.6181e-049
+---> Word video ----- P(Obs/Model) : 7.60003e-165
+Predicted utterance: down
+Actual utterance: up
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/up/rec_45.txt <---------
+observation seq obtained -- 12	32	32	10	10	8	12	12	23	12	11	32	17	13	18	18	18	13	13	17	13	13	13	13	13	13	14	23	20	19	9	14	24	1	9	
+---> Word calendar ----- P(Obs/Model) : 1.90266e-221
+---> Word close ----- P(Obs/Model) : 2.1693e-069
+---> Word down ----- P(Obs/Model) : 2.47066e-070
+---> Word exit ----- P(Obs/Model) : 1.80263e-088
+---> Word faculties ----- P(Obs/Model) : 1.60244e-056
+---> Word github ----- P(Obs/Model) : 1.01598e-044
+---> Word history ----- P(Obs/Model) : 1.89181e-056
+---> Word jobs ----- P(Obs/Model) : 2.41502e-041
+---> Word open ----- P(Obs/Model) : 1.52696e-099
+---> Word outlook ----- P(Obs/Model) : 1.18572e-071
+---> Word payments ----- P(Obs/Model) : 1.28481e-112
+---> Word portal ----- P(Obs/Model) : 2.34487e-075
+---> Word quora ----- P(Obs/Model) : 3.89748e-068
+---> Word search ----- P(Obs/Model) : 3.44136e-050
+---> Word up ----- P(Obs/Model) : 5.57537e-063
+---> Word video ----- P(Obs/Model) : 3.62517e-133
+Predicted utterance: jobs
+Actual utterance: up
+Accuracy for the digit up is : 20.000000 

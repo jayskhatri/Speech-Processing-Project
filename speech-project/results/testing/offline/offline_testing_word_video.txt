@@ -1,0 +1,112 @@
+--------------------------------------------* Word video *--------------------------------------------------------
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/video/rec_41.txt <---------
+observation seq obtained -- 32	12	12	12	24	10	23	17	13	18	23	30	30	30	30	30	29	29	29	30	30	30	8	8	13	13	13	13	9	9	9	9	10	10	9	
+---> Word calendar ----- P(Obs/Model) : 1.42281e-119
+---> Word close ----- P(Obs/Model) : 2.84184e-044
+---> Word down ----- P(Obs/Model) : 4.57596e-038
+---> Word exit ----- P(Obs/Model) : 7.02134e-044
+---> Word faculties ----- P(Obs/Model) : 2.76517e-041
+---> Word github ----- P(Obs/Model) : 6.28412e-043
+---> Word history ----- P(Obs/Model) : 9.04262e-040
+---> Word jobs ----- P(Obs/Model) : 9.4884e-068
+---> Word open ----- P(Obs/Model) : 3.11003e-078
+---> Word outlook ----- P(Obs/Model) : 1.89712e-124
+---> Word payments ----- P(Obs/Model) : 1.03809e-040
+---> Word portal ----- P(Obs/Model) : 1.51809e-045
+---> Word quora ----- P(Obs/Model) : 1.48453e-138
+---> Word search ----- P(Obs/Model) : 4.72995e-130
+---> Word up ----- P(Obs/Model) : 5.20675e-049
+---> Word video ----- P(Obs/Model) : 1.50825e-057
+Predicted utterance: down
+Actual utterance: video
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/video/rec_42.txt <---------
+observation seq obtained -- 31	11	32	31	32	11	32	32	23	30	30	30	30	30	30	30	2	30	30	8	8	13	13	13	13	13	13	9	10	10	10	30	30	11	9	
+---> Word calendar ----- P(Obs/Model) : 7.17919e-072
+---> Word close ----- P(Obs/Model) : 1.1003e-047
+---> Word down ----- P(Obs/Model) : 4.34686e-044
+---> Word exit ----- P(Obs/Model) : 2.08127e-041
+---> Word faculties ----- P(Obs/Model) : 2.43132e-040
+---> Word github ----- P(Obs/Model) : 3.24263e-039
+---> Word history ----- P(Obs/Model) : 2.31859e-039
+---> Word jobs ----- P(Obs/Model) : 1.99793e-066
+---> Word open ----- P(Obs/Model) : 8.6335e-105
+---> Word outlook ----- P(Obs/Model) : 5.72613e-040
+---> Word payments ----- P(Obs/Model) : 2.04692e-034
+---> Word portal ----- P(Obs/Model) : 8.56687e-034
+---> Word quora ----- P(Obs/Model) : 1.06399e-047
+---> Word search ----- P(Obs/Model) : 3.58451e-040
+---> Word up ----- P(Obs/Model) : 1.021e-071
+---> Word video ----- P(Obs/Model) : 2.9128e-025
+Predicted utterance: video
+Actual utterance: video
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/video/rec_43.txt <---------
+observation seq obtained -- 31	11	32	31	32	11	32	32	23	23	30	30	30	30	3	29	30	30	30	8	23	13	13	13	13	13	9	9	9	10	10	10	10	30	9	
+---> Word calendar ----- P(Obs/Model) : 4.00537e-043
+---> Word close ----- P(Obs/Model) : 5.88382e-046
+---> Word down ----- P(Obs/Model) : 3.18877e-067
+---> Word exit ----- P(Obs/Model) : 1.03e-040
+---> Word faculties ----- P(Obs/Model) : 1.80653e-039
+---> Word github ----- P(Obs/Model) : 3.26266e-036
+---> Word history ----- P(Obs/Model) : 5.54588e-039
+---> Word jobs ----- P(Obs/Model) : 7.44184e-064
+---> Word open ----- P(Obs/Model) : 1.05613e-144
+---> Word outlook ----- P(Obs/Model) : 1.16948e-091
+---> Word payments ----- P(Obs/Model) : 6.27034e-033
+---> Word portal ----- P(Obs/Model) : 2.80439e-037
+---> Word quora ----- P(Obs/Model) : 3.42877e-105
+---> Word search ----- P(Obs/Model) : 3.82014e-068
+---> Word up ----- P(Obs/Model) : 3.21673e-074
+---> Word video ----- P(Obs/Model) : 4.06562e-027
+Predicted utterance: video
+Actual utterance: video
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/video/rec_44.txt <---------
+observation seq obtained -- 31	32	24	20	12	31	9	30	23	19	14	30	30	30	30	30	29	30	30	30	8	13	8	13	13	13	13	13	13	9	23	10	10	10	9	
+---> Word calendar ----- P(Obs/Model) : 1.59561e-082
+---> Word close ----- P(Obs/Model) : 2.78231e-047
+---> Word down ----- P(Obs/Model) : 1.22579e-038
+---> Word exit ----- P(Obs/Model) : 1.016e-072
+---> Word faculties ----- P(Obs/Model) : 4.87852e-043
+---> Word github ----- P(Obs/Model) : 3.26141e-040
+---> Word history ----- P(Obs/Model) : 1.13218e-041
+---> Word jobs ----- P(Obs/Model) : 4.22751e-061
+---> Word open ----- P(Obs/Model) : 5.72352e-139
+---> Word outlook ----- P(Obs/Model) : 3.39668e-067
+---> Word payments ----- P(Obs/Model) : 8.3385e-036
+---> Word portal ----- P(Obs/Model) : 6.39735e-043
+---> Word quora ----- P(Obs/Model) : 1.65094e-078
+---> Word search ----- P(Obs/Model) : 2.96209e-071
+---> Word up ----- P(Obs/Model) : 1.5337e-049
+---> Word video ----- P(Obs/Model) : 4.4608e-028
+Predicted utterance: video
+Actual utterance: video
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/video/rec_45.txt <---------
+observation seq obtained -- 32	31	11	31	31	32	11	31	32	30	30	30	29	30	30	30	30	8	8	13	13	13	13	13	13	9	9	9	10	10	11	12	14	23	9	
+---> Word calendar ----- P(Obs/Model) : 8.86613e-100
+---> Word close ----- P(Obs/Model) : 2.36984e-046
+---> Word down ----- P(Obs/Model) : 6.16385e-040
+---> Word exit ----- P(Obs/Model) : 1.48775e-043
+---> Word faculties ----- P(Obs/Model) : 6.00376e-047
+---> Word github ----- P(Obs/Model) : 2.01091e-047
+---> Word history ----- P(Obs/Model) : 2.51045e-040
+---> Word jobs ----- P(Obs/Model) : 5.82378e-074
+---> Word open ----- P(Obs/Model) : 6.58861e-194
+---> Word outlook ----- P(Obs/Model) : 7.15741e-074
+---> Word payments ----- P(Obs/Model) : 3.80909e-047
+---> Word portal ----- P(Obs/Model) : 1.12434e-040
+---> Word quora ----- P(Obs/Model) : 1.5684e-075
+---> Word search ----- P(Obs/Model) : 1.3754e-067
+---> Word up ----- P(Obs/Model) : 4.7952e-050
+---> Word video ----- P(Obs/Model) : 1.96168e-041
+Predicted utterance: down
+Actual utterance: video
+Accuracy for the digit video is : 30.000000 

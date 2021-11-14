@@ -1,0 +1,112 @@
+--------------------------------------------* Word close *--------------------------------------------------------
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/close/rec_41.txt <---------
+observation seq obtained -- 14	12	10	12	11	12	18	17	9	9	9	9	13	13	13	23	13	13	13	20	23	23	6	6	6	6	23	23	13	13	10	12	10	10	9	
+---> Word calendar ----- P(Obs/Model) : 1.92809e-146
+---> Word close ----- P(Obs/Model) : 1.35686e-030
+---> Word down ----- P(Obs/Model) : 9.11607e-040
+---> Word exit ----- P(Obs/Model) : 2.61927e-072
+---> Word faculties ----- P(Obs/Model) : 4.20897e-088
+---> Word github ----- P(Obs/Model) : 1.87231e-194
+---> Word history ----- P(Obs/Model) : 3.01131e-180
+---> Word jobs ----- P(Obs/Model) : 1.29661e-075
+---> Word open ----- P(Obs/Model) : 9.83491e-126
+---> Word outlook ----- P(Obs/Model) : 9.67277e-046
+---> Word payments ----- P(Obs/Model) : 2.12996e-058
+---> Word portal ----- P(Obs/Model) : 1.19341e-042
+---> Word quora ----- P(Obs/Model) : 1.47164e-162
+---> Word search ----- P(Obs/Model) : 1.4801e-055
+---> Word up ----- P(Obs/Model) : 5.35989e-054
+---> Word video ----- P(Obs/Model) : 5.89364e-099
+Predicted utterance: close
+Actual utterance: close
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/close/rec_42.txt <---------
+observation seq obtained -- 9	10	23	11	4	23	24	17	23	23	15	29	10	23	13	23	13	13	13	20	14	9	23	14	23	13	6	9	9	9	23	24	24	23	9	
+---> Word calendar ----- P(Obs/Model) : 1.12796e-135
+---> Word close ----- P(Obs/Model) : 8.73729e-046
+---> Word down ----- P(Obs/Model) : 2.02531e-072
+---> Word exit ----- P(Obs/Model) : 6.9145e-132
+---> Word faculties ----- P(Obs/Model) : 6.57686e-113
+---> Word github ----- P(Obs/Model) : 4.11336e-079
+---> Word history ----- P(Obs/Model) : 4.88897e-088
+---> Word jobs ----- P(Obs/Model) : 4.20627e-057
+---> Word open ----- P(Obs/Model) : 2.47798e-183
+---> Word outlook ----- P(Obs/Model) : 5.92733e-129
+---> Word payments ----- P(Obs/Model) : 7.95886e-141
+---> Word portal ----- P(Obs/Model) : 5.72064e-073
+---> Word quora ----- P(Obs/Model) : 3.3746e-133
+---> Word search ----- P(Obs/Model) : 2.3414e-093
+---> Word up ----- P(Obs/Model) : 1.24061e-102
+---> Word video ----- P(Obs/Model) : 1.14789e-107
+Predicted utterance: close
+Actual utterance: close
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/close/rec_43.txt <---------
+observation seq obtained -- 15	10	15	12	12	12	17	23	6	15	15	2	13	13	13	13	7	20	8	20	23	23	23	6	6	19	6	9	13	10	12	23	10	23	9	
+---> Word calendar ----- P(Obs/Model) : 5.63308e-151
+---> Word close ----- P(Obs/Model) : 1.04652e-046
+---> Word down ----- P(Obs/Model) : 3.84283e-161
+---> Word exit ----- P(Obs/Model) : 1.20625e-183
+---> Word faculties ----- P(Obs/Model) : 2.82976e-179
+---> Word github ----- P(Obs/Model) : 1.33663e-233
+---> Word history ----- P(Obs/Model) : 2.04314e-172
+---> Word jobs ----- P(Obs/Model) : 3.5731e-117
+---> Word open ----- P(Obs/Model) : 3.08342e-179
+---> Word outlook ----- P(Obs/Model) : 3.46911e-162
+---> Word payments ----- P(Obs/Model) : 5.0967e-177
+---> Word portal ----- P(Obs/Model) : 2.47316e-186
+---> Word quora ----- P(Obs/Model) : 3.91197e-277
+---> Word search ----- P(Obs/Model) : 4.32997e-083
+---> Word up ----- P(Obs/Model) : 3.92122e-211
+---> Word video ----- P(Obs/Model) : 6.93838e-203
+Predicted utterance: close
+Actual utterance: close
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/close/rec_44.txt <---------
+observation seq obtained -- 23	32	12	10	12	10	14	17	23	9	9	9	13	13	13	13	13	8	23	23	6	6	6	6	6	6	13	10	9	23	12	11	12	11	9	
+---> Word calendar ----- P(Obs/Model) : 7.79632e-183
+---> Word close ----- P(Obs/Model) : 1.07543e-031
+---> Word down ----- P(Obs/Model) : 1.00695e-042
+---> Word exit ----- P(Obs/Model) : 3.54268e-069
+---> Word faculties ----- P(Obs/Model) : 8.97949e-080
+---> Word github ----- P(Obs/Model) : 2.38251e-250
+---> Word history ----- P(Obs/Model) : 1.94513e-217
+---> Word jobs ----- P(Obs/Model) : 4.81137e-089
+---> Word open ----- P(Obs/Model) : 1.08863e-120
+---> Word outlook ----- P(Obs/Model) : 1.62454e-064
+---> Word payments ----- P(Obs/Model) : 2.01434e-067
+---> Word portal ----- P(Obs/Model) : 6.65844e-044
+---> Word quora ----- P(Obs/Model) : 1.88118e-218
+---> Word search ----- P(Obs/Model) : 2.40139e-054
+---> Word up ----- P(Obs/Model) : 7.55992e-055
+---> Word video ----- P(Obs/Model) : 5.50964e-071
+Predicted utterance: close
+Actual utterance: close
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/close/rec_45.txt <---------
+observation seq obtained -- 10	12	15	12	12	12	14	13	6	13	13	13	23	23	23	23	8	14	18	10	23	6	6	6	6	6	6	23	9	13	14	24	23	24	9	
+---> Word calendar ----- P(Obs/Model) : 1.29648e-157
+---> Word close ----- P(Obs/Model) : 1.76267e-047
+---> Word down ----- P(Obs/Model) : 2.00488e-080
+---> Word exit ----- P(Obs/Model) : 3.61092e-155
+---> Word faculties ----- P(Obs/Model) : 1.41431e-106
+---> Word github ----- P(Obs/Model) : 1.4734e-280
+---> Word history ----- P(Obs/Model) : 5.19992e-254
+---> Word jobs ----- P(Obs/Model) : 5.88157e-047
+---> Word open ----- P(Obs/Model) : 4.40396e-132
+---> Word outlook ----- P(Obs/Model) : 2.52736e-082
+---> Word payments ----- P(Obs/Model) : 2.72152e-142
+---> Word portal ----- P(Obs/Model) : 4.22498e-069
+---> Word quora ----- P(Obs/Model) : 6.75806e-274
+---> Word search ----- P(Obs/Model) : 8.64691e-063
+---> Word up ----- P(Obs/Model) : 1.908e-081
+---> Word video ----- P(Obs/Model) : 4.93583e-086
+Predicted utterance: jobs
+Actual utterance: close
+Accuracy for the digit close is : 40.000000 

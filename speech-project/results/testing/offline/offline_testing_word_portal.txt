@@ -1,0 +1,112 @@
+--------------------------------------------* Word portal *--------------------------------------------------------
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/portal/rec_41.txt <---------
+observation seq obtained -- 11	31	31	11	31	32	32	11	32	32	12	23	19	20	19	14	19	20	20	23	30	23	23	23	23	23	19	17	18	17	23	6	6	23	23	
+---> Word calendar ----- P(Obs/Model) : 9.06072e-079
+---> Word close ----- P(Obs/Model) : 5.99145e-048
+---> Word down ----- P(Obs/Model) : 1.99136e-047
+---> Word exit ----- P(Obs/Model) : 7.5955e-081
+---> Word faculties ----- P(Obs/Model) : 5.77418e-045
+---> Word github ----- P(Obs/Model) : 4.12823e-098
+---> Word history ----- P(Obs/Model) : 3.70367e-099
+---> Word jobs ----- P(Obs/Model) : 1.32524e-041
+---> Word open ----- P(Obs/Model) : 2.17081e-134
+---> Word outlook ----- P(Obs/Model) : 1.0571e-039
+---> Word payments ----- P(Obs/Model) : 5.35553e-050
+---> Word portal ----- P(Obs/Model) : 3.74156e-033
+---> Word quora ----- P(Obs/Model) : 1.70436e-098
+---> Word search ----- P(Obs/Model) : 2.17264e-036
+---> Word up ----- P(Obs/Model) : 1.32378e-049
+---> Word video ----- P(Obs/Model) : 7.04059e-097
+Predicted utterance: portal
+Actual utterance: portal
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/portal/rec_42.txt <---------
+observation seq obtained -- 31	11	32	31	24	11	32	32	17	20	23	30	23	23	13	8	23	8	19	23	8	23	23	13	9	9	9	9	9	30	23	17	23	9	9	
+---> Word calendar ----- P(Obs/Model) : 5.76887e-098
+---> Word close ----- P(Obs/Model) : 1.70157e-042
+---> Word down ----- P(Obs/Model) : 4.3924e-043
+---> Word exit ----- P(Obs/Model) : 3.68014e-042
+---> Word faculties ----- P(Obs/Model) : 5.70374e-038
+---> Word github ----- P(Obs/Model) : 7.79507e-041
+---> Word history ----- P(Obs/Model) : 9.0825e-041
+---> Word jobs ----- P(Obs/Model) : 3.17514e-048
+---> Word open ----- P(Obs/Model) : 1.29023e-141
+---> Word outlook ----- P(Obs/Model) : 1.16495e-034
+---> Word payments ----- P(Obs/Model) : 1.61708e-057
+---> Word portal ----- P(Obs/Model) : 2.17372e-034
+---> Word quora ----- P(Obs/Model) : 2.08849e-046
+---> Word search ----- P(Obs/Model) : 3.85017e-036
+---> Word up ----- P(Obs/Model) : 4.23459e-047
+---> Word video ----- P(Obs/Model) : 5.72465e-068
+Predicted utterance: portal
+Actual utterance: portal
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/portal/rec_43.txt <---------
+observation seq obtained -- 31	32	31	11	32	31	11	32	31	32	11	32	32	8	13	23	6	19	14	23	30	23	9	14	8	23	23	23	23	16	23	23	9	9	9	
+---> Word calendar ----- P(Obs/Model) : 1.73807e-072
+---> Word close ----- P(Obs/Model) : 3.71547e-075
+---> Word down ----- P(Obs/Model) : 8.84158e-080
+---> Word exit ----- P(Obs/Model) : 2.0492e-107
+---> Word faculties ----- P(Obs/Model) : 1.44957e-065
+---> Word github ----- P(Obs/Model) : 6.71593e-095
+---> Word history ----- P(Obs/Model) : 1.37104e-097
+---> Word jobs ----- P(Obs/Model) : 1.28391e-050
+---> Word open ----- P(Obs/Model) : 1.51124e-201
+---> Word outlook ----- P(Obs/Model) : 2.88101e-062
+---> Word payments ----- P(Obs/Model) : 7.08363e-098
+---> Word portal ----- P(Obs/Model) : 1.1119e-031
+---> Word quora ----- P(Obs/Model) : 2.21888e-101
+---> Word search ----- P(Obs/Model) : 8.94586e-063
+---> Word up ----- P(Obs/Model) : 2.51649e-075
+---> Word video ----- P(Obs/Model) : 2.69109e-070
+Predicted utterance: portal
+Actual utterance: portal
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/portal/rec_44.txt <---------
+observation seq obtained -- 11	31	31	11	32	32	24	11	32	32	12	12	23	23	13	13	23	23	14	23	30	30	23	23	8	8	23	22	23	23	6	6	6	23	23	
+---> Word calendar ----- P(Obs/Model) : 9.46867e-076
+---> Word close ----- P(Obs/Model) : 3.84908e-039
+---> Word down ----- P(Obs/Model) : 2.30562e-046
+---> Word exit ----- P(Obs/Model) : 4.75403e-046
+---> Word faculties ----- P(Obs/Model) : 1.06936e-043
+---> Word github ----- P(Obs/Model) : 1.25368e-156
+---> Word history ----- P(Obs/Model) : 6.22136e-127
+---> Word jobs ----- P(Obs/Model) : 7.95462e-048
+---> Word open ----- P(Obs/Model) : 1.09608e-131
+---> Word outlook ----- P(Obs/Model) : 8.02453e-036
+---> Word payments ----- P(Obs/Model) : 4.24115e-072
+---> Word portal ----- P(Obs/Model) : 2.50087e-032
+---> Word quora ----- P(Obs/Model) : 1.498e-126
+---> Word search ----- P(Obs/Model) : 2.90591e-066
+---> Word up ----- P(Obs/Model) : 6.1717e-048
+---> Word video ----- P(Obs/Model) : 1.02729e-068
+Predicted utterance: portal
+Actual utterance: portal
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/portal/rec_45.txt <---------
+observation seq obtained -- 24	20	12	31	32	23	23	18	20	23	30	30	23	30	22	23	23	23	23	23	23	23	23	23	13	3	23	23	23	8	13	13	10	23	9	
+---> Word calendar ----- P(Obs/Model) : 1.19507e-094
+---> Word close ----- P(Obs/Model) : 4.043e-042
+---> Word down ----- P(Obs/Model) : 5.4787e-070
+---> Word exit ----- P(Obs/Model) : 2.35027e-052
+---> Word faculties ----- P(Obs/Model) : 3.52826e-043
+---> Word github ----- P(Obs/Model) : 1.3024e-063
+---> Word history ----- P(Obs/Model) : 5.99064e-044
+---> Word jobs ----- P(Obs/Model) : 5.00704e-059
+---> Word open ----- P(Obs/Model) : 4.53199e-143
+---> Word outlook ----- P(Obs/Model) : 6.78303e-065
+---> Word payments ----- P(Obs/Model) : 3.66479e-069
+---> Word portal ----- P(Obs/Model) : 5.89637e-034
+---> Word quora ----- P(Obs/Model) : 9.45318e-074
+---> Word search ----- P(Obs/Model) : 7.08935e-070
+---> Word up ----- P(Obs/Model) : 8.11729e-077
+---> Word video ----- P(Obs/Model) : 9.85708e-067
+Predicted utterance: portal
+Actual utterance: portal
+Accuracy for the digit portal is : 50.000000 

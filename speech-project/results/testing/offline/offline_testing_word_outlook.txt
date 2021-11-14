@@ -1,0 +1,112 @@
+--------------------------------------------* Word outlook *--------------------------------------------------------
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/outlook/rec_41.txt <---------
+observation seq obtained -- 31	32	32	31	11	31	31	11	32	32	24	20	32	32	18	19	8	23	23	13	13	13	14	17	23	23	13	8	13	8	13	13	9	10	9	
+---> Word calendar ----- P(Obs/Model) : 4.69747e-110
+---> Word close ----- P(Obs/Model) : 1.00068e-045
+---> Word down ----- P(Obs/Model) : 4.19244e-046
+---> Word exit ----- P(Obs/Model) : 9.03619e-075
+---> Word faculties ----- P(Obs/Model) : 8.37867e-041
+---> Word github ----- P(Obs/Model) : 6.43848e-036
+---> Word history ----- P(Obs/Model) : 6.92339e-042
+---> Word jobs ----- P(Obs/Model) : 9.06676e-038
+---> Word open ----- P(Obs/Model) : 2.7474e-208
+---> Word outlook ----- P(Obs/Model) : 2.26533e-030
+---> Word payments ----- P(Obs/Model) : 2.27035e-047
+---> Word portal ----- P(Obs/Model) : 1.03709e-033
+---> Word quora ----- P(Obs/Model) : 5.0632e-041
+---> Word search ----- P(Obs/Model) : 3.11088e-033
+---> Word up ----- P(Obs/Model) : 2.4472e-043
+---> Word video ----- P(Obs/Model) : 1.15494e-035
+Predicted utterance: outlook
+Actual utterance: outlook
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/outlook/rec_42.txt <---------
+observation seq obtained -- 32	32	32	31	11	32	31	11	31	31	32	11	32	32	18	13	13	8	23	13	9	13	14	17	23	23	23	20	23	8	14	23	23	13	9	
+---> Word calendar ----- P(Obs/Model) : 5.01508e-075
+---> Word close ----- P(Obs/Model) : 4.1881e-044
+---> Word down ----- P(Obs/Model) : 6.08027e-050
+---> Word exit ----- P(Obs/Model) : 1.09132e-053
+---> Word faculties ----- P(Obs/Model) : 1.33167e-040
+---> Word github ----- P(Obs/Model) : 3.94784e-036
+---> Word history ----- P(Obs/Model) : 5.35232e-040
+---> Word jobs ----- P(Obs/Model) : 8.00239e-039
+---> Word open ----- P(Obs/Model) : 1.17491e-189
+---> Word outlook ----- P(Obs/Model) : 2.82593e-030
+---> Word payments ----- P(Obs/Model) : 5.74109e-078
+---> Word portal ----- P(Obs/Model) : 1.49328e-033
+---> Word quora ----- P(Obs/Model) : 4.84285e-039
+---> Word search ----- P(Obs/Model) : 2.11298e-033
+---> Word up ----- P(Obs/Model) : 4.1718e-041
+---> Word video ----- P(Obs/Model) : 9.19852e-046
+Predicted utterance: outlook
+Actual utterance: outlook
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/outlook/rec_43.txt <---------
+observation seq obtained -- 32	32	31	32	31	11	31	31	11	31	32	32	11	32	32	20	23	14	14	13	13	10	21	20	30	8	8	10	10	6	13	13	9	10	9	
+---> Word calendar ----- P(Obs/Model) : 5.58597e-091
+---> Word close ----- P(Obs/Model) : 1.05591e-077
+---> Word down ----- P(Obs/Model) : 1.64157e-058
+---> Word exit ----- P(Obs/Model) : 1.88435e-080
+---> Word faculties ----- P(Obs/Model) : 2.11319e-041
+---> Word github ----- P(Obs/Model) : 2.19605e-093
+---> Word history ----- P(Obs/Model) : 1.97245e-097
+---> Word jobs ----- P(Obs/Model) : 2.29127e-069
+---> Word open ----- P(Obs/Model) : 8.03048e-218
+---> Word outlook ----- P(Obs/Model) : 2.6132e-033
+---> Word payments ----- P(Obs/Model) : 1.63341e-046
+---> Word portal ----- P(Obs/Model) : 1.82018e-061
+---> Word quora ----- P(Obs/Model) : 4.23897e-074
+---> Word search ----- P(Obs/Model) : 1.12335e-036
+---> Word up ----- P(Obs/Model) : 1.28322e-079
+---> Word video ----- P(Obs/Model) : 1.54743e-061
+Predicted utterance: outlook
+Actual utterance: outlook
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/outlook/rec_44.txt <---------
+observation seq obtained -- 32	32	31	11	31	31	11	32	31	24	11	32	32	17	19	23	23	23	14	23	13	13	13	13	17	23	23	23	13	10	8	23	13	9	9	
+---> Word calendar ----- P(Obs/Model) : 6.57677e-108
+---> Word close ----- P(Obs/Model) : 3.79266e-043
+---> Word down ----- P(Obs/Model) : 4.36762e-048
+---> Word exit ----- P(Obs/Model) : 1.11019e-071
+---> Word faculties ----- P(Obs/Model) : 3.35037e-040
+---> Word github ----- P(Obs/Model) : 1.25978e-037
+---> Word history ----- P(Obs/Model) : 9.39362e-041
+---> Word jobs ----- P(Obs/Model) : 1.97831e-039
+---> Word open ----- P(Obs/Model) : 4.67175e-173
+---> Word outlook ----- P(Obs/Model) : 8.08768e-030
+---> Word payments ----- P(Obs/Model) : 3.47126e-073
+---> Word portal ----- P(Obs/Model) : 3.32024e-034
+---> Word quora ----- P(Obs/Model) : 6.01538e-040
+---> Word search ----- P(Obs/Model) : 8.79525e-035
+---> Word up ----- P(Obs/Model) : 1.21824e-040
+---> Word video ----- P(Obs/Model) : 1.66975e-064
+Predicted utterance: outlook
+Actual utterance: outlook
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+---------> Reading file input/recordings/outlook/rec_45.txt <---------
+observation seq obtained -- 31	11	32	31	32	11	32	32	11	12	11	11	12	17	17	18	23	14	20	8	13	13	13	9	17	23	23	23	23	13	23	30	20	9	9	
+---> Word calendar ----- P(Obs/Model) : 1.35178e-109
+---> Word close ----- P(Obs/Model) : 6.77674e-041
+---> Word down ----- P(Obs/Model) : 6.4201e-041
+---> Word exit ----- P(Obs/Model) : 7.28267e-054
+---> Word faculties ----- P(Obs/Model) : 1.54219e-041
+---> Word github ----- P(Obs/Model) : 4.98186e-040
+---> Word history ----- P(Obs/Model) : 4.28425e-038
+---> Word jobs ----- P(Obs/Model) : 9.75636e-043
+---> Word open ----- P(Obs/Model) : 1.68097e-140
+---> Word outlook ----- P(Obs/Model) : 1.18116e-031
+---> Word payments ----- P(Obs/Model) : 2.52763e-077
+---> Word portal ----- P(Obs/Model) : 2.09378e-038
+---> Word quora ----- P(Obs/Model) : 2.13786e-040
+---> Word search ----- P(Obs/Model) : 2.4263e-035
+---> Word up ----- P(Obs/Model) : 2.25005e-038
+---> Word video ----- P(Obs/Model) : 7.99854e-089
+Predicted utterance: outlook
+Actual utterance: outlook
+Accuracy for the digit outlook is : 50.000000 
