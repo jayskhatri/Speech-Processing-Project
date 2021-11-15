@@ -8,7 +8,7 @@
 #include <iomanip>
 #include <vector>
 #include <algorithm>
-#include <unistd.h>
+//#include <unistd.h>
 #include <sstream>
 #include "windows.h"
 
@@ -889,7 +889,8 @@ void initialize_model(int digit, int seq, char *filename = "--"){
 		readA(A_file);
 		readB(B_file);
 		readPi(PI_file);
-	}else if(filename  == "avg"){
+	}else if(filename  == "avg")
+	{
 		read_average_model(digit);
 		
 	}
@@ -901,7 +902,7 @@ void initialize_model(int digit, int seq, char *filename = "--"){
 	// 	readA(a_file);
 	// 	readB(b_file);
 	// 	readPi(pi_file);
-	// }
+	// z
 }
 
 //adding current model values to avg model
@@ -1074,6 +1075,42 @@ void get_DC_shift(){
     fclose(fp);
 
 }
+
+// dumping average model to file generated in live training
+void dump_avg_model_live(int digit){
+	char a_file_avg[100], b_file_avg[100], pi_file_avg[100], ind[3];
+
+	sprintf(a_file_avg, "output/live_avgmodels/word_%s_A.txt", keywords[digit]);
+	FILE *fp = fopen(a_file_avg, "w");
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=N; j++){
+			fprintf(fp, "%Le   ", a_average[i][j]);
+		}
+		fprintf(fp, "\n");
+	}
+	fclose(fp);
+
+	
+	sprintf(b_file_avg, "output/live_avgmodels/word_%s_B.txt", keywords[digit]);
+	ofstream fout(b_file_avg);
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=M; j++){
+			//fprintf(fp, "%Le   ", b_average[i][j]);
+			fout<<b_average[i][j]<<"   ";
+		}
+		fout<<endl;
+		//fprintf(fp, "\n");
+	}
+	fout.close();
+
+	sprintf(pi_file_avg, "output/live_avgmodels/word_%s_PI.txt", keywords[digit]);
+	fp = fopen(pi_file_avg, "w");
+	for(int i=1; i<=N; i++){
+		fprintf(fp, "%Le   ", pi_average[i]);
+	}
+	fclose(fp);
+}
+
 
 //function to setup the global variable like, max and nFactor
 //max and nFactor depends on the vowel recording file and are used to do the normalization
@@ -1359,7 +1396,7 @@ void generate_obs_sequence(char *filename){
 		calculate_tokhura_distance(Ci, obs_ind++, op);
 	}
 	T = num_frames;
-	//cout<<"Number of frames: "<<num_frames<<endl;
+	cout<<"Number of frames: "<<num_frames<<endl;
 	fprintf(op, "\n");
 	fclose(op);
 	cout<<"wrote observation seq in file: "<<filename<<"\n";
@@ -1989,25 +2026,31 @@ void test_file(char *filename, char *test){
 }
 
 //live training of a word
-void live_training(char *word_name){
+void live_training(int choice){
+
+	//itr_count will keep track of no of times a particular word is recorded as part of live training.
+	int itr_count=20;
+	
 	printf("---------------------------Live Training Module----------------------------------\n");
-	printf("Now you'll be asked to record your voice for 10 times\n");
+	printf("Now you'll be asked to record your voice for %d times\n",itr_count);
 	system("pause");
 
-	for(int i=0; i<=10; i++){
-		char command[50], filename[50], obs_file[100], line[50];
-		sprintf(filename, "input/recordings/%s/rec_%d.txt", word_name, i+1);
-		sprintf(command, "Recording_Module.exe live_train.wav");
+	for(int i=1; i<=itr_count; i++){
+		char command[500], filename[50], obs_file[100], line[50];
+		//sprintf(filename, "live_training.txt");
+		//sprintf(command, "Recording_Module.exe live_train.wav");
+		sprintf(filename, "input/live_training/rec_%d.txt" , i);
+		sprintf(command, " Recording_Module.exe 1 o.wav ");
+	
 		strcat(command, filename);
 		system(command);
-
 		FILE *f = fopen(filename, "r");
-
+		
 		if(f == NULL){
 			printf("Issue in opening file %s", filename);
 			exit(1);
 		}
-
+		
 		//setting dcshift and nfactor
 		setupGlobal(filename);
 
@@ -2028,7 +2071,9 @@ void live_training(char *word_name){
 
 			//framing
 			//generating observation seq
-			sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[d], u);
+			//sprintf(obs_file, "live_training_observation.txt" );
+			//generate_obs_sequence(obs_file);
+			sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[choice], i);
 			generate_obs_sequence(obs_file);
 
 			// for(int i=1; i<=T; i++){
@@ -2040,7 +2085,7 @@ void live_training(char *word_name){
 			// fprintf(common_dump, "\n");
 			
 			//initializing model
-			initialize_model(d, 1, "--");
+			initialize_model(choice, 1, "--");
 
 			int iteration = 1;
 			//starts converging model upto CONVERGE_ITERATIONS or till convergence whichever reach early
@@ -2082,11 +2127,13 @@ void live_training(char *word_name){
 			// dump_converged_model(common_dump);
 
 			add_to_avg_model();
-			dump_final_model(u, d);
+			dump_final_model_live(i, choice);
 	}
-	average_of_avg_model(10);
-	dump_avg_model(); //check here
+	average_of_avg_model(itr_count);
+	dump_avg_model(choice); //check here
 	erase_avg_model();
+	
+	
 }
 
 //driver function
@@ -2101,16 +2148,17 @@ int _tmain(int argc, _TCHAR* argv[]){
 	read_codebook();
 	
 	//training();
-	
 	char choice;
 	
 	while(1){
-		cout<<"\nPress 1. for automated test on test files\nPress 2. for manual test using the file\nPress 3. for live testing\nPress 0. to exit\nEnter your choice: "; cin>>choice;
+		cout<<"\nPress 1. for automated test on test files\nPress 2. for manual test using the file\nPress 3. for live testing\nPress 4. for live training\nPress 0. to exit\nEnter your choice: "; cin>>choice;
 
 		switch(choice){
 			case '1':
 				{
+					
 					testing();
+
 					break;
 				}
 
@@ -2144,29 +2192,22 @@ int _tmain(int argc, _TCHAR* argv[]){
 				{
 					if(environment_known == 0){
 						printf("--------------Recording silence--------------\n");
-						system("Recording_Module.exe 3 silence.wav silence_file.txt");	
+						system("Recording_Module.exe 1 silence.wav silence_file.txt");	
 						environment_known = 1;
 					}
-					printf("Enter the word name which you want to train as index: ");
-					char new_word[100];
-					scanf("%s", &new_word);
+					int choice;
+					for(int i=0;i<16;i++)
+					{
+						cout<<"Enter "<<i+1<<" for training "<<keywords[i]<<endl;
+					}
+					cin>>choice;
+					choice--;
 					
-					char recordings_folder[200];
-					sprintf(recordings_folder, "input/recordings/%s", new_word);
+					live_training(choice);
+				break;
 					
-					if(mkdir(recordings_folder) != 0){
-						printf("Input Folder %s created\n", new_word);
-					}
-					sprintf(recordings_folder, "output/%s/", new_word);
-					if(mkdir(recordings_folder) != 0){
-						printf("Output Folder %s created\n", new_word);
-					}
-					else{
-						printf("Folder %s already exists in input/recordings and output/ folder\n", new_word);
-						break;
-					}
 
-					live_training(new_word);
+					
 
 				}
 			case '0':
