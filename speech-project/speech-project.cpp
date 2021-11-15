@@ -10,7 +10,7 @@
 #include <algorithm>
 //#include <unistd.h>
 #include <sstream>
-#include "windows.h"
+#include <windows.h>
 
 #define CONVERGE_ITERATIONS 200
 #define M 32 //Number of obsevation symbols per state
@@ -1688,7 +1688,6 @@ void live_testing(){
 	printf("\n----------Live testing----------\n");
 
 	system("Recording_Module.exe 3 input.wav input_file.txt");
-
 	initialize_model(0, 0, "--");
 
 	FILE *f = fopen("input_file.txt", "r");
@@ -2029,21 +2028,46 @@ void test_file(char *filename, char *test){
 void live_training(int choice){
 
 	//itr_count will keep track of no of times a particular word is recorded as part of live training.
-	int itr_count=20;
-	
+	int itr_count=10;
+	int listen=0;
 	printf("---------------------------Live Training Module----------------------------------\n");
 	printf("Now you'll be asked to record your voice for %d times\n",itr_count);
 	system("pause");
 
+	//Giving option for user.
+	printf("Enter 1 to listen training audio else enter 2\n");
+	scanf("%d",&listen);
+
 	for(int i=1; i<=itr_count; i++){
 		char command[500], filename[50], obs_file[100], line[50];
-		//sprintf(filename, "live_training.txt");
-		//sprintf(command, "Recording_Module.exe live_train.wav");
+		char save='a', save_file[100]="";
+		
+	    cout<<"Press s for saving training data else enter n"<<endl;
+		cin>>save;
+		//Will save the live training data.
+		if(save=='s'||save=='S')
+		{
+			cout<<"Enter file name to be saved"<<endl;
+			cin>>save_file;
+			sprintf(filename,"input/live_training/");
+			strcat(filename,save_file);
+			strcat(filename,".txt");
+			sprintf(command, " Recording_Module.exe 3 o.wav ");
+	        strcat(command, filename);
+		    system(command);
+		}
+		else
+		{
 		sprintf(filename, "input/live_training/rec_%d.txt" , i);
-		sprintf(command, " Recording_Module.exe 1 o.wav ");
-	
-		strcat(command, filename);
+		sprintf(command, " Recording_Module.exe 3 o.wav ");
+	    strcat(command, filename);
 		system(command);
+		}
+
+		//Will playback the audio.
+		if(listen==1)
+	    bool played= PlaySound("o.wav", NULL, SND_SYNC);
+
 		FILE *f = fopen(filename, "r");
 		
 		if(f == NULL){
@@ -2127,10 +2151,10 @@ void live_training(int choice){
 			// dump_converged_model(common_dump);
 
 			add_to_avg_model();
-			dump_final_model_live(i, choice);
+			dump_final_model(i, choice);
 	}
 	average_of_avg_model(itr_count);
-	dump_avg_model(choice); //check here
+	dump_avg_model_live(choice); //check here
 	erase_avg_model();
 	
 	
