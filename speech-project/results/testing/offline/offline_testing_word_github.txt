@@ -3,110 +3,30 @@
 
 ---------> Reading file input/recordings/github/rec_41.txt <---------
 observation seq obtained -- 11	32	32	32	31	11	31	32	31	32	32	24	20	12	31	1	30	30	30	30	9	29	20	30	19	19	18	18	14	4	13	13	10	14	20	
----> Word calendar ----- P(Obs/Model) : 1.09517e-162
----> Word close ----- P(Obs/Model) : 5.9158e-085
----> Word down ----- P(Obs/Model) : 1.37821e-082
----> Word exit ----- P(Obs/Model) : 5.10829e-110
----> Word faculties ----- P(Obs/Model) : 8.53963e-052
----> Word github ----- P(Obs/Model) : 1.33922e-034
----> Word history ----- P(Obs/Model) : 1.53955e-062
----> Word jobs ----- P(Obs/Model) : 2.61769e-072
----> Word open ----- P(Obs/Model) : 1.81924e-222
----> Word outlook ----- P(Obs/Model) : 6.05146e-098
----> Word payments ----- P(Obs/Model) : 2.50087e-066
----> Word portal ----- P(Obs/Model) : 3.26358e-077
----> Word quora ----- P(Obs/Model) : 2.39074e-104
----> Word search ----- P(Obs/Model) : 3.83539e-068
----> Word up ----- P(Obs/Model) : 4.35861e-078
----> Word video ----- P(Obs/Model) : 9.95093e-072
 Predicted utterance: github
 Actual utterance: github
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/github/rec_42.txt <---------
 observation seq obtained -- 31	31	32	31	11	32	31	20	11	32	32	24	10	9	8	29	30	30	30	3	9	30	30	8	23	8	18	18	14	8	13	10	24	24	18	
----> Word calendar ----- P(Obs/Model) : 9.94067e-216
----> Word close ----- P(Obs/Model) : 2.97096e-058
----> Word down ----- P(Obs/Model) : 2.10179e-083
----> Word exit ----- P(Obs/Model) : 4.08835e-052
----> Word faculties ----- P(Obs/Model) : 1.31703e-056
----> Word github ----- P(Obs/Model) : 4.42623e-036
----> Word history ----- P(Obs/Model) : 6.09663e-051
----> Word jobs ----- P(Obs/Model) : 1.19067e-063
----> Word open ----- P(Obs/Model) : 3.22633e-297
----> Word outlook ----- P(Obs/Model) : 1.97966e-111
----> Word payments ----- P(Obs/Model) : 1.92765e-055
----> Word portal ----- P(Obs/Model) : 3.26366e-054
----> Word quora ----- P(Obs/Model) : 1.4398e-107
----> Word search ----- P(Obs/Model) : 5.8928e-085
----> Word up ----- P(Obs/Model) : 1.19855e-083
----> Word video ----- P(Obs/Model) : 1.41212e-053
 Predicted utterance: github
 Actual utterance: github
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/github/rec_43.txt <---------
-observation seq obtained -- 32	24	20	11	32	32	11	30	12	10	9	9	9	9	8	8	29	29	1	29	30	9	20	30	23	22	17	17	13	13	9	13	13	17	20	
----> Word calendar ----- P(Obs/Model) : 1.75428e-103
----> Word close ----- P(Obs/Model) : 1.991e-075
----> Word down ----- P(Obs/Model) : 1.44445e-070
----> Word exit ----- P(Obs/Model) : 3.01041e-049
----> Word faculties ----- P(Obs/Model) : 4.53813e-049
----> Word github ----- P(Obs/Model) : 1.19064e-061
----> Word history ----- P(Obs/Model) : 1.83862e-070
----> Word jobs ----- P(Obs/Model) : 5.39403e-084
----> Word open ----- P(Obs/Model) : 2.73193e-105
----> Word outlook ----- P(Obs/Model) : 3.18141e-158
----> Word payments ----- P(Obs/Model) : 7.89944e-076
----> Word portal ----- P(Obs/Model) : 1.88529e-076
----> Word quora ----- P(Obs/Model) : 8.35298e-162
----> Word search ----- P(Obs/Model) : 7.46804e-164
----> Word up ----- P(Obs/Model) : 5.01216e-107
----> Word video ----- P(Obs/Model) : 2.24664e-107
-Predicted utterance: faculties
+observation seq obtained -- 12	12	24	14	14	12	9	9	9	9	9	8	2	2	29	3	1	3	30	29	8	8	17	17	13	13	20	9	9	13	23	24	18	17	9	
+Predicted utterance: github
 Actual utterance: github
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/github/rec_44.txt <---------
 observation seq obtained -- 32	31	32	11	32	32	10	10	10	9	9	9	9	9	20	3	29	29	29	30	29	29	4	8	19	18	17	18	18	14	23	14	17	13	20	
----> Word calendar ----- P(Obs/Model) : 9.77345e-136
----> Word close ----- P(Obs/Model) : 4.15887e-079
----> Word down ----- P(Obs/Model) : 6.81322e-078
----> Word exit ----- P(Obs/Model) : 8.50048e-105
----> Word faculties ----- P(Obs/Model) : 4.0899e-068
----> Word github ----- P(Obs/Model) : 4.05711e-033
----> Word history ----- P(Obs/Model) : 1.33192e-044
----> Word jobs ----- P(Obs/Model) : 7.68036e-050
----> Word open ----- P(Obs/Model) : 1.3879e-150
----> Word outlook ----- P(Obs/Model) : 7.5853e-219
----> Word payments ----- P(Obs/Model) : 1.43711e-100
----> Word portal ----- P(Obs/Model) : 2.50049e-062
----> Word quora ----- P(Obs/Model) : 1.77063e-217
----> Word search ----- P(Obs/Model) : 3.11893e-190
----> Word up ----- P(Obs/Model) : 3.70464e-084
----> Word video ----- P(Obs/Model) : 2.51704e-084
 Predicted utterance: github
 Actual utterance: github
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/github/rec_45.txt <---------
 observation seq obtained -- 31	32	32	31	11	31	31	11	32	31	24	11	32	32	7	7	30	30	29	29	29	29	30	4	23	17	18	17	17	14	13	13	14	17	20	
----> Word calendar ----- P(Obs/Model) : 2.37554e-108
----> Word close ----- P(Obs/Model) : 1.13695e-136
----> Word down ----- P(Obs/Model) : 3.21167e-050
----> Word exit ----- P(Obs/Model) : 1.38796e-078
----> Word faculties ----- P(Obs/Model) : 3.5683e-048
----> Word github ----- P(Obs/Model) : 6.52789e-035
----> Word history ----- P(Obs/Model) : 5.83465e-045
----> Word jobs ----- P(Obs/Model) : 2.51091e-060
----> Word open ----- P(Obs/Model) : 1.02411e-227
----> Word outlook ----- P(Obs/Model) : 1.76405e-159
----> Word payments ----- P(Obs/Model) : 2.87006e-104
----> Word portal ----- P(Obs/Model) : 1.97739e-108
----> Word quora ----- P(Obs/Model) : 2.17327e-161
----> Word search ----- P(Obs/Model) : 2.472e-154
----> Word up ----- P(Obs/Model) : 4.31719e-057
----> Word video ----- P(Obs/Model) : 3.34632e-076
 Predicted utterance: github
 Actual utterance: github
-Accuracy for the digit github is : 40.000000 
+Accuracy for the word github is : 100.000000 

@@ -2,111 +2,31 @@
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/down/rec_41.txt <---------
-observation seq obtained -- 11	10	10	12	11	11	11	9	9	4	23	22	19	19	13	13	8	20	13	13	9	9	9	9	9	9	9	9	9	9	10	32	11	20	9	
----> Word calendar ----- P(Obs/Model) : 3.05422e-099
----> Word close ----- P(Obs/Model) : 1.75173e-071
----> Word down ----- P(Obs/Model) : 6.98255e-057
----> Word exit ----- P(Obs/Model) : 3.43475e-090
----> Word faculties ----- P(Obs/Model) : 3.15067e-053
----> Word github ----- P(Obs/Model) : 5.83637e-055
----> Word history ----- P(Obs/Model) : 5.36017e-058
----> Word jobs ----- P(Obs/Model) : 3.44437e-048
----> Word open ----- P(Obs/Model) : 1.13888e-134
----> Word outlook ----- P(Obs/Model) : 4.03966e-052
----> Word payments ----- P(Obs/Model) : 1.08241e-095
----> Word portal ----- P(Obs/Model) : 1.27752e-045
----> Word quora ----- P(Obs/Model) : 1.67793e-053
----> Word search ----- P(Obs/Model) : 1.06047e-072
----> Word up ----- P(Obs/Model) : 4.21731e-053
----> Word video ----- P(Obs/Model) : 4.4018e-075
-Predicted utterance: portal
+observation seq obtained -- 12	30	23	9	29	9	29	8	23	19	17	17	17	18	17	13	6	13	13	13	9	9	9	9	9	13	13	13	13	14	10	14	10	10	9	
+Predicted utterance: down
 Actual utterance: down
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/down/rec_42.txt <---------
 observation seq obtained -- 30	32	11	12	11	11	9	9	9	19	22	17	17	17	17	13	13	13	13	9	9	9	9	9	9	9	9	9	9	9	9	13	9	11	9	
----> Word calendar ----- P(Obs/Model) : 6.40787e-074
----> Word close ----- P(Obs/Model) : 2.91319e-034
----> Word down ----- P(Obs/Model) : 1.17424e-020
----> Word exit ----- P(Obs/Model) : 5.26856e-045
----> Word faculties ----- P(Obs/Model) : 2.48998e-051
----> Word github ----- P(Obs/Model) : 4.75964e-063
----> Word history ----- P(Obs/Model) : 8.93182e-039
----> Word jobs ----- P(Obs/Model) : 2.33726e-043
----> Word open ----- P(Obs/Model) : 3.24056e-060
----> Word outlook ----- P(Obs/Model) : 8.2899e-052
----> Word payments ----- P(Obs/Model) : 5.1493e-067
----> Word portal ----- P(Obs/Model) : 2.39741e-050
----> Word quora ----- P(Obs/Model) : 1.5225e-052
----> Word search ----- P(Obs/Model) : 3.17987e-087
----> Word up ----- P(Obs/Model) : 9.77307e-039
----> Word video ----- P(Obs/Model) : 1.52497e-068
 Predicted utterance: down
 Actual utterance: down
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/down/rec_43.txt <---------
 observation seq obtained -- 11	12	11	11	12	11	9	9	8	23	19	17	17	17	13	23	13	23	23	9	9	9	9	9	9	9	9	9	13	9	23	10	10	10	9	
----> Word calendar ----- P(Obs/Model) : 2.18281e-042
----> Word close ----- P(Obs/Model) : 1.869e-034
----> Word down ----- P(Obs/Model) : 4.11738e-025
----> Word exit ----- P(Obs/Model) : 8.77212e-043
----> Word faculties ----- P(Obs/Model) : 1.19144e-046
----> Word github ----- P(Obs/Model) : 6.53645e-040
----> Word history ----- P(Obs/Model) : 2.83606e-038
----> Word jobs ----- P(Obs/Model) : 4.35989e-042
----> Word open ----- P(Obs/Model) : 4.95504e-030
----> Word outlook ----- P(Obs/Model) : 1.85339e-041
----> Word payments ----- P(Obs/Model) : 6.22202e-039
----> Word portal ----- P(Obs/Model) : 7.20482e-037
----> Word quora ----- P(Obs/Model) : 1.62582e-053
----> Word search ----- P(Obs/Model) : 5.37667e-040
----> Word up ----- P(Obs/Model) : 9.95879e-038
----> Word video ----- P(Obs/Model) : 5.61148e-069
 Predicted utterance: down
 Actual utterance: down
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/down/rec_44.txt <---------
 observation seq obtained -- 32	11	12	12	11	11	11	9	9	23	23	17	17	17	13	13	13	13	13	13	29	29	9	9	9	9	9	9	9	9	10	10	10	10	9	
----> Word calendar ----- P(Obs/Model) : 6.1787e-053
----> Word close ----- P(Obs/Model) : 2.35742e-035
----> Word down ----- P(Obs/Model) : 1.05832e-023
----> Word exit ----- P(Obs/Model) : 1.39514e-043
----> Word faculties ----- P(Obs/Model) : 1.34904e-048
----> Word github ----- P(Obs/Model) : 7.5509e-039
----> Word history ----- P(Obs/Model) : 5.07484e-038
----> Word jobs ----- P(Obs/Model) : 1.26118e-041
----> Word open ----- P(Obs/Model) : 1.26642e-032
----> Word outlook ----- P(Obs/Model) : 3.19803e-097
----> Word payments ----- P(Obs/Model) : 8.63881e-038
----> Word portal ----- P(Obs/Model) : 3.11929e-041
----> Word quora ----- P(Obs/Model) : 1.4226e-108
----> Word search ----- P(Obs/Model) : 3.89801e-097
----> Word up ----- P(Obs/Model) : 5.8776e-036
----> Word video ----- P(Obs/Model) : 3.73854e-038
 Predicted utterance: down
 Actual utterance: down
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/down/rec_45.txt <---------
-observation seq obtained -- 11	32	12	12	23	9	9	30	20	19	19	17	17	17	13	14	13	9	9	9	9	9	9	9	2	9	9	9	9	13	10	11	14	23	9	
----> Word calendar ----- P(Obs/Model) : 4.74361e-103
----> Word close ----- P(Obs/Model) : 1.37029e-038
----> Word down ----- P(Obs/Model) : 4.30473e-041
----> Word exit ----- P(Obs/Model) : 5.87998e-097
----> Word faculties ----- P(Obs/Model) : 9.32306e-058
----> Word github ----- P(Obs/Model) : 4.79579e-045
----> Word history ----- P(Obs/Model) : 2.97381e-040
----> Word jobs ----- P(Obs/Model) : 1.78409e-042
----> Word open ----- P(Obs/Model) : 1.1886e-037
----> Word outlook ----- P(Obs/Model) : 9.89998e-050
----> Word payments ----- P(Obs/Model) : 2.53426e-099
----> Word portal ----- P(Obs/Model) : 3.00999e-039
----> Word quora ----- P(Obs/Model) : 1.61738e-054
----> Word search ----- P(Obs/Model) : 3.4492e-053
----> Word up ----- P(Obs/Model) : 4.45829e-069
----> Word video ----- P(Obs/Model) : 2.34469e-072
-Predicted utterance: open
+observation seq obtained -- 10	10	10	10	10	9	9	9	9	9	8	23	17	17	17	18	13	8	23	20	13	9	9	9	9	9	9	9	9	9	10	11	11	10	9	
+Predicted utterance: down
 Actual utterance: down
-Accuracy for the digit down is : 30.000000 
+Accuracy for the word down is : 100.000000 

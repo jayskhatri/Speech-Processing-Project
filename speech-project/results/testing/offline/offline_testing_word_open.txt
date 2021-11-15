@@ -2,111 +2,31 @@
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/open/rec_41.txt <---------
-observation seq obtained -- 11	32	32	12	10	11	12	12	12	23	10	11	11	30	13	13	13	13	13	1	9	10	9	10	23	10	19	13	18	18	19	23	9	9	9	
----> Word calendar ----- P(Obs/Model) : 2.3824e-131
----> Word close ----- P(Obs/Model) : 8.68582e-072
----> Word down ----- P(Obs/Model) : 2.40531e-071
----> Word exit ----- P(Obs/Model) : 8.76514e-048
----> Word faculties ----- P(Obs/Model) : 7.1326e-057
----> Word github ----- P(Obs/Model) : 3.15057e-042
----> Word history ----- P(Obs/Model) : 3.37845e-060
----> Word jobs ----- P(Obs/Model) : 6.67004e-043
----> Word open ----- P(Obs/Model) : 3.44516e-058
----> Word outlook ----- P(Obs/Model) : 6.17042e-071
----> Word payments ----- P(Obs/Model) : 2.50572e-040
----> Word portal ----- P(Obs/Model) : 4.88751e-075
----> Word quora ----- P(Obs/Model) : 2.70632e-071
----> Word search ----- P(Obs/Model) : 1.77335e-046
----> Word up ----- P(Obs/Model) : 3.44154e-067
----> Word video ----- P(Obs/Model) : 5.9457e-074
-Predicted utterance: payments
+observation seq obtained -- 11	32	32	11	12	12	10	14	9	9	10	11	11	9	13	13	13	13	13	23	23	9	9	9	9	9	18	13	17	17	19	9	9	9	9	
+Predicted utterance: open
 Actual utterance: open
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/open/rec_42.txt <---------
-observation seq obtained -- 32	24	20	11	32	31	23	11	11	11	10	13	14	10	23	13	13	13	13	9	9	9	10	10	10	14	20	13	17	14	23	13	9	9	9	
----> Word calendar ----- P(Obs/Model) : 2.03704e-085
----> Word close ----- P(Obs/Model) : 9.28118e-042
----> Word down ----- P(Obs/Model) : 1.46387e-043
----> Word exit ----- P(Obs/Model) : 1.2293e-055
----> Word faculties ----- P(Obs/Model) : 5.06876e-048
----> Word github ----- P(Obs/Model) : 8.89311e-042
----> Word history ----- P(Obs/Model) : 1.43953e-040
----> Word jobs ----- P(Obs/Model) : 3.15596e-043
----> Word open ----- P(Obs/Model) : 7.2674e-062
----> Word outlook ----- P(Obs/Model) : 1.29747e-037
----> Word payments ----- P(Obs/Model) : 9.49445e-082
----> Word portal ----- P(Obs/Model) : 1.08137e-039
----> Word quora ----- P(Obs/Model) : 3.02387e-045
----> Word search ----- P(Obs/Model) : 1.81036e-045
----> Word up ----- P(Obs/Model) : 1.5651e-037
----> Word video ----- P(Obs/Model) : 3.55019e-044
-Predicted utterance: up
+observation seq obtained -- 11	23	23	23	23	10	6	10	10	23	11	11	13	2	13	13	13	13	20	13	9	9	9	9	9	19	23	17	17	19	23	9	9	9	9	
+Predicted utterance: open
 Actual utterance: open
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/open/rec_43.txt <---------
 observation seq obtained -- 24	20	11	32	32	11	10	8	11	30	12	23	12	23	23	13	13	13	13	13	9	9	10	10	10	10	8	20	18	17	18	13	13	9	9	
----> Word calendar ----- P(Obs/Model) : 7.31769e-135
----> Word close ----- P(Obs/Model) : 1.83827e-045
----> Word down ----- P(Obs/Model) : 2.75585e-045
----> Word exit ----- P(Obs/Model) : 6.84194e-054
----> Word faculties ----- P(Obs/Model) : 3.21734e-049
----> Word github ----- P(Obs/Model) : 8.6957e-043
----> Word history ----- P(Obs/Model) : 4.91127e-044
----> Word jobs ----- P(Obs/Model) : 1.93982e-043
----> Word open ----- P(Obs/Model) : 1.67906e-038
----> Word outlook ----- P(Obs/Model) : 4.57523e-042
----> Word payments ----- P(Obs/Model) : 6.15624e-044
----> Word portal ----- P(Obs/Model) : 2.02027e-048
----> Word quora ----- P(Obs/Model) : 1.10863e-044
----> Word search ----- P(Obs/Model) : 4.71481e-048
----> Word up ----- P(Obs/Model) : 4.14032e-040
----> Word video ----- P(Obs/Model) : 1.01956e-075
 Predicted utterance: open
 Actual utterance: open
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/open/rec_44.txt <---------
 observation seq obtained -- 10	11	11	12	11	10	12	24	23	23	23	11	13	9	13	13	13	13	8	9	13	13	13	10	10	20	23	13	14	23	23	9	9	9	9	
----> Word calendar ----- P(Obs/Model) : 1.01687e-075
----> Word close ----- P(Obs/Model) : 4.19074e-033
----> Word down ----- P(Obs/Model) : 2.13278e-038
----> Word exit ----- P(Obs/Model) : 3.34745e-051
----> Word faculties ----- P(Obs/Model) : 2.97843e-070
----> Word github ----- P(Obs/Model) : 3.30001e-044
----> Word history ----- P(Obs/Model) : 2.05139e-039
----> Word jobs ----- P(Obs/Model) : 4.33547e-043
----> Word open ----- P(Obs/Model) : 1.8885e-028
----> Word outlook ----- P(Obs/Model) : 8.65454e-037
----> Word payments ----- P(Obs/Model) : 1.52685e-056
----> Word portal ----- P(Obs/Model) : 3.76145e-040
----> Word quora ----- P(Obs/Model) : 4.52779e-042
----> Word search ----- P(Obs/Model) : 1.41741e-043
----> Word up ----- P(Obs/Model) : 2.32327e-035
----> Word video ----- P(Obs/Model) : 4.4706e-041
 Predicted utterance: open
 Actual utterance: open
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/open/rec_45.txt <---------
 observation seq obtained -- 12	11	24	10	30	11	11	23	30	11	12	30	11	13	13	2	2	2	2	9	9	13	13	10	10	10	23	13	18	17	13	23	9	9	9	
----> Word calendar ----- P(Obs/Model) : 1.2354e-107
----> Word close ----- P(Obs/Model) : 5.69494e-043
----> Word down ----- P(Obs/Model) : 1.96644e-050
----> Word exit ----- P(Obs/Model) : 1.4074e-047
----> Word faculties ----- P(Obs/Model) : 3.16341e-054
----> Word github ----- P(Obs/Model) : 1.64282e-046
----> Word history ----- P(Obs/Model) : 7.56336e-042
----> Word jobs ----- P(Obs/Model) : 9.83288e-049
----> Word open ----- P(Obs/Model) : 1.36334e-032
----> Word outlook ----- P(Obs/Model) : 5.82586e-046
----> Word payments ----- P(Obs/Model) : 9.85322e-050
----> Word portal ----- P(Obs/Model) : 6.19903e-049
----> Word quora ----- P(Obs/Model) : 1.63969e-048
----> Word search ----- P(Obs/Model) : 8.51335e-056
----> Word up ----- P(Obs/Model) : 8.84085e-153
----> Word video ----- P(Obs/Model) : 1.07854e-068
 Predicted utterance: open
 Actual utterance: open
-Accuracy for the digit open is : 30.000000 
+Accuracy for the word open is : 100.000000 
