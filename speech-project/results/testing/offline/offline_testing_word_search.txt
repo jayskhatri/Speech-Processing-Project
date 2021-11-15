@@ -3,110 +3,30 @@
 
 ---------> Reading file input/recordings/search/rec_41.txt <---------
 observation seq obtained -- 32	32	31	11	31	32	11	31	32	24	20	12	31	23	8	17	8	8	8	8	8	9	9	17	15	15	20	20	20	20	14	13	11	10	9	
----> Word calendar ----- P(Obs/Model) : 1.54293e-132
----> Word close ----- P(Obs/Model) : 4.38538e-051
----> Word down ----- P(Obs/Model) : 2.02238e-106
----> Word exit ----- P(Obs/Model) : 2.83876e-108
----> Word faculties ----- P(Obs/Model) : 8.69148e-100
----> Word github ----- P(Obs/Model) : 1.10398e-044
----> Word history ----- P(Obs/Model) : 7.75405e-046
----> Word jobs ----- P(Obs/Model) : 8.5455e-046
----> Word open ----- P(Obs/Model) : 1.78999e-193
----> Word outlook ----- P(Obs/Model) : 1.82672e-099
----> Word payments ----- P(Obs/Model) : 1.61974e-128
----> Word portal ----- P(Obs/Model) : 2.27434e-098
----> Word quora ----- P(Obs/Model) : 6.81428e-105
----> Word search ----- P(Obs/Model) : 5.21829e-036
----> Word up ----- P(Obs/Model) : 6.50172e-104
----> Word video ----- P(Obs/Model) : 5.67792e-117
 Predicted utterance: search
 Actual utterance: search
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/search/rec_42.txt <---------
 observation seq obtained -- 32	12	31	31	32	31	31	32	24	20	11	32	7	19	17	17	17	19	8	8	8	8	23	9	15	15	3	4	20	23	23	12	12	12	9	
----> Word calendar ----- P(Obs/Model) : 5.81341e-174
----> Word close ----- P(Obs/Model) : 5.7457e-075
----> Word down ----- P(Obs/Model) : 4.67258e-138
----> Word exit ----- P(Obs/Model) : 2.47106e-132
----> Word faculties ----- P(Obs/Model) : 4.43785e-135
----> Word github ----- P(Obs/Model) : 8.28973e-068
----> Word history ----- P(Obs/Model) : 3.84428e-051
----> Word jobs ----- P(Obs/Model) : 1.54777e-056
----> Word open ----- P(Obs/Model) : 0
----> Word outlook ----- P(Obs/Model) : 1.91976e-145
----> Word payments ----- P(Obs/Model) : 1.1443e-122
----> Word portal ----- P(Obs/Model) : 1.53748e-129
----> Word quora ----- P(Obs/Model) : 1.13133e-135
----> Word search ----- P(Obs/Model) : 3.3768e-035
----> Word up ----- P(Obs/Model) : 6.31019e-143
----> Word video ----- P(Obs/Model) : 6.84058e-202
 Predicted utterance: search
 Actual utterance: search
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/search/rec_43.txt <---------
 observation seq obtained -- 31	32	31	11	32	31	11	32	31	32	11	32	32	14	18	18	17	19	20	20	8	23	23	15	14	15	3	20	4	23	10	9	12	10	9	
----> Word calendar ----- P(Obs/Model) : 1.62974e-154
----> Word close ----- P(Obs/Model) : 1.21214e-051
----> Word down ----- P(Obs/Model) : 2.45531e-138
----> Word exit ----- P(Obs/Model) : 5.11173e-145
----> Word faculties ----- P(Obs/Model) : 3.12625e-113
----> Word github ----- P(Obs/Model) : 2.20708e-051
----> Word history ----- P(Obs/Model) : 1.6817e-046
----> Word jobs ----- P(Obs/Model) : 9.31188e-044
----> Word open ----- P(Obs/Model) : 4.80966e-264
----> Word outlook ----- P(Obs/Model) : 3.22341e-126
----> Word payments ----- P(Obs/Model) : 1.35205e-139
----> Word portal ----- P(Obs/Model) : 3.26524e-097
----> Word quora ----- P(Obs/Model) : 6.75996e-136
----> Word search ----- P(Obs/Model) : 5.09868e-034
----> Word up ----- P(Obs/Model) : 2.32193e-130
----> Word video ----- P(Obs/Model) : 1.12131e-131
 Predicted utterance: search
 Actual utterance: search
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/search/rec_44.txt <---------
 observation seq obtained -- 32	32	31	11	31	32	31	32	32	24	20	12	31	17	17	17	17	23	8	8	8	6	9	14	12	3	3	20	18	20	23	9	9	12	9	
----> Word calendar ----- P(Obs/Model) : 3.87869e-201
----> Word close ----- P(Obs/Model) : 1.16832e-055
----> Word down ----- P(Obs/Model) : 2.81135e-112
----> Word exit ----- P(Obs/Model) : 1.07355e-086
----> Word faculties ----- P(Obs/Model) : 4.65874e-066
----> Word github ----- P(Obs/Model) : 3.59022e-087
----> Word history ----- P(Obs/Model) : 3.04475e-075
----> Word jobs ----- P(Obs/Model) : 6.43314e-057
----> Word open ----- P(Obs/Model) : 0
----> Word outlook ----- P(Obs/Model) : 2.62555e-101
----> Word payments ----- P(Obs/Model) : 7.13585e-096
----> Word portal ----- P(Obs/Model) : 1.98351e-046
----> Word quora ----- P(Obs/Model) : 9.26384e-135
----> Word search ----- P(Obs/Model) : 4.52118e-036
----> Word up ----- P(Obs/Model) : 3.89507e-109
----> Word video ----- P(Obs/Model) : 7.90073e-119
 Predicted utterance: search
 Actual utterance: search
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/search/rec_45.txt <---------
-observation seq obtained -- 12	31	31	32	31	11	32	24	20	11	32	20	5	5	23	17	18	19	19	8	7	8	8	29	10	23	20	15	20	20	23	23	23	14	9	
----> Word calendar ----- P(Obs/Model) : 1.11499e-163
----> Word close ----- P(Obs/Model) : 1.92365e-096
----> Word down ----- P(Obs/Model) : 7.97111e-139
----> Word exit ----- P(Obs/Model) : 5.35323e-112
----> Word faculties ----- P(Obs/Model) : 3.29094e-133
----> Word github ----- P(Obs/Model) : 1.32195e-100
----> Word history ----- P(Obs/Model) : 1.50981e-103
----> Word jobs ----- P(Obs/Model) : 4.60653e-055
----> Word open ----- P(Obs/Model) : 6.92314e-241
----> Word outlook ----- P(Obs/Model) : 1.8625e-154
----> Word payments ----- P(Obs/Model) : 1.76591e-124
----> Word portal ----- P(Obs/Model) : 2.53712e-154
----> Word quora ----- P(Obs/Model) : 3.23987e-161
----> Word search ----- P(Obs/Model) : 1.23412e-064
----> Word up ----- P(Obs/Model) : 1.85862e-077
----> Word video ----- P(Obs/Model) : 3.02234e-159
-Predicted utterance: jobs
+observation seq obtained -- 10	4	30	11	10	10	10	23	23	5	5	5	5	7	7	8	13	13	17	17	17	8	30	8	8	8	23	9	16	12	15	20	20	4	20	
+Predicted utterance: search
 Actual utterance: search
-Accuracy for the digit search is : 40.000000 
+Accuracy for the word search is : 100.000000 

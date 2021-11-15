@@ -3,110 +3,30 @@
 
 ---------> Reading file input/recordings/jobs/rec_41.txt <---------
 observation seq obtained -- 31	32	32	11	32	32	30	10	11	23	10	9	20	4	20	23	14	18	19	18	8	13	17	14	6	6	13	5	6	13	6	6	9	10	9	
----> Word calendar ----- P(Obs/Model) : 2.96745e-146
----> Word close ----- P(Obs/Model) : 2.54905e-074
----> Word down ----- P(Obs/Model) : 4.6614e-078
----> Word exit ----- P(Obs/Model) : 8.89278e-138
----> Word faculties ----- P(Obs/Model) : 1.34226e-092
----> Word github ----- P(Obs/Model) : 4.15983e-212
----> Word history ----- P(Obs/Model) : 1.63508e-215
----> Word jobs ----- P(Obs/Model) : 2.47701e-034
----> Word open ----- P(Obs/Model) : 7.35429e-150
----> Word outlook ----- P(Obs/Model) : 3.3019e-075
----> Word payments ----- P(Obs/Model) : 1.95133e-101
----> Word portal ----- P(Obs/Model) : 3.08378e-069
----> Word quora ----- P(Obs/Model) : 4.70085e-218
----> Word search ----- P(Obs/Model) : 3.93789e-048
----> Word up ----- P(Obs/Model) : 1.08217e-054
----> Word video ----- P(Obs/Model) : 9.27163e-074
 Predicted utterance: jobs
 Actual utterance: jobs
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/jobs/rec_42.txt <---------
 observation seq obtained -- 32	31	32	11	32	32	12	12	10	9	9	9	20	20	20	19	18	19	8	18	23	9	13	17	8	19	19	19	13	13	23	13	10	24	9	
----> Word calendar ----- P(Obs/Model) : 2.09454e-131
----> Word close ----- P(Obs/Model) : 2.09669e-048
----> Word down ----- P(Obs/Model) : 7.11492e-046
----> Word exit ----- P(Obs/Model) : 3.367e-063
----> Word faculties ----- P(Obs/Model) : 4.06513e-046
----> Word github ----- P(Obs/Model) : 9.0926e-037
----> Word history ----- P(Obs/Model) : 1.12677e-044
----> Word jobs ----- P(Obs/Model) : 1.49339e-035
----> Word open ----- P(Obs/Model) : 3.04472e-130
----> Word outlook ----- P(Obs/Model) : 2.91057e-049
----> Word payments ----- P(Obs/Model) : 1.37097e-048
----> Word portal ----- P(Obs/Model) : 1.90893e-042
----> Word quora ----- P(Obs/Model) : 9.74165e-045
----> Word search ----- P(Obs/Model) : 1.25956e-046
----> Word up ----- P(Obs/Model) : 7.71197e-048
----> Word video ----- P(Obs/Model) : 3.71203e-073
 Predicted utterance: jobs
 Actual utterance: jobs
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/jobs/rec_43.txt <---------
-observation seq obtained -- 24	11	32	32	32	32	31	11	31	31	11	32	31	32	11	32	32	9	9	29	20	20	20	20	19	18	19	18	14	13	17	13	23	7	9	
----> Word calendar ----- P(Obs/Model) : 6.11533e-136
----> Word close ----- P(Obs/Model) : 7.02596e-055
----> Word down ----- P(Obs/Model) : 2.02592e-052
----> Word exit ----- P(Obs/Model) : 1.41615e-082
----> Word faculties ----- P(Obs/Model) : 1.77455e-042
----> Word github ----- P(Obs/Model) : 1.15257e-032
----> Word history ----- P(Obs/Model) : 7.36296e-041
----> Word jobs ----- P(Obs/Model) : 5.79646e-035
----> Word open ----- P(Obs/Model) : 5.35862e-162
----> Word outlook ----- P(Obs/Model) : 2.13992e-067
----> Word payments ----- P(Obs/Model) : 3.25751e-051
----> Word portal ----- P(Obs/Model) : 9.827e-078
----> Word quora ----- P(Obs/Model) : 1.53695e-071
----> Word search ----- P(Obs/Model) : 1.63176e-063
----> Word up ----- P(Obs/Model) : 1.32689e-048
----> Word video ----- P(Obs/Model) : 4.67758e-068
-Predicted utterance: github
+observation seq obtained -- 12	31	31	32	31	11	32	24	20	11	32	31	19	20	14	13	18	17	13	13	13	9	13	13	14	14	4	9	7	23	7	9	5	1	6	
+Predicted utterance: jobs
 Actual utterance: jobs
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/jobs/rec_44.txt <---------
 observation seq obtained -- 31	11	31	31	31	32	31	24	11	32	32	29	4	30	20	23	17	17	17	8	18	10	13	13	17	19	27	13	10	6	6	23	14	23	9	
----> Word calendar ----- P(Obs/Model) : 2.89494e-141
----> Word close ----- P(Obs/Model) : 3.22591e-106
----> Word down ----- P(Obs/Model) : 1.00839e-080
----> Word exit ----- P(Obs/Model) : 2.59658e-094
----> Word faculties ----- P(Obs/Model) : 8.32123e-088
----> Word github ----- P(Obs/Model) : 3.59517e-123
----> Word history ----- P(Obs/Model) : 6.11884e-131
----> Word jobs ----- P(Obs/Model) : 4.39867e-074
----> Word open ----- P(Obs/Model) : 1.75095e-267
----> Word outlook ----- P(Obs/Model) : 1.34205e-099
----> Word payments ----- P(Obs/Model) : 6.53712e-084
----> Word portal ----- P(Obs/Model) : 1.22755e-079
----> Word quora ----- P(Obs/Model) : 3.50746e-162
----> Word search ----- P(Obs/Model) : 1.1764e-098
----> Word up ----- P(Obs/Model) : 2.58033e-107
----> Word video ----- P(Obs/Model) : 2.81551e-131
 Predicted utterance: jobs
 Actual utterance: jobs
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/jobs/rec_45.txt <---------
 observation seq obtained -- 11	12	23	23	12	11	10	9	9	9	4	20	20	8	17	19	18	20	9	13	13	13	6	13	5	6	2	6	6	23	23	10	14	11	9	
----> Word calendar ----- P(Obs/Model) : 3.17845e-165
----> Word close ----- P(Obs/Model) : 7.091e-072
----> Word down ----- P(Obs/Model) : 2.24208e-070
----> Word exit ----- P(Obs/Model) : 9.09046e-117
----> Word faculties ----- P(Obs/Model) : 1.70834e-119
----> Word github ----- P(Obs/Model) : 5.71272e-191
----> Word history ----- P(Obs/Model) : 4.28759e-187
----> Word jobs ----- P(Obs/Model) : 1.07411e-038
----> Word open ----- P(Obs/Model) : 6.92666e-107
----> Word outlook ----- P(Obs/Model) : 4.73091e-081
----> Word payments ----- P(Obs/Model) : 5.17262e-081
----> Word portal ----- P(Obs/Model) : 1.40174e-076
----> Word quora ----- P(Obs/Model) : 4.36973e-191
----> Word search ----- P(Obs/Model) : 1.02802e-051
----> Word up ----- P(Obs/Model) : 3.83978e-085
----> Word video ----- P(Obs/Model) : 2.36076e-108
 Predicted utterance: jobs
 Actual utterance: jobs
-Accuracy for the digit jobs is : 40.000000 
+Accuracy for the word jobs is : 100.000000 
