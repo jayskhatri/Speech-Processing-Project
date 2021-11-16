@@ -93,17 +93,19 @@ bool browser_open = false;
 
 static const WORD TAB_SCANCODE = 0x09;
 static const WORD LEFT_ALT_SCANCODE = 0x12;
-static const WORD LCTRL_SCANCODE = 0xA2;
-static const WORD H_SCANCODE = 0x48;
-static const WORD B_SCANCODE = 0x42;
-static const WORD J_SCANCODE = 0x4A;
-static const WORD K_SCANCODE = 0x4B;
-static const WORD O_SCANCODE = 0x4F;
-static const WORD P_SCANCODE = 0x50;
-static const WORD W_SCANCODE = 0x57;
-static const WORD NUMPAD_5 = 0x65;
-static const WORD LSHIFT_SCANCODE = 0xA0;
+static const WORD LCTRL_SCANCODE = 0x1d;
+static const WORD H_SCANCODE = 0x23;
+static const WORD B_SCANCODE = 0x30;
+static const WORD J_SCANCODE = 0x24;
+static const WORD K_SCANCODE = 0x25;
+static const WORD O_SCANCODE = 0x18;
+static const WORD P_SCANCODE = 0x19;
+static const WORD NUMPAD_5 = 0x4c;
+static const WORD LSHIFT_SCANCODE = 0x2a;
 static const DWORD keypress_delay_ms = 500;
+static const WORD W_SCANCODE = 0x57;
+
+bool next_prob_word[16];
 
 void pressKey(bool down_or_up, WORD scanCode, bool extended = false){
 	INPUT input = { 0 };
@@ -318,102 +320,303 @@ void open_browser(){
 	system("start firefox.exe");
 }
 
+int is_substring(char *a, char *b){
+	int m = sizeof(a)/sizeof(a[0]);
+	int n = sizeof(b)/sizeof(b[0]);
+
+	for(int i=0; i<=n-m; i++){
+		int j;
+		for(j=0; j<m; j++){
+			if(b[i+j] != a[j])
+				break;
+		}
+		if(j == m)
+			return 1;
+	}
+	return -1;
+}
+
+char window_title[100];
+HWND hwnd;
+
 //perform the operation according to detected operation
 void perform(int operation){
+	int t0, t1, t2, t3, t6, t14;
+	int i;
+
+	if(system(NULL)){
+		printf("Performing operation\n");
+	}else {
+		printf("Error in system call\n");
+		exit(1);
+	}
+
 	switch (operation){
 		case 0:
 			{
 				open_calendar();
+				for(int i = 0; i<16; i++){
+					if(i == 3 || i == 14 || i==0){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
 		case 1:
 			{
+				for(int i=5; i>0; i--){
+					alt_tab(2);
+					Sleep(1000);
+					hwnd = GetForegroundWindow(); 
+					GetWindowTextA(hwnd, window_title, sizeof(window_title));
+					printf("\n%s", window_title);
+
+					if (is_substring("Firefox", window_title) != -1){
+						break;
+					}
+				}
 				close_tab();
+				for(int i = 0; i<16; i++){
+					next_prob_word[i] = 1;
+				}
 				break;
 			}
 		
 		case 2:
 			{
+				for(int i=5; i>0; i--){
+					alt_tab(2);
+					Sleep(1000);
+					hwnd = GetForegroundWindow(); 
+					GetWindowTextA(hwnd, window_title, sizeof(window_title));
+					printf("\n%s", window_title);
+
+					if (is_substring("Firefox", window_title) != -1){
+						break;
+					}
+				}
 				scrolling_down();
+				for(int i = 0; i<16; i++){
+					if(i == 8){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
 		case 3:
 			{
-				close_browser();
+				t3 = MessageBox(NULL, TEXT("Do you want to close the browser?"), TEXT("msg"), MB_YESNOCANCEL);
+				if(t3 == CONFIRM_BOX_YES){
+					close_browser();
+					for(int i = 0; i<16; i++){
+						if(i == 3 || i == 14){
+							next_prob_word[i] = 0;
+						}
+						else {
+							next_prob_word[i] = 1;
+						}
+					}
+				}
 				break;
 			}
 		
 		case 4:
 			{
 				open_faculty_page();
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i == 14 || i==4){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
 		case 5:
 			{
 				open_github();
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i == 14 || i==5){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
+
 				break;
 			}
 		
 		case 6:
 			{
+				for(int i=5; i>0; i--){
+					alt_tab(2);
+					Sleep(1000);
+					hwnd = GetForegroundWindow(); 
+					GetWindowTextA(hwnd, window_title, sizeof(window_title));
+					printf("\n%s", window_title);
+
+					if (is_substring("Firefox", window_title) != -1){
+						break;
+					}
+				}
+				
 				open_history();
+
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i == 6){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 		
 		case 7:
 			{
 				open_jobs();
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i==14 || i == 7){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 			
 		case 8:
 			{
 				open_browser();
+				for(int i=0; i<16; i++){
+					if(i == 8 || i == 14){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
 		case 9:
 			{
 				open_outlook();
+				for(int i=0; i<16; i++){
+					if( i == 9 || i == 8 || i==14){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 		
 		case 10:
 			{
 				open_payments();
+				for(int i=0; i<16; i++){
+					if( i==8 || i == 10 || i==14){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 		
 		case 11:
 			{
 				open_portal();
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i==14 || i == 11){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
 		case 12:
 			{
 				open_quora();
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i==14 || i == 12){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
 		case 13:
 			{
 				search_google();
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i==14 || i == 13){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
 		case 14:
 			{
+				t14 = 5;
+				for(int i=t14; t14>=0; t14--){
+					alt_tab(2);
+					Sleep(1000);
+					hwnd = GetForegroundWindow(); // get handle of currently active window
+					GetWindowTextA(hwnd, window_title, sizeof(window_title));
+					if (is_substring("Firefox", window_title) != -1) break;
+				}
+
 				scrolling_up();
+				
+				for(int i=0; i<16; i++){
+					if(i==0){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 		
 		case 15:
 			{
 				search_video();
+				for(int i = 0; i<16; i++){
+					if(i == 8 || i==14 || i == 15){
+						next_prob_word[i] = 0;
+					}
+					else {
+						next_prob_word[i] = 1;
+					}
+				}
 				break;
 			}
 
@@ -1666,8 +1869,10 @@ void test_prediction(){
 	int total_words = sizeof(keywords)/sizeof(keywords[0]);
 	//checking for all the models
 	for(int k = 0; k<total_words; k++){
-		read_average_model(k);
-		solution_to_prob1(k);
+		if(next_prob_word[k] == 1){
+			read_average_model(k);
+			solution_to_prob1(k);
+		}
 	}
 
 	printf("Detected word %s\n", keywords[test_ans]);
@@ -1947,9 +2152,11 @@ void testing(){
 			test_ans = 0;
 			max_pobs_model = 0;
 			for(int k = 0; k<total_words; k++){
-				read_average_model(k);
-				solution_to_prob1(k, fp);
-				erase_avg_model();
+				//if(next_prob_word[k] == 1){
+					read_average_model(k);
+					solution_to_prob1(k);
+					erase_avg_model();
+				//}
 			}
 			
 			printf("\nPredicted utterance: %s\n", keywords[test_ans]);
@@ -1959,13 +2166,13 @@ void testing(){
 			fprintf(fp, "Actual utterance: %s\n", keywords[d]);
 			if(test_ans == d) correctAns++, totalCorrectAns++;
 		}
-		printf("Accuracy for the word %s is : %lf % \n", keywords[d], (correctAns / 10.0f)*100);
-		fprintf(fp, "Accuracy for the digit %s is : %lf % \n", keywords[d], (correctAns / 10.0f)*100);
+		printf("Accuracy for the word %s is : %lf % \n", keywords[d], (correctAns / 5.0f)*100);
+		fprintf(fp, "Accuracy for the word %s is : %lf % \n", keywords[d], (correctAns / 5.0f)*100);
 		//system("pause");
 		fclose(fp);
 	}
 
-	printf("Accuracy of the system: %d %\n\n", totalCorrectAns);
+	printf("Accuracy of the system: %lf %\n\n", (totalCorrectAns/80.0f)*100);
 }
 
 //testing particular file only
@@ -2122,27 +2329,27 @@ void live_training(int choice){
 				backward_procedure();
 				viterbi();
 				
-				//printing in log file
-				// fprintf(dig_dump, "iteration: %d\n", iteration);
-				// fprintf(dig_dump, "-->pstar : %g\n", pstar);
-				// fprintf(dig_dump, "-->qstar : ");
-				// for(int i=1; i<=T; i++){
-				// 	fprintf(dig_dump, "%d ", Q[i]);
-				// }
-				// fprintf(dig_dump, "\n");
+// 				//printing in log file
+// 				// fprintf(dig_dump, "iteration: %d\n", iteration);
+// 				// fprintf(dig_dump, "-->pstar : %g\n", pstar);
+// 				// fprintf(dig_dump, "-->qstar : ");
+// 				// for(int i=1; i<=T; i++){
+// 				// 	fprintf(dig_dump, "%d ", Q[i]);
+// 				// }
+// 				// fprintf(dig_dump, "\n");
 
-				calculate_xi();
-				calculate_gamma();
-				//cout<<"difference: "<<prev_p_star - pstar<<endl;
-				reevaluate_model_parameters();
-			}
+// 				calculate_xi();
+// 				calculate_gamma();
+// 				//cout<<"difference: "<<prev_p_star - pstar<<endl;
+// 				reevaluate_model_parameters();
+// 			}
 
-			//writing final state sequence
-			// fprintf(common_dump, "-->qstar : ");
-			// for(int i=1; i<=T; i++){
-			// 	fprintf(common_dump, "%d ", Q[i]);
-			// }
-			// fprintf(common_dump, "\n");
+// 			//writing final state sequence
+// 			// fprintf(common_dump, "-->qstar : ");
+// 			// for(int i=1; i<=T; i++){
+// 			// 	fprintf(common_dump, "%d ", Q[i]);
+// 			// }
+// 			// fprintf(common_dump, "\n");
 			
 			//writing final model in the log file
 			// fprintf(dig_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
@@ -2170,6 +2377,13 @@ int _tmain(int argc, _TCHAR* argv[]){
 	common_dump = fopen(com_dump, "w");
 	
 	read_codebook();
+
+	for(int i=0; i<16; i++){
+		if(i == 1 || i == 3 || i==2 || i==6 || i==14)
+			next_prob_word[i] = 0;
+		else
+			next_prob_word[i] = 1;
+	}
 	
 	//training();
 	char choice;
@@ -2178,6 +2392,11 @@ int _tmain(int argc, _TCHAR* argv[]){
 		cout<<"\nPress 1. for automated test on test files\nPress 2. for manual test using the file\nPress 3. for live testing\nPress 4. for live training\nPress 0. to exit\nEnter your choice: "; cin>>choice;
 
 		switch(choice){
+			case 't':
+				{
+					training();
+					break;
+				}
 			case '1':
 				{
 					

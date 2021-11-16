@@ -3,110 +3,30 @@
 
 ---------> Reading file input/recordings/history/rec_41.txt <---------
 observation seq obtained -- 20	12	31	32	12	12	30	11	12	11	11	8	17	19	19	1	3	29	29	29	3	4	3	3	9	30	30	29	4	20	19	30	8	30	30	
----> Word calendar ----- P(Obs/Model) : 1.41489e-104
----> Word close ----- P(Obs/Model) : 1.55761e-085
----> Word down ----- P(Obs/Model) : 6.44218e-191
----> Word exit ----- P(Obs/Model) : 2.90894e-044
----> Word faculties ----- P(Obs/Model) : 8.08626e-046
----> Word github ----- P(Obs/Model) : 8.55246e-043
----> Word history ----- P(Obs/Model) : 1.40052e-037
----> Word jobs ----- P(Obs/Model) : 3.048e-104
----> Word open ----- P(Obs/Model) : 3.35828e-298
----> Word outlook ----- P(Obs/Model) : 2.7551e-305
----> Word payments ----- P(Obs/Model) : 1.26544e-049
----> Word portal ----- P(Obs/Model) : 8.04013e-087
----> Word quora ----- P(Obs/Model) : 7.44478e-310
----> Word search ----- P(Obs/Model) : 1.36879e-161
----> Word up ----- P(Obs/Model) : 1.06272e-196
----> Word video ----- P(Obs/Model) : 9.69696e-109
 Predicted utterance: history
 Actual utterance: history
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/history/rec_42.txt <---------
 observation seq obtained -- 32	32	31	11	31	32	31	32	32	24	20	12	31	13	9	2	29	29	2	3	3	20	4	29	30	9	29	20	8	30	8	8	8	7	29	
----> Word calendar ----- P(Obs/Model) : 8.31961e-089
----> Word close ----- P(Obs/Model) : 3.88792e-066
----> Word down ----- P(Obs/Model) : 2.55351e-138
----> Word exit ----- P(Obs/Model) : 1.58467e-044
----> Word faculties ----- P(Obs/Model) : 6.84362e-039
----> Word github ----- P(Obs/Model) : 3.16851e-037
----> Word history ----- P(Obs/Model) : 3.84431e-035
----> Word jobs ----- P(Obs/Model) : 1.99481e-069
----> Word open ----- P(Obs/Model) : 8.2509e-322
----> Word outlook ----- P(Obs/Model) : 2.1132e-243
----> Word payments ----- P(Obs/Model) : 7.35808e-052
----> Word portal ----- P(Obs/Model) : 1.48235e-079
----> Word quora ----- P(Obs/Model) : 6.77704e-252
----> Word search ----- P(Obs/Model) : 7.81995e-190
----> Word up ----- P(Obs/Model) : 2.18873e-172
----> Word video ----- P(Obs/Model) : 2.71576e-048
 Predicted utterance: history
 Actual utterance: history
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/history/rec_43.txt <---------
-observation seq obtained -- 8	12	14	30	13	23	20	8	8	2	29	2	2	20	20	20	20	20	20	20	30	7	30	30	29	29	2	2	2	2	3	9	29	30	9	
----> Word calendar ----- P(Obs/Model) : 4.84461e-083
----> Word close ----- P(Obs/Model) : 5.15766e-083
----> Word down ----- P(Obs/Model) : 1.40002e-085
----> Word exit ----- P(Obs/Model) : 2.80941e-044
----> Word faculties ----- P(Obs/Model) : 1.99261e-041
----> Word github ----- P(Obs/Model) : 4.88886e-052
----> Word history ----- P(Obs/Model) : 2.05788e-049
----> Word jobs ----- P(Obs/Model) : 1.63504e-103
----> Word open ----- P(Obs/Model) : 1.66957e-125
----> Word outlook ----- P(Obs/Model) : 3.12974e-198
----> Word payments ----- P(Obs/Model) : 5.19226e-059
----> Word portal ----- P(Obs/Model) : 5.76569e-102
----> Word quora ----- P(Obs/Model) : 9.41127e-205
----> Word search ----- P(Obs/Model) : 9.17571e-181
----> Word up ----- P(Obs/Model) : 1.02299e-283
----> Word video ----- P(Obs/Model) : 4.42992e-055
-Predicted utterance: faculties
+observation seq obtained -- 31	32	32	11	32	32	11	10	29	29	2	2	14	19	23	8	8	2	2	29	3	3	3	3	30	30	30	30	30	4	7	7	30	30	30	
+Predicted utterance: history
 Actual utterance: history
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/history/rec_44.txt <---------
 observation seq obtained -- 11	31	32	24	32	12	31	12	23	17	24	22	13	23	13	29	29	3	3	4	4	15	4	20	29	29	20	4	30	8	30	30	30	29	29	
----> Word calendar ----- P(Obs/Model) : 5.46545e-147
----> Word close ----- P(Obs/Model) : 1.90527e-065
----> Word down ----- P(Obs/Model) : 1.52999e-143
----> Word exit ----- P(Obs/Model) : 6.03269e-073
----> Word faculties ----- P(Obs/Model) : 4.74138e-072
----> Word github ----- P(Obs/Model) : 3.77642e-058
----> Word history ----- P(Obs/Model) : 3.35841e-038
----> Word jobs ----- P(Obs/Model) : 4.13684e-096
----> Word open ----- P(Obs/Model) : 0
----> Word outlook ----- P(Obs/Model) : 3.55701e-304
----> Word payments ----- P(Obs/Model) : 1.32233e-107
----> Word portal ----- P(Obs/Model) : 1.0951e-087
----> Word quora ----- P(Obs/Model) : 1.88895e-309
----> Word search ----- P(Obs/Model) : 1.05695e-241
----> Word up ----- P(Obs/Model) : 7.73953e-144
----> Word video ----- P(Obs/Model) : 1.14377e-128
 Predicted utterance: history
 Actual utterance: history
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 ---------> Reading file input/recordings/history/rec_45.txt <---------
 observation seq obtained -- 23	11	12	11	12	32	24	11	11	12	23	10	23	8	8	30	8	3	3	3	20	20	4	3	4	4	20	30	7	8	30	30	30	30	29	
----> Word calendar ----- P(Obs/Model) : 2.60696e-071
----> Word close ----- P(Obs/Model) : 1.38606e-061
----> Word down ----- P(Obs/Model) : 1.42686e-159
----> Word exit ----- P(Obs/Model) : 1.6552e-041
----> Word faculties ----- P(Obs/Model) : 9.23549e-042
----> Word github ----- P(Obs/Model) : 1.22159e-049
----> Word history ----- P(Obs/Model) : 1.92937e-033
----> Word jobs ----- P(Obs/Model) : 2.72966e-061
----> Word open ----- P(Obs/Model) : 2.59843e-254
----> Word outlook ----- P(Obs/Model) : 1.85895e-194
----> Word payments ----- P(Obs/Model) : 4.49535e-042
----> Word portal ----- P(Obs/Model) : 1.64707e-083
----> Word quora ----- P(Obs/Model) : 1.30458e-193
----> Word search ----- P(Obs/Model) : 5.64501e-076
----> Word up ----- P(Obs/Model) : 3.27784e-166
----> Word video ----- P(Obs/Model) : 1.11975e-043
 Predicted utterance: history
 Actual utterance: history
-Accuracy for the digit history is : 40.000000 
+Accuracy for the word history is : 100.000000 
