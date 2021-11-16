@@ -2242,8 +2242,8 @@ void live_training(int choice){
 	system("pause");
 
 	//Giving option for user.
-	printf("Enter 1 to listen training audio else enter 2\n");
-	scanf("%d",&listen);
+	//printf("Enter 1 to listen training audio else enter 2\n");
+	//scanf("%d",&listen);
 
 	for(int i=1; i<=itr_count; i++){
 		char command[500], filename[50], obs_file[100], line[50];
@@ -2266,14 +2266,14 @@ void live_training(int choice){
 		else
 		{
 		sprintf(filename, "input/live_training/rec_%d.txt" , i);
-		sprintf(command, " Recording_Module.exe 3 o.wav ");
+		sprintf(command, " Recording_Module.exe 3 input.wav ");
 	    strcat(command, filename);
 		system(command);
 		}
 
 		//Will playback the audio.
-		if(listen==1)
-	    bool played= PlaySound("o.wav", NULL, SND_SYNC);
+		//if(listen==1)
+	    //bool played= PlaySound("input.wav", NULL, SND_SYNC);
 
 		FILE *f = fopen(filename, "r");
 		
@@ -2365,6 +2365,7 @@ void live_training(int choice){
 	erase_avg_model();
 	
 	
+}
 }
 
 //driver function
