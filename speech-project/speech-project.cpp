@@ -11,6 +11,8 @@
 //#include <unistd.h>
 #include <sstream>
 #include <windows.h>
+#include "test.h"
+
 
 #define CONVERGE_ITERATIONS 200
 #define M 32 //Number of obsevation symbols per state
@@ -24,9 +26,10 @@
 
 const int WIN_SIZE  = (FRAME_SIZE * FRAMES);
 
+
 int T; //Time sequence length
 const int MAX_T = 150; // max time sequence length
-using namespace std;
+using namespace speechproject;
 
 //Global variables
 long double dcShift, nFactor, mx, silenceEnergy;
@@ -413,7 +416,7 @@ void perform(int operation){
 
 		case 3:
 			{
-				t3 = MessageBox(NULL, TEXT("Do you want to close the browser?"), TEXT("msg"), MB_YESNOCANCEL);
+				//t3 = MessageBox(NULL, TEXT("Do you want to close the browser?"), TEXT("msg"), MB_YESNOCANCEL);
 				if(t3 == CONFIRM_BOX_YES){
 					close_browser();
 					for(int i = 0; i<16; i++){
@@ -2173,6 +2176,8 @@ void testing(){
 	}
 
 	printf("Accuracy of the system: %lf %\n\n", (totalCorrectAns/80.0f)*100);
+	//Useful to display in forms.
+	acc=(totalCorrectAns/80.0f)*100;
 }
 
 //testing particular file only
@@ -2228,6 +2233,7 @@ void test_file(char *filename, char *test){
 	printf("\nPredicted utterance: %d\n", test_ans);
 
 	fprintf(fp, "Predicted utterance: %d\n", test_ans);
+	//word1[]=keywords[Predicted utterance];
 	fclose(fp);
 }
 
@@ -2242,8 +2248,8 @@ void live_training(int choice){
 	system("pause");
 
 	//Giving option for user.
-	printf("Enter 1 to listen training audio else enter 2\n");
-	scanf("%d",&listen);
+	//printf("Enter 1 to listen training audio else enter 2\n");
+	//scanf("%d",&listen);
 
 	for(int i=1; i<=itr_count; i++){
 		char command[500], filename[50], obs_file[100], line[50];
@@ -2266,14 +2272,14 @@ void live_training(int choice){
 		else
 		{
 		sprintf(filename, "input/live_training/rec_%d.txt" , i);
-		sprintf(command, " Recording_Module.exe 3 o.wav ");
+		sprintf(command, " Recording_Module.exe 3 input.wav ");
 	    strcat(command, filename);
 		system(command);
 		}
 
 		//Will playback the audio.
-		if(listen==1)
-	    bool played= PlaySound("o.wav", NULL, SND_SYNC);
+		//if(listen==1)
+	    //bool played= PlaySound("input.wav", NULL, SND_SYNC);
 
 		FILE *f = fopen(filename, "r");
 		
@@ -2366,9 +2372,22 @@ void live_training(int choice){
 	
 	
 }
+}
 
 //driver function
-int _tmain(int argc, _TCHAR* argv[]){
+int _tmain(array<System::String ^> ^args){
+	Application::EnableVisualStyles();
+	//Application::SetCompatibleTextRenderingDefault(false); 
+	Application::SetCompatibleTextRenderingDefault(false); 
+	int trigger=0;
+    Application::Run(gcnew test());
+	//this.Close();
+	if(bt_value==1)
+	{
+		trigger=1;
+		//Application::Close(gcnew test());
+		
+	}
 
 	uni.open("universe.csv");
 	printf("This code is authored by Jay Khatri - 214101023\n");
@@ -2386,36 +2405,42 @@ int _tmain(int argc, _TCHAR* argv[]){
 	}
 	
 	//training();
-	char choice;
 	
-	while(1){
-		cout<<"\nPress 1. for automated test on test files\nPress 2. for manual test using the file\nPress 3. for live testing\nPress 4. for live training\nPress 0. to exit\nEnter your choice: "; cin>>choice;
+	
+	while(trigger==1){
+		//cout<<"\nPress 1. for automated test on test files\nPress 2. for manual test using the file\nPress 3. for live testing\nPress 4. for live training\nPress 0. to exit\nEnter your choice: "; cin>>choice;
 
 		switch(choice){
 			case 't':
 				{
 					training();
+					trigger=0;
+					 Application::Run(gcnew test());
+					
 					break;
 				}
 			case '1':
 				{
 					
 					testing();
-
+					 Application::Run(gcnew test());
+					 trigger=1;
 					break;
 				}
 
 			case '2':
 				{
-					char filename[100], test[100], test_fn[100];
+					char filename[100], test_1[100], test_fn[100];
 					printf("Make sure file is available in input/manual_testing/ folder and write .txt (extension in the input)\nEnter the filename you want to test  - ");
 					scanf("%s", &test_fn);
 					sprintf(filename, "input/manual_testing/%s", test_fn);
 
 					printf("Enter the filename to store the results in - ");
-					scanf("%s", &test);
+					scanf("%s", &test_1);
 
-					test_file(filename, test);
+					test_file(filename, test_1);
+					 Application::Run(gcnew test());
+					 trigger=1;
 					break;
 				}
 			case '3':
@@ -2428,6 +2453,8 @@ int _tmain(int argc, _TCHAR* argv[]){
 					is_live_testing = 1;
 					live_testing();
 					is_live_testing = 0;
+					Application::Run(gcnew test());
+					trigger=1;
 					break;
 				}
 			
@@ -2447,15 +2474,15 @@ int _tmain(int argc, _TCHAR* argv[]){
 					choice--;
 					
 					live_training(choice);
-				break;
-					
-
-					
-
+					Application::Run(gcnew test());
+					trigger=1;
+				     break;
 				}
 			case '0':
 				{
 					cout<<"Exiting the program\n";
+					bt_value=0;
+					trigger=0;
 					return 0;
 				}
 		}
