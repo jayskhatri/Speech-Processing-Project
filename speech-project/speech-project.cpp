@@ -8,7 +8,6 @@
 #include <iomanip>
 #include <vector>
 #include <algorithm>
-//#include <unistd.h>
 #include <sstream>
 #include <windows.h>
 
@@ -83,7 +82,7 @@ FILE *common_dump;
 int environment_known = 0, is_live_testing = 0;
 char keywords[][100] = {"calendar", "close", "down", "exit", "faculties", "github", "history", "jobs", "open", "outlook", "payments", "portal", "quora", "search", "up", "video"};
 
-
+//////////////////////////////////////////////////////////Browser related code///////////////////////////////////////////////////////////////////
 bool browser_open = false;
 #define SCROLL_DOWN_VAL -700
 #define SCROLL_UP_VAL 700
@@ -91,8 +90,8 @@ bool browser_open = false;
 #define CONFIRM_BOX_NO 7
 #define CONFIRM_BOX_CANCEL 2
 
-static const WORD TAB_SCANCODE = 0x09;
-static const WORD LEFT_ALT_SCANCODE = 0x12;
+static const WORD TAB_SCANCODE = 0x0f;
+static const WORD LEFT_ALT_SCANCODE = 0x38;
 static const WORD LCTRL_SCANCODE = 0x1d;
 static const WORD H_SCANCODE = 0x23;
 static const WORD B_SCANCODE = 0x30;
@@ -103,118 +102,108 @@ static const WORD P_SCANCODE = 0x19;
 static const WORD NUMPAD_5 = 0x4c;
 static const WORD LSHIFT_SCANCODE = 0x2a;
 static const DWORD keypress_delay_ms = 500;
-static const WORD W_SCANCODE = 0x57;
+static const WORD W_SCANCODE = 0x11;
 
 bool next_prob_word[16];
+string browserName = "Firefox";
+char window_title[256];
+HWND hwnd;
 
-void pressKey(bool down_or_up, WORD scanCode, bool extended = false){
+
+void sendkey(WORD scan_code, bool tf_down_up, bool extended = false) {
 	INPUT input = { 0 };
 	input.type = INPUT_KEYBOARD;
-	input.ki.wScan = scanCode;
-	
-	if(!down_or_up) input.ki.dwFlags |= KEYEVENTF_KEYUP;
-	if(extended) input.ki.dwFlags |= KEYEVENTF_EXTENDEDKEY;
-
+	input.ki.wScan = scan_code;
+	input.ki.dwFlags = KEYEVENTF_SCANCODE;
+	if (!tf_down_up) input.ki.dwFlags |= KEYEVENTF_KEYUP;
+	if (extended)    input.ki.dwFlags |= KEYEVENTF_EXTENDEDKEY;
 	SendInput(1, &input, sizeof(input));
 }
 
-void up_key(WORD scanCode, bool extended = false){
-	pressKey(false, scanCode, extended);
+void keydown(WORD scan_code, bool extended = false) {
+	sendkey(scan_code, true, extended);
 }
 
-void down_key(WORD scanCode, bool extended = false){
-	pressKey(true, scanCode, extended);
+void keyup(WORD scan_code, bool extended = false) {
+	sendkey(scan_code, false, extended);
 }
 
-void alt_tab(int tab_count = 1){
-	down_key(LEFT_ALT_SCANCODE);
+void alt_tab(int tab_count = 1) {
+	keydown(LEFT_ALT_SCANCODE);
 
 	Sleep(keypress_delay_ms);
 	for (int i = 0; i<tab_count; ++i) {
-		down_key(TAB_SCANCODE);
+		keydown(TAB_SCANCODE);
 		Sleep(keypress_delay_ms);
-		up_key(TAB_SCANCODE);
+		keyup(TAB_SCANCODE);
 		Sleep(keypress_delay_ms);
 	}
-	up_key(LEFT_ALT_SCANCODE);
+	keyup(LEFT_ALT_SCANCODE);
+}
+
+void toggle_to_browser(){
+	Sleep(500);
+	alt_tab(2);
 }
 
 void ctrl_h(){
-	down_key(LCTRL_SCANCODE);
+	keydown(LCTRL_SCANCODE);
 	Sleep(keypress_delay_ms);
-	down_key(H_SCANCODE);
+	keydown(H_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(H_SCANCODE);
+	keyup(H_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(LCTRL_SCANCODE);
+	keyup(LCTRL_SCANCODE);
 	Sleep(keypress_delay_ms);
 
+}
+
+void open_history(){
+	ctrl_h();
 }
 
 void ctrl_j(){
-	down_key(LCTRL_SCANCODE);
+	keydown(LCTRL_SCANCODE);
 	Sleep(keypress_delay_ms);
-	down_key(J_SCANCODE);
+	keydown(J_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(J_SCANCODE);
+	keyup(J_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(LCTRL_SCANCODE);
-	Sleep(keypress_delay_ms);
-
-}
-
-void ctrl_k(){
-	down_key(LCTRL_SCANCODE);
-	Sleep(keypress_delay_ms);
-	down_key(K_SCANCODE);
-	Sleep(keypress_delay_ms);
-	up_key(K_SCANCODE);
-	Sleep(keypress_delay_ms);
-	up_key(LCTRL_SCANCODE);
+	keyup(LCTRL_SCANCODE);
 	Sleep(keypress_delay_ms);
 
 }
 
 void ctrl_w(){
-	down_key(LCTRL_SCANCODE);
+	keydown(LCTRL_SCANCODE);
 	Sleep(keypress_delay_ms);
-	down_key(W_SCANCODE);
+	keydown(W_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(W_SCANCODE);
+	keyup(W_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(LCTRL_SCANCODE);
+	keyup(LCTRL_SCANCODE);
 	Sleep(keypress_delay_ms);
+}
 
+void ctrl_k(){
+	keydown(LCTRL_SCANCODE);
+	Sleep(keypress_delay_ms);
+	keydown(K_SCANCODE);
+	Sleep(keypress_delay_ms);
+	keyup(K_SCANCODE);
+	Sleep(keypress_delay_ms);
+	keyup(LCTRL_SCANCODE);
+	Sleep(keypress_delay_ms);
 }
 
 void alt_p(){
-	down_key(LEFT_ALT_SCANCODE);
+	keydown(LEFT_ALT_SCANCODE);
 	Sleep(keypress_delay_ms);
-	down_key(P_SCANCODE);
+	keydown(P_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(P_SCANCODE);
+	keyup(P_SCANCODE);
 	Sleep(keypress_delay_ms);
-	up_key(LEFT_ALT_SCANCODE);
-	Sleep(keypress_delay_ms);
-}
-
-void ctrl_shift_o(){
-	down_key(LCTRL_SCANCODE);
-	Sleep(keypress_delay_ms);
-
-	down_key(LSHIFT_SCANCODE);
-	Sleep(keypress_delay_ms);
-
-	down_key(O_SCANCODE);
-	Sleep(keypress_delay_ms);
-
-	up_key(O_SCANCODE);
-	Sleep(keypress_delay_ms);
-
-	up_key(LSHIFT_SCANCODE);
-	Sleep(keypress_delay_ms);
-
-	up_key(LCTRL_SCANCODE);
+	keyup(LEFT_ALT_SCANCODE);
 	Sleep(keypress_delay_ms);
 }
 
@@ -228,6 +217,9 @@ void show_menu(){
 }
 
 void close_browser(){
+	char command[50];
+	
+	sprintf(command, "taskkill /f /im %s.exe", browserName);
 	system("taskkill /f /im firefox.exe");
 }
 
@@ -245,22 +237,28 @@ void open_outlook(){
 
 void search_video(){
 	char video_search[] = "https://www.youtube.com/results?search_query=";
-	char input[100];
+	char input[100], final[200];
+	char temp;
+
 	printf("Enter the video name - ");
-	scanf("%s", input);
-	strcat(video_search, input);
-	char command[100] = "start ";
-	strcat(command, video_search);
+	//gets(input);
+	scanf("%c", &temp);
+	fgets(input, 100, stdin);
+	int i=0;
+	while(input[i] != '\0'){
+		if(input[i] == ' ')
+			input[i] = '+';
+		i++;
+	}
+	strcat(final, video_search);
+	strcat(final, input);
+	char command[1000] = "start ";
+	strcat(command, final);
 	system(command);
 }
 
 void open_payments(){
-	// if(browser_open)
-		system("start https://online.iitg.ac.in/epay/");
-	// else {
-	// 	open_browser();
-	// 	system("start https://online.iitg.ac.in/epay/");
-	// }
+	system("start https://online.iitg.ac.in/epay/");
 }
 
 void search_google(){
@@ -268,7 +266,7 @@ void search_google(){
 	char  search_query[] = "https://www.google.com/search?q=";
 	char qinput[100];
 	printf("Enter the search query - ");
-	scanf("%s", qinput);
+	scanf("%s\n", qinput);
 	strcat(search_query, qinput);
 	char command[100] = "start ";
 	strcat(command, search_query);
@@ -300,18 +298,12 @@ void open_calendar(){
 	system("start https://iitg.ac.in/acad/academic_calender.php");
 }
 
-void open_history(){
-	ctrl_h();
-}
-
 void scrolling_down(){
-	go_to_browser();
 	Sleep(500);
 	mouse_event(MOUSEEVENTF_WHEEL, 0, 0, SCROLL_DOWN_VAL, 0);
 }
 
 void scrolling_up(){
-	go_to_browser();
 	Sleep(500);
 	mouse_event(MOUSEEVENTF_WHEEL, 0, 0, SCROLL_UP_VAL, 0);
 }
@@ -320,38 +312,35 @@ void open_browser(){
 	system("start firefox.exe");
 }
 
-int is_substring(char *a, char *b){
-	int m = sizeof(a)/sizeof(a[0]);
-	int n = sizeof(b)/sizeof(b[0]);
+int is_substring(string a, string b){
+	int m = a.length();
+	int n = b.length();
 
-	for(int i=0; i<=n-m; i++){
+	for (int i = 0; i <= n - m; i++) {
 		int j;
-		for(j=0; j<m; j++){
-			if(b[i+j] != a[j])
-				break;
-		}
-		if(j == m)
-			return 1;
+		for (j = 0; j < m; j++)
+		if (b[i + j] != a[j])
+			break;
+
+		if (j == m)
+			return i;
 	}
+
 	return -1;
 }
 
-char window_title[100];
-HWND hwnd;
-
 //perform the operation according to detected operation
-void perform(int operation){
-	int t0, t1, t2, t3, t6, t14;
+void perform(int index){
+	index = 2;
+	int x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11;
 	int i;
-
-	if(system(NULL)){
-		printf("Performing operation\n");
-	}else {
-		printf("Error in system call\n");
+	if (system(NULL))
+		puts("Proceed");
+	else
 		exit(1);
-	}
-
-	switch (operation){
+		
+	//deciding what to do
+	switch (index){
 		case 0:
 			{
 				open_calendar();
@@ -368,38 +357,44 @@ void perform(int operation){
 
 		case 1:
 			{
-				for(int i=5; i>0; i--){
+				x2 = 5;
+				while (x2>0){
+
 					alt_tab(2);
 					Sleep(1000);
-					hwnd = GetForegroundWindow(); 
+					hwnd = GetForegroundWindow(); // get handle of currently active window
 					GetWindowTextA(hwnd, window_title, sizeof(window_title));
 					printf("\n%s", window_title);
 
-					if (is_substring("Firefox", window_title) != -1){
+					if (is_substring(browserName, window_title) != -1){
 						break;
 					}
+					x2--;
 				}
 				close_tab();
-				for(int i = 0; i<16; i++){
-					next_prob_word[i] = 1;
-				}
 				break;
+
 			}
 		
+		//scroll dowwn
 		case 2:
 			{
-				for(int i=5; i>0; i--){
+				x3 = 5;
+				while (x3>0){
 					alt_tab(2);
 					Sleep(1000);
-					hwnd = GetForegroundWindow(); 
+					hwnd = GetForegroundWindow(); // get handle of currently active window
 					GetWindowTextA(hwnd, window_title, sizeof(window_title));
 					printf("\n%s", window_title);
 
-					if (is_substring("Firefox", window_title) != -1){
+					if (is_substring(browserName, window_title) != -1){
 						break;
 					}
+					x3--;
 				}
 				scrolling_down();
+				alt_tab(1);
+				
 				for(int i = 0; i<16; i++){
 					if(i == 8){
 						next_prob_word[i] = 0;
@@ -408,31 +403,41 @@ void perform(int operation){
 						next_prob_word[i] = 1;
 					}
 				}
+
 				break;
 			}
 
+
+		//exit browser
 		case 3:
 			{
-				t3 = MessageBox(NULL, TEXT("Do you want to close the browser?"), TEXT("msg"), MB_YESNOCANCEL);
-				if(t3 == CONFIRM_BOX_YES){
-					close_browser();
-					for(int i = 0; i<16; i++){
-						if(i == 3 || i == 14){
-							next_prob_word[i] = 0;
+				// if (close_flag == 1)
+				// {
+					x1 = MessageBox(nullptr, TEXT("Do you want to close browser?"), TEXT("Message"), MB_YESNOCANCEL);
+					if (x1 == CONFIRM_BOX_YES)
+					{
+						system("taskkill /IM firefox.exe /F");
+						// close_flag = 0;
+						// read_flag = 0;
+						// stop_flag = 0;
+						for(int i = 0; i<16; i++){
+							if(i == 3)
+								next_prob_word[i] = 0;
+							else
+								next_prob_word[i] = 1;
 						}
-						else {
-							next_prob_word[i] = 1;
-						}
+
 					}
-				}
+
+				// }
 				break;
 			}
-		
+
 		case 4:
 			{
 				open_faculty_page();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 14 || i==4){
+					if(i == 8 || i==4){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -446,7 +451,7 @@ void perform(int operation){
 			{
 				open_github();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 14 || i==5){
+					if(i == 8 || i==5){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -456,39 +461,35 @@ void perform(int operation){
 
 				break;
 			}
-		
+
+		//history
 		case 6:
 			{
-				for(int i=5; i>0; i--){
+				x7 = 5;
+				while (x7 >0){
 					alt_tab(2);
 					Sleep(1000);
-					hwnd = GetForegroundWindow(); 
+					hwnd = GetForegroundWindow(); // get handle of currently active window
 					GetWindowTextA(hwnd, window_title, sizeof(window_title));
 					printf("\n%s", window_title);
 
-					if (is_substring("Firefox", window_title) != -1){
+					if (is_substring(browserName, window_title) != -1){
 						break;
 					}
+					x7--;
 				}
-				
-				open_history();
 
-				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 6){
-						next_prob_word[i] = 0;
-					}
-					else {
-						next_prob_word[i] = 1;
-					}
-				}
+
+				open_history();
+				
 				break;
 			}
-		
+
 		case 7:
 			{
 				open_jobs();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==14 || i == 7){
+					if(i == 8 || i == 7){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -497,17 +498,17 @@ void perform(int operation){
 				}
 				break;
 			}
-			
+
+
+		//open browser
 		case 8:
 			{
-				open_browser();
-				for(int i=0; i<16; i++){
-					if(i == 8 || i == 14){
+				system("start https://www.google.com/");
+				for (i = 0; i < 11; i++){
+					if ((i == 8))
 						next_prob_word[i] = 0;
-					}
-					else {
+					else
 						next_prob_word[i] = 1;
-					}
 				}
 				break;
 			}
@@ -516,7 +517,7 @@ void perform(int operation){
 			{
 				open_outlook();
 				for(int i=0; i<16; i++){
-					if( i == 9 || i == 8 || i==14){
+					if( i == 9 || i == 8){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -530,7 +531,7 @@ void perform(int operation){
 			{
 				open_payments();
 				for(int i=0; i<16; i++){
-					if( i==8 || i == 10 || i==14){
+					if( i==8 || i == 10 ){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -544,7 +545,7 @@ void perform(int operation){
 			{
 				open_portal();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==14 || i == 11){
+					if(i == 8 || i == 11){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -558,7 +559,7 @@ void perform(int operation){
 			{
 				open_quora();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==14 || i == 12){
+					if(i == 8 || i == 12){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -572,7 +573,7 @@ void perform(int operation){
 			{
 				search_google();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==14 || i == 13){
+					if(i == 8 || i == 13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -582,35 +583,40 @@ void perform(int operation){
 				break;
 			}
 
+		//scroll up
 		case 14:
 			{
-				t14 = 5;
-				for(int i=t14; t14>=0; t14--){
+				x2 = 5;
+				while (x2>0){
 					alt_tab(2);
 					Sleep(1000);
 					hwnd = GetForegroundWindow(); // get handle of currently active window
 					GetWindowTextA(hwnd, window_title, sizeof(window_title));
-					if (is_substring("Firefox", window_title) != -1) break;
-				}
+					//printf("\n%s", window_title);
 
+					if (is_substring(browserName, window_title) != -1){
+						break;
+					}
+					x2--;
+				}
 				scrolling_up();
-				
-				for(int i=0; i<16; i++){
-					if(i==0){
+				for(int i = 0; i<16; i++){
+					if(i == 8){
 						next_prob_word[i] = 0;
 					}
 					else {
 						next_prob_word[i] = 1;
 					}
 				}
+
 				break;
 			}
-		
+	
 		case 15:
 			{
 				search_video();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==14 || i == 15){
+					if(i == 8 || i == 15){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -620,12 +626,11 @@ void perform(int operation){
 				break;
 			}
 
-		default:
-			{
-				printf("Invalid operation\n");
-				break;
-			}
+		default :
+			system("taskkill /IM Firefox.exe /F");
+			break;
 	}
+
 }
 
 
