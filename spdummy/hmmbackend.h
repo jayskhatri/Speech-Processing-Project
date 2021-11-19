@@ -11,7 +11,7 @@
 //#include <unistd.h>
 #include <sstream>
 #include <windows.h>
-
+#include <cstring>
 
 #define CONVERGE_ITERATIONS 200
 #define M 32 //Number of obsevation symbols per state
@@ -123,7 +123,7 @@ void pressKey(bool down_or_up, WORD scanCode, bool extended = false){
 	if(!down_or_up) input.ki.dwFlags |= KEYEVENTF_KEYUP;
 	if(extended) input.ki.dwFlags |= KEYEVENTF_EXTENDEDKEY;
 
-	SendInput(1, &input, sizeof(input));
+	//SendInput(1, &input, sizeof(input));
 }
 
 void up_key(WORD scanCode, bool extended = false){
@@ -1748,6 +1748,7 @@ void make_all_obs_seq(){
 
 //trains the 20 files
 void training(){
+	//read_codebook();
 	char filename[100], line[100], obs_file[100], dump_file[100], com_dump[100];
 	erase_all_model();
 	FILE *digit_dump;
@@ -1760,7 +1761,7 @@ void training(){
 		sprintf(dump_file, "results/training/training_word_%s.txt", keywords[d]);
 		FILE *dig_dump = fopen(dump_file, "w");
 
-		fprintf(common_dump, "\n------------------------------------------------> Word %s <------------------------------------------------\n", keywords[d]);
+		//fprintf(common_dump, "\n------------------------------------------------> Word %s <------------------------------------------------\n", keywords[d]);
 		fprintf(dig_dump, "\n------------------------------------------------> Word %s <------------------------------------------------\n", keywords[d]);
 		
 		for(int u = 1; u <= total_files_trained; u++){
@@ -1775,7 +1776,7 @@ void training(){
 			}
 
 			fprintf(dig_dump, "\n------------------------------------------------ opening file %s ------------------------------------------------\n", filename);
-			fprintf(common_dump, "\n------------------------------------------------ opening file %s ------------------------------------------------\n", filename);
+			//fprintf(common_dump, "\n------------------------------------------------ opening file %s ------------------------------------------------\n", filename);
 			
 			//setting dcshift and nfactor
 			setupGlobal(filename);
@@ -1800,15 +1801,15 @@ void training(){
 			sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[d], u);
 			generate_obs_sequence(obs_file);
 			fprintf(dig_dump, "->obs seq: ");
-			fprintf(common_dump, "->obs seq: ");
+			//fprintf(common_dump, "->obs seq: ");
 
 			for(int i=1; i<=T; i++){
 				fprintf(dig_dump, "%4d ", O[i]);
-				fprintf(common_dump, "%4d ", O[i]);
+				//fprintf(common_dump, "%4d ", O[i]);
 			}
-
+			
 			fprintf(dig_dump, "\n");
-			fprintf(common_dump, "\n");
+			//fprintf(common_dump, "\n");
 			
 			//initializing model
 			if(train == 0)
@@ -1843,17 +1844,17 @@ void training(){
 			}
 
 			//writing final state sequence
-			fprintf(common_dump, "-->qstar : ");
+			//fprintf(common_dump, "-->qstar : ");
 			for(int i=1; i<=T; i++){
-				fprintf(common_dump, "%d ", Q[i]);
+				//fprintf(common_dump, "%d ", Q[i]);
 			}
-			fprintf(common_dump, "\n");
+			//fprintf(common_dump, "\n");
 			
 			//writing final model in the log file
 			fprintf(dig_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
-			fprintf(common_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
+			//fprintf(common_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
 			dump_converged_model(dig_dump);
-			dump_converged_model(common_dump);
+			//dump_converged_model(common_dump);
 
 			add_to_avg_model();
 			dump_final_model(u, d);
@@ -2118,6 +2119,7 @@ void validation(){
 
 //function to test the models
 void testing(){
+	//training();
 	char filename[100], line[100], test_file[100];
 	int correctAns = 0, totalCorrectAns = 0;
 	int total_words = sizeof(keywords)/sizeof(keywords[0]);
@@ -2260,6 +2262,7 @@ void live_training(int choice){
 	printf("---------------------------Live Training Module----------------------------------\n");
 	printf("Now you'll be asked to record your voice for %d times\n",itr_count);
 	system("pause");
+
 
 	//Giving option for user.
 	//printf("Enter 1 to listen training audio else enter 2\n");
@@ -2409,7 +2412,7 @@ int _tmain(array<System::String ^> ^args){
 	sprintf(com_dump, "results/training/common_dump.txt");
 	common_dump = fopen(com_dump, "w");
 	
-	read_codebook();
+	
 
 	for(int i=0; i<16; i++){
 		if(i == 1 || i == 3 || i==2 || i==6 || i==14)

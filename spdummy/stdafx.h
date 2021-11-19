@@ -12,5 +12,6 @@
 //#include <unistd.h>
 #include <sstream>
 #include <windows.h>
+#include <cstring>
 
 // TODO: reference additional headers your program requires here

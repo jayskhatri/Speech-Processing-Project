@@ -1,4 +1,4 @@
-﻿Build started 17-11-2021 17:35:09.
+﻿Build started 19-11-2021 14:30:01.
      1>Project "E:\spdummy\spdummy\spdummy.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\spdummy.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -106,72 +106,72 @@
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
      1>e:\spdummy\spdummy\hmmbackend.h(1734): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
      1>e:\spdummy\spdummy\hmmbackend.h(1737): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(1760): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(1761): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(1761): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(1762): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(1768): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(1769): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(1770): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(1771): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(1790): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(1793): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(1800): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(1791): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(1794): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(1801): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(1751): warning C4101: 'com_dump' : unreferenced local variable
-     1>e:\spdummy\spdummy\hmmbackend.h(1753): warning C4101: 'digit_dump' : unreferenced local variable
-     1>e:\spdummy\spdummy\hmmbackend.h(1915): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(1752): warning C4101: 'com_dump' : unreferenced local variable
+     1>e:\spdummy\spdummy\hmmbackend.h(1754): warning C4101: 'digit_dump' : unreferenced local variable
+     1>e:\spdummy\spdummy\hmmbackend.h(1916): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(1931): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(1934): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(1909): warning C4101: 'obs_file' : unreferenced local variable
-     1>e:\spdummy\spdummy\hmmbackend.h(2004): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(1932): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(1935): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(1910): warning C4101: 'obs_file' : unreferenced local variable
+     1>e:\spdummy\spdummy\hmmbackend.h(2005): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2006): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2007): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(2023): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2026): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2032): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2024): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(2027): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(2033): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2126): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2128): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2127): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2129): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(2132): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2134): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2135): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2137): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(2153): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2155): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2155): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(2157): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(2204): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2203): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2205): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(2206): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2208): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(2223): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2225): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2279): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2280): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
-     1>e:\spdummy\spdummy\hmmbackend.h(2281): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\spdummy\spdummy\hmmbackend.h(2225): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(2227): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
      1>e:\spdummy\spdummy\hmmbackend.h(2282): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
      1>e:\spdummy\spdummy\hmmbackend.h(2283): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
-     1>e:\spdummy\spdummy\hmmbackend.h(2288): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2289): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>e:\spdummy\spdummy\hmmbackend.h(2290): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2284): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
-     1>e:\spdummy\spdummy\hmmbackend.h(2298): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2285): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\spdummy\spdummy\hmmbackend.h(2286): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\spdummy\spdummy\hmmbackend.h(2291): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\spdummy\spdummy\hmmbackend.h(2292): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\spdummy\spdummy\hmmbackend.h(2293): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\spdummy\spdummy\hmmbackend.h(2301): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>e:\spdummy\spdummy\hmmbackend.h(2315): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2318): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
-     1>e:\spdummy\spdummy\hmmbackend.h(2327): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\spdummy\spdummy\hmmbackend.h(2318): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(2321): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>e:\spdummy\spdummy\hmmbackend.h(2330): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
      1>e:\spdummy\spdummy\hmmbackend.h(429): warning C4700: uninitialized local variable 't3' used
          All outputs are up-to-date.
@@ -185,11 +185,14 @@
          Debug\spdummy.obj
          Debug\stdafx.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
-     1>spdummy.obj : error LNK2028: unresolved token (0A0000BE) "extern "C" unsigned int __stdcall SendInput(unsigned int,struct tagINPUT *,int)" (?SendInput@@$$J212YGIIPAUtagINPUT@@H@Z) referenced in function "void __clrcall pressKey(bool,unsigned short,bool)" (?pressKey@@$$FYMX_NG0@Z)
-     1>spdummy.obj : error LNK2019: unresolved external symbol "extern "C" unsigned int __stdcall SendInput(unsigned int,struct tagINPUT *,int)" (?SendInput@@$$J212YGIIPAUtagINPUT@@H@Z) referenced in function "void __clrcall pressKey(bool,unsigned short,bool)" (?pressKey@@$$FYMX_NG0@Z)
-     1>E:\spdummy\Debug\spdummy.exe : fatal error LNK1120: 2 unresolved externals
-     1>Done Building Project "E:\spdummy\spdummy\spdummy.vcxproj" (build target(s)) -- FAILED.
+         spdummy.vcxproj -> E:\spdummy\Debug\spdummy.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\spdummy\Debug\spdummy.exe;#1" /manifest Debug\spdummy.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\spdummy.unsuccessfulbuild".
+         Touching "Debug\spdummy.lastbuildstate".
+     1>Done Building Project "E:\spdummy\spdummy\spdummy.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.07
+Time Elapsed 00:00:01.97
