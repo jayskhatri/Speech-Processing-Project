@@ -241,19 +241,20 @@ void search_video(){
 	char temp;
 
 	printf("Enter the video name - ");
-	//gets(input);
+	
 	scanf("%c", &temp);
-	fgets(input, 100, stdin);
+	//fgets(input, 100, stdin);
+	cin.getline(input, 100);
 	int i=0;
 	while(input[i] != '\0'){
 		if(input[i] == ' ')
 			input[i] = '+';
 		i++;
 	}
-	strcat(final, video_search);
+	sprintf(final, "%s", video_search);
 	strcat(final, input);
-	char command[1000] = "start ";
-	strcat(command, final);
+	char command[1000];
+	sprintf(command, "start %s", final);
 	system(command);
 }
 
@@ -264,12 +265,23 @@ void open_payments(){
 void search_google(){
 	//query replace space with +
 	char  search_query[] = "https://www.google.com/search?q=";
-	char qinput[100];
+	char qinput[100], final[200];
+	char temp;
+
 	printf("Enter the search query - ");
-	scanf("%s\n", qinput);
-	strcat(search_query, qinput);
-	char command[100] = "start ";
-	strcat(command, search_query);
+	scanf("%c", &temp);
+	cin.getline(qinput, 100);
+	int i = 0;
+	while(qinput[i] != '\0'){
+		if(qinput[i] == ' ')
+			qinput[i] = '+';
+		i++;
+	}
+
+	sprintf(final, "%s", search_query);
+	strcat(final, qinput);
+	char command[100];
+	sprintf(command, "start %s", final);
 	system(command);
 }
 
@@ -282,7 +294,7 @@ void open_portal(){
 }
 
 void open_jobs(){
-	printf("Opening jobs page\n");
+	system("start https://www.naukri.com/");
 }
 
 void open_github(){
@@ -309,7 +321,7 @@ void scrolling_up(){
 }
 
 void open_browser(){
-	system("start firefox.exe");
+	system("start www.google.com");
 }
 
 int is_substring(string a, string b){
@@ -331,7 +343,7 @@ int is_substring(string a, string b){
 
 //perform the operation according to detected operation
 void perform(int index){
-	index = 2;
+	//index = 13;
 	int x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11;
 	int i;
 	if (system(NULL))
@@ -345,7 +357,7 @@ void perform(int index){
 			{
 				open_calendar();
 				for(int i = 0; i<16; i++){
-					if(i == 3 || i == 14 || i==0){
+					if(i == 14 || i==0){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -481,6 +493,7 @@ void perform(int index){
 
 
 				open_history();
+				alt_tab(1);		
 				
 				break;
 			}
@@ -599,7 +612,10 @@ void perform(int index){
 					}
 					x2--;
 				}
+				
 				scrolling_up();
+				
+				alt_tab(1);
 				for(int i = 0; i<16; i++){
 					if(i == 8){
 						next_prob_word[i] = 0;
@@ -1086,6 +1102,20 @@ void read_average_model(int digit){
 	readB(filename);
 
 	sprintf(filename, "output/avgmodels/word_%s_PI.txt", keywords[digit]);
+	readPi(filename);
+}
+
+//reading average model
+void read_average_model_for_testing(int digit){
+	
+	char filename[100];
+	sprintf(filename, "output/final_avgmodels/word_%s_A.txt", keywords[digit]);
+	readA(filename);
+
+	sprintf(filename, "output/final_avgmodels/word_%s_B.txt", keywords[digit]);
+	readB(filename);
+
+	sprintf(filename, "output/final_avgmodels/word_%s_PI.txt", keywords[digit]);
 	readPi(filename);
 }
 
@@ -2158,7 +2188,7 @@ void testing(){
 			max_pobs_model = 0;
 			for(int k = 0; k<total_words; k++){
 				//if(next_prob_word[k] == 1){
-					read_average_model(k);
+					read_average_model_for_testing(k);
 					solution_to_prob1(k);
 					erase_avg_model();
 				//}
@@ -2257,8 +2287,7 @@ void live_training(int choice){
 	    cout<<"Press s for saving training data else enter n"<<endl;
 		cin>>save;
 		//Will save the live training data.
-		if(save=='s'||save=='S')
-		{
+		if(save=='s'||save=='S'){
 			cout<<"Enter file name to be saved"<<endl;
 			cin>>save_file;
 			sprintf(filename,"input/live_training/");
@@ -2268,12 +2297,11 @@ void live_training(int choice){
 	        strcat(command, filename);
 		    system(command);
 		}
-		else
-		{
-		sprintf(filename, "input/live_training/rec_%d.txt" , i);
-		sprintf(command, " Recording_Module.exe 3 input.wav ");
-	    strcat(command, filename);
-		system(command);
+		else{
+			sprintf(filename, "input/live_training/rec_%d.txt" , i);
+			sprintf(command, " Recording_Module.exe 3 input.wav ");
+			strcat(command, filename);
+			system(command);
 		}
 
 		//Will playback the audio.
@@ -2290,94 +2318,54 @@ void live_training(int choice){
 		//setting dcshift and nfactor
 		setupGlobal(filename);
 
-			sSize = 0;
-			//reading the samples and normalizing them
-			while(!feof(f)){
-				fgets(line, 100, f);
+		sSize = 0;
+		//reading the samples and normalizing them
+		while(!feof(f)){
+			fgets(line, 100, f);
 				
-				//input file may contain header, so we skip it
-				if(!isalpha(line[0])){
-					int y = atof(line);
-					double normalizedX = floor((y-dcShift)*nFactor);
-					//if(abs(normalizedX) > 1)
-					sample[sSize++] = normalizedX;
-				}
+			//input file may contain header, so we skip it
+			if(!isalpha(line[0])){
+				int y = atof(line);
+				double normalizedX = floor((y-dcShift)*nFactor);
+				//if(abs(normalizedX) > 1)
+				sample[sSize++] = normalizedX;
 			}
-			fclose(f);
+		}
+		fclose(f);
 
-			//framing
-			//generating observation seq
-			//sprintf(obs_file, "live_training_observation.txt" );
-			//generate_obs_sequence(obs_file);
-			sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[choice], i);
-			generate_obs_sequence(obs_file);
+		//framing
+		sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[choice], i);
+		generate_obs_sequence(obs_file);
 
-			// for(int i=1; i<=T; i++){
-			// 	fprintf(dig_dump, "%4d ", O[i]);
-			// 	fprintf(common_dump, "%4d ", O[i]);
-			// }
+		initialize_model(choice, 1, "--");
 
-			// fprintf(dig_dump, "\n");
-			// fprintf(common_dump, "\n");
-			
-			//initializing model
-			initialize_model(choice, 1, "--");
-
-			int iteration = 1;
-			//starts converging model upto CONVERGE_ITERATIONS or till convergence whichever reach early
-			pstar = 0, prev_p_star = -1;
-			while(pstar > prev_p_star && iteration < 1000){
-				//cout<<"iteration: "<<iteration++<<endl;
-				iteration++;
-				prev_p_star = pstar; 
-				forward_procedure();
-				backward_procedure();
-				viterbi();
-				
-// 				//printing in log file
-// 				// fprintf(dig_dump, "iteration: %d\n", iteration);
-// 				// fprintf(dig_dump, "-->pstar : %g\n", pstar);
-// 				// fprintf(dig_dump, "-->qstar : ");
-// 				// for(int i=1; i<=T; i++){
-// 				// 	fprintf(dig_dump, "%d ", Q[i]);
-// 				// }
-// 				// fprintf(dig_dump, "\n");
-
-// 				calculate_xi();
-// 				calculate_gamma();
-// 				//cout<<"difference: "<<prev_p_star - pstar<<endl;
-// 				reevaluate_model_parameters();
-// 			}
-
-// 			//writing final state sequence
-// 			// fprintf(common_dump, "-->qstar : ");
-// 			// for(int i=1; i<=T; i++){
-// 			// 	fprintf(common_dump, "%d ", Q[i]);
-// 			// }
-// 			// fprintf(common_dump, "\n");
-			
-			//writing final model in the log file
-			// fprintf(dig_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
-			// fprintf(common_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
-			// dump_converged_model(dig_dump);
-			// dump_converged_model(common_dump);
-
-			add_to_avg_model();
-			dump_final_model(i, choice);
+		int iteration = 1;
+		//starts converging model upto CONVERGE_ITERATIONS or till convergence whichever reach early
+		pstar = 0, prev_p_star = -1;
+		while(pstar > prev_p_star && iteration < 1000){
+			//cout<<"iteration: "<<iteration++<<endl;
+			iteration++;
+			prev_p_star = pstar; 
+			forward_procedure();
+			backward_procedure();
+			viterbi();
+			calculate_xi();
+			calculate_gamma();
+			//cout<<"difference: "<<prev_p_star - pstar<<endl;
+			reevaluate_model_parameters();
+		}
+		add_to_avg_model();
+		dump_final_model(i, choice);
 	}
 	average_of_avg_model(itr_count);
 	dump_avg_model_live(choice); //check here
 	erase_avg_model();
-	
-	
-}
 }
 
 //driver function
 int _tmain(int argc, _TCHAR* argv[]){
 
 	uni.open("universe.csv");
-	printf("This code is authored by Jay Khatri - 214101023\n");
 	char com_dump[100];
 	sprintf(com_dump, "results/training/common_dump.txt");
 	common_dump = fopen(com_dump, "w");
@@ -2400,7 +2388,8 @@ int _tmain(int argc, _TCHAR* argv[]){
 		switch(choice){
 			case 't':
 				{
-					training();
+					for(int i=0; i<3; i++)
+						training();
 					break;
 				}
 			case '1':
@@ -2445,10 +2434,11 @@ int _tmain(int argc, _TCHAR* argv[]){
 						environment_known = 1;
 					}
 					int choice;
-					for(int i=0;i<16;i++)
-					{
+					cout<<endl;
+					for(int i=0;i<16;i++){
 						cout<<"Enter "<<i+1<<" for training "<<keywords[i]<<endl;
 					}
+					cout<<"Enter your choice: ";
 					cin>>choice;
 					choice--;
 					
