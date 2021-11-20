@@ -1,0 +1,14 @@
+
+---------> Reading file input/manual_testing/input_file.txt <---------
+observation seq obtained -- 10	11	11	12	11	10	12	24	23	23	23	11	13	9	13	13	13	13	8	9	13	13	13	10	10	20	23	13	14	23	23	9	9	9	9	
+---> Word calendar ----- P(Obs/Model) : 8.46256e-084
+---> Word close ----- P(Obs/Model) : 3.60054e-033
+---> Word down ----- P(Obs/Model) : 2.23633e-040
+---> Word exit ----- P(Obs/Model) : 6.62368e-074
+---> Word faculties ----- P(Obs/Model) : 8.85236e-112
+---> Word github ----- P(Obs/Model) : 1.0558e-073
+---> Word history ----- P(Obs/Model) : 6.71604e-044
+---> Word jobs ----- P(Obs/Model) : 1.24635e-047
+---> Word open ----- P(Obs/Model) : 9.02089e-028
+---> Word outlook ----- P(Obs/Model) : 3.12992e-037
+Predicted utterance: 8

@@ -1,14 +1,20 @@
 
 ---------> Reading file input/input_file.txt <---------
-observation seq obtained -- 1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	
----> Word calendar ----- P(Obs/Model) : 0
----> Word close ----- P(Obs/Model) : 0
----> Word down ----- P(Obs/Model) : 0
----> Word exit ----- P(Obs/Model) : 9.75088e-041
----> Word faculties ----- P(Obs/Model) : 1.74253e-121
----> Word github ----- P(Obs/Model) : 4.12971e-063
----> Word history ----- P(Obs/Model) : 1.39108e-183
----> Word jobs ----- P(Obs/Model) : 4.46789e-173
----> Word open ----- P(Obs/Model) : 0
----> Word outlook ----- P(Obs/Model) : 0
-Predicted utterance: 3
+observation seq obtained -- 
+---> Word calendar ----- P(Obs/Model) : 8.46256e-084
+---> Word close ----- P(Obs/Model) : 3.60054e-033
+---> Word down ----- P(Obs/Model) : 2.23633e-040
+---> Word exit ----- P(Obs/Model) : 6.62368e-074
+---> Word faculties ----- P(Obs/Model) : 8.85236e-112
+---> Word github ----- P(Obs/Model) : 1.0558e-073
+---> Word history ----- P(Obs/Model) : 6.71604e-044
+---> Word jobs ----- P(Obs/Model) : 1.24635e-047
+---> Word open ----- P(Obs/Model) : 9.02089e-028
+---> Word outlook ----- P(Obs/Model) : 3.12992e-037
+---> Word payments ----- P(Obs/Model) : 2.30348e-065
+---> Word portal ----- P(Obs/Model) : 2.61024e-039
+---> Word quora ----- P(Obs/Model) : 5.90677e-044
+---> Word search ----- P(Obs/Model) : 1.02981e-046
+---> Word up ----- P(Obs/Model) : 2.32327e-035
+---> Word video ----- P(Obs/Model) : 2.33679e-048
+Predicted utterance: 8

@@ -2214,6 +2214,7 @@ void testing(){
 void test_file(char *filename, char *test){
 	char line[100], test_file[100];
 	int correctAns = 0, totalCorrectAns = 0;
+	int total_words = sizeof(keywords)/sizeof(keywords[0]);
 
 	sprintf(test_file, "results/testing/offline/%s.txt", test);
 	FILE *fp = fopen(test_file, "w");
@@ -2254,7 +2255,7 @@ void test_file(char *filename, char *test){
 
 	test_ans = 0;
 	max_pobs_model = 0;
-	for(int k = 0; k<=9; k++){
+	for(int k = 0; k<total_words; k++){
 		read_average_model(k);
 		solution_to_prob1(k, fp);
 		erase_avg_model();

@@ -1,0 +1,217 @@
+﻿Build started 20-11-2021 17:49:34.
+     1>Project "C:\Users\jaykh\Documents\Visual Studio 2010\Projects\final_sp_ui\final_sp_ui\final_sp_ui.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\final_sp_ui.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\final_sp_ui.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt final_sp_ui.cpp /clr:nostdlib 
+         final_sp_ui.cpp
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(228): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(251): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(260): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(261): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(263): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(278): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(287): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(288): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(290): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x8' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x2' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x9' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x5' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x10' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x7' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x4' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x6' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x1' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x11' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x0' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(352): warning C4101: 'x3' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(854): warning C4101: 'index' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(947): warning C4101: 'j' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1118): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1121): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1124): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1132): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1135): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1138): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1144): warning C4101: 'a_file' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1144): warning C4101: 'pi_file' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1144): warning C4101: 'b_file' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1144): warning C4101: 'obs_file' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1175): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1201): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1202): warning C4101: 'j' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1215): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1218): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1221): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1212): warning C4101: 'index' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1250): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1251): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1261): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1273): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1274): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1248): warning C4101: 'ind' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1292): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1294): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1330): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1331): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1341): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1353): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1354): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1328): warning C4101: 'ind' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1369): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1631): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1646): warning C4172: returning address of local variable or temporary
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1585): warning C4101: 'arr_energy' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1704): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1721): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1724): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1730): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1749): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1751): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1753): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1765): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1766): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1769): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1771): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1788): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1791): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1814): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1815): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1822): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1824): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1844): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1847): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1854): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1805): warning C4101: 'com_dump' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1807): warning C4101: 'digit_dump' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1960): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1976): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1979): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(1954): warning C4101: 'obs_file' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2053): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2055): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2072): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2075): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2081): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2176): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2177): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2182): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2185): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2203): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2205): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2170): warning C4101: 'acc' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2253): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2254): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2257): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2274): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2276): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2338): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2339): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2340): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2341): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2342): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2346): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2347): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2348): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2356): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2373): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2376): warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\hmm_backend.h(2382): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\Form1.h(481): warning C4101: 's1' : unreferenced local variable
+     1>c:\users\jaykh\documents\visual studio 2010\projects\final_sp_ui\final_sp_ui\Form1.h(542): warning C4101: 'lt' : unreferenced local variable
+         All outputs are up-to-date.
+       CoreResGen:
+         No resources are out of date with respect to their source files. Skipping resource generation.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jaykh\Documents\Visual Studio 2010\Projects\final_sp_ui\Debug\final_sp_ui.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\final_sp_ui.Form1.resources /MANIFEST /ManifestFile:"Debug\final_sp_ui.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\jaykh\Documents\Visual Studio 2010\Projects\final_sp_ui\Debug\final_sp_ui.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\final_sp_ui.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+     1>.NETFramework,Version=v4.0.AssemblyAttributes.obj : warning LNK4099: PDB 'vc100.pdb' was not found with '.NETFramework,Version=v4.0.AssemblyAttributes.obj' or at 'C:\Users\jaykh\Documents\Visual Studio 2010\Projects\final_sp_ui\Debug\vc100.pdb'; linking object as if no debug info
+         final_sp_ui.vcxproj -> C:\Users\jaykh\Documents\Visual Studio 2010\Projects\final_sp_ui\Debug\final_sp_ui.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\jaykh\Documents\Visual Studio 2010\Projects\final_sp_ui\Debug\final_sp_ui.exe;#1" /manifest Debug\final_sp_ui.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\final_sp_ui.unsuccessfulbuild".
+         Touching "Debug\final_sp_ui.lastbuildstate".
+     1>Done Building Project "C:\Users\jaykh\Documents\Visual Studio 2010\Projects\final_sp_ui\final_sp_ui\final_sp_ui.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.89

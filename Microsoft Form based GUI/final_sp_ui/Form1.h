@@ -16,6 +16,7 @@ namespace final_sp_ui {
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
 	public:
+		int test_ans;
 		Form1(void)
 		{
 			InitializeComponent();
@@ -47,7 +48,7 @@ namespace final_sp_ui {
 
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::RadioButton^  radioButton2;
-	private: System::Windows::Forms::TextBox^  textBox4;
+
 	private: System::Windows::Forms::RadioButton^  radioButton3;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::RadioButton^  radioButton5;
@@ -61,6 +62,12 @@ namespace final_sp_ui {
 	private: System::Windows::Forms::Label^  label7;
 	private: System::Windows::Forms::Label^  label8;
 	private: System::Windows::Forms::Label^  label9;
+	private: System::Windows::Forms::Button^  btn_cnf;
+	private: System::Windows::Forms::Label^  label10;
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	private: System::Windows::Forms::Label^  label11;
+
+
 
 	private:
 		/// <summary>
@@ -75,13 +82,13 @@ namespace final_sp_ui {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
@@ -95,12 +102,17 @@ namespace final_sp_ui {
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->btn_cnf = (gcnew System::Windows::Forms::Button());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// radioButton1
 			// 
 			this->radioButton1->AutoSize = true;
-			this->radioButton1->Location = System::Drawing::Point(54, 27);
+			this->radioButton1->Location = System::Drawing::Point(55, 192);
 			this->radioButton1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(124, 21);
@@ -113,7 +125,7 @@ namespace final_sp_ui {
 			// radioButton4
 			// 
 			this->radioButton4->AutoSize = true;
-			this->radioButton4->Location = System::Drawing::Point(79, 417);
+			this->radioButton4->Location = System::Drawing::Point(55, 487);
 			this->radioButton4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton4->Name = L"radioButton4";
 			this->radioButton4->Size = System::Drawing::Size(51, 21);
@@ -126,7 +138,7 @@ namespace final_sp_ui {
 			// button1
 			// 
 			this->button1->BackColor = System::Drawing::SystemColors::MenuHighlight;
-			this->button1->Location = System::Drawing::Point(310, 457);
+			this->button1->Location = System::Drawing::Point(304, 550);
 			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(119, 41);
@@ -138,7 +150,7 @@ namespace final_sp_ui {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(237, 29);
+			this->label2->Location = System::Drawing::Point(238, 194);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(210, 17);
 			this->label2->TabIndex = 7;
@@ -149,16 +161,18 @@ namespace final_sp_ui {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(206, 112);
+			this->label3->Location = System::Drawing::Point(207, 247);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(112, 17);
 			this->label3->TabIndex = 9;
 			this->label3->Text = L"Predicted Word!!";
+			this->label3->Visible = false;
+			this->label3->Click += gcnew System::EventHandler(this, &Form1::label3_Click);
 			// 
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
-			this->radioButton2->Location = System::Drawing::Point(54, 108);
+			this->radioButton2->Location = System::Drawing::Point(55, 243);
 			this->radioButton2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(102, 21);
@@ -168,19 +182,10 @@ namespace final_sp_ui {
 			this->radioButton2->UseVisualStyleBackColor = true;
 			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton2_CheckedChanged);
 			// 
-			// textBox4
-			// 
-			this->textBox4->Location = System::Drawing::Point(324, 112);
-			this->textBox4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(164, 22);
-			this->textBox4->TabIndex = 13;
-			this->textBox4->TextChanged += gcnew System::EventHandler(this, &Form1::textBox4_TextChanged);
-			// 
 			// radioButton3
 			// 
 			this->radioButton3->AutoSize = true;
-			this->radioButton3->Location = System::Drawing::Point(79, 222);
+			this->radioButton3->Location = System::Drawing::Point(55, 346);
 			this->radioButton3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton3->Name = L"radioButton3";
 			this->radioButton3->Size = System::Drawing::Size(101, 21);
@@ -193,7 +198,7 @@ namespace final_sp_ui {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(273, 225);
+			this->label4->Location = System::Drawing::Point(207, 348);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(112, 17);
 			this->label4->TabIndex = 10;
@@ -202,7 +207,7 @@ namespace final_sp_ui {
 			// radioButton5
 			// 
 			this->radioButton5->AutoSize = true;
-			this->radioButton5->Location = System::Drawing::Point(79, 287);
+			this->radioButton5->Location = System::Drawing::Point(55, 405);
 			this->radioButton5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton5->Name = L"radioButton5";
 			this->radioButton5->Size = System::Drawing::Size(111, 21);
@@ -214,7 +219,7 @@ namespace final_sp_ui {
 			// 
 			// checkBox3
 			// 
-			this->checkBox3->Location = System::Drawing::Point(284, 283);
+			this->checkBox3->Location = System::Drawing::Point(241, 401);
 			this->checkBox3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->checkBox3->Name = L"checkBox3";
 			this->checkBox3->Size = System::Drawing::Size(111, 30);
@@ -226,7 +231,7 @@ namespace final_sp_ui {
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(489, 288);
+			this->checkBox1->Location = System::Drawing::Point(391, 405);
 			this->checkBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(98, 21);
@@ -240,7 +245,7 @@ namespace final_sp_ui {
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(16) {L"Open", L"Close", L"Exit", L"History", L"Up", 
 				L"Down", L"Quora", L"Jobs", L"Search", L"Payment", L"Video", L"Portal", L"Faculties", L"Outlook", L"Github", L"Calender"});
-			this->comboBox1->Location = System::Drawing::Point(340, 353);
+			this->comboBox1->Location = System::Drawing::Point(311, 447);
 			this->comboBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(213, 24);
@@ -250,7 +255,7 @@ namespace final_sp_ui {
 			// label5
 			// 
 			this->label5->ForeColor = System::Drawing::SystemColors::InactiveCaptionText;
-			this->label5->Location = System::Drawing::Point(51, 348);
+			this->label5->Location = System::Drawing::Point(22, 442);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(238, 30);
 			this->label5->TabIndex = 19;
@@ -259,7 +264,7 @@ namespace final_sp_ui {
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(441, 222);
+			this->textBox6->Location = System::Drawing::Point(341, 345);
 			this->textBox6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(164, 22);
@@ -268,19 +273,20 @@ namespace final_sp_ui {
 			// 
 			// label1
 			// 
-			this->label1->Location = System::Drawing::Point(11, 165);
+			this->label1->Location = System::Drawing::Point(13, 295);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(743, 38);
 			this->label1->TabIndex = 21;
-			this->label1->Text = L"Will take 2 recordings, in first recordng it will take silence as input and in se" 
-				L"cond recording it will take user input!!";
+			this->label1->Text = L"Will take 2 recordings for the first call of live testing, in first recording it " 
+				L"will take silence as input and in second recording it will take user input!!";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->label1->Visible = false;
+			this->label1->Click += gcnew System::EventHandler(this, &Form1::label1_Click);
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(206, 90);
+			this->label6->Location = System::Drawing::Point(207, 225);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(371, 17);
 			this->label6->TabIndex = 22;
@@ -291,7 +297,7 @@ namespace final_sp_ui {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(411, 29);
+			this->label7->Location = System::Drawing::Point(412, 194);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(46, 17);
 			this->label7->TabIndex = 23;
@@ -301,7 +307,7 @@ namespace final_sp_ui {
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(206, 30);
+			this->label8->Location = System::Drawing::Point(207, 562);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(91, 17);
 			this->label8->TabIndex = 24;
@@ -312,19 +318,62 @@ namespace final_sp_ui {
 			// 
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6.5F));
-			this->label9->Location = System::Drawing::Point(473, 501);
+			this->label9->Location = System::Drawing::Point(405, 594);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(306, 13);
 			this->label9->TabIndex = 25;
 			this->label9->Text = L"Copyright 2021 Jay Khatri (214101023), V. Abhijith (214101059)";
 			this->label9->Click += gcnew System::EventHandler(this, &Form1::label9_Click);
 			// 
+			// btn_cnf
+			// 
+			this->btn_cnf->Location = System::Drawing::Point(523, 345);
+			this->btn_cnf->Name = L"btn_cnf";
+			this->btn_cnf->Size = System::Drawing::Size(75, 23);
+			this->btn_cnf->TabIndex = 26;
+			this->btn_cnf->Text = L"Perform";
+			this->btn_cnf->UseVisualStyleBackColor = true;
+			this->btn_cnf->Visible = false;
+			this->btn_cnf->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(338, 247);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(54, 17);
+			this->label10->TabIndex = 27;
+			this->label10->Text = L"label10";
+			this->label10->Visible = false;
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(103, -29);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(569, 184);
+			this->pictureBox1->TabIndex = 28;
+			this->pictureBox1->TabStop = false;
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(656, 346);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(54, 17);
+			this->label11->TabIndex = 29;
+			this->label11->Text = L"label11";
+			this->label11->Visible = false;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->ClientSize = System::Drawing::Size(782, 523);
+			this->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->ClientSize = System::Drawing::Size(782, 624);
+			this->Controls->Add(this->label11);
+			this->Controls->Add(this->label10);
+			this->Controls->Add(this->btn_cnf);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
@@ -339,16 +388,17 @@ namespace final_sp_ui {
 			this->Controls->Add(this->radioButton5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->radioButton3);
-			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->radioButton4);
 			this->Controls->Add(this->radioButton1);
+			this->Controls->Add(this->pictureBox1);
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"Form1";
-			this->Text = L"Form1";
+			this->Text = L"Speech Based Browser";
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -358,33 +408,44 @@ namespace final_sp_ui {
 			 }
 	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 				 choice='1';
-				 textBox6->Text=" ";
-				 textBox4->Text=" ";
-				 label1->Visible=false;
-				  label6->Visible=false;
-				 
+				 this->textBox6->Text=" ";
+				 this->label1->Visible=false;
+				 this->label6->Visible=false;
+				 this->label3->Visible = false;
+				 this->label10->Visible = false;
+				 this->label4->Visible=false;
+				 this->btn_cnf->Visible = false;
 			 }
 private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			 
-			 textBox6->Text=" ";
-			 label1->Visible=false;
-			 label6->Visible=true;
+			 this->label3->Visible = false;
+			 this->textBox6->Text=" ";
+			 this->label1->Visible=false;
+			 this->label6->Visible=true;
+			 this->label10->Visible = false;
+			 this->label4->Visible=false;
+			 this->label11->Visible = false;
+			 this->btn_cnf->Visible = false;
 			 choice='2';
 		 }
 private: System::Void radioButton3_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			 
-			  textBox4->Text=" ";
-			 label1->Visible=true;
-			  label6->Visible=false;
+			 this->label3->Visible = false;
+			 this->label1->Visible=true;
+			 this->label4->Visible=false;
+			 this->label6->Visible=false;
+			 this->label11->Visible = false;
+			 this->label10->Visible = false;
+			 this->btn_cnf->Visible = false;
 			 choice='3';
 			
 		 }
 private: System::Void radioButton4_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			 
-			 textBox6->Text=" ";
-			  textBox4->Text=" ";
+			 this->label3->Visible = false;
+			 this->label11->Visible = false;
+			 this->label4->Visible=false;
 			 choice='0';
-			 label1->Visible=false;
+			 this->label10->Visible = false;
+			 this->label1->Visible=false;
+			 this->btn_cnf->Visible = false;
 		 }
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 			 this->Refresh();
@@ -401,25 +462,34 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 				  //this->Refresh();
 			 }
 			 else if(choice=='2'){
+				 read_codebook();
+				 this->label3->Visible = false;
 				 this->button1->Visible = false;
-				  test_file_helper();
-				  string str = keywords[manual_test_result];
+				  int man_ans = test_file_helper();
+				  string str = keywords[man_ans];
 				  String^ str3 = gcnew String(str.c_str());
-				  textBox4->Text=str3;
+				  this->label10->Text=str3;
+				  this->label10->Visible = true;
 				  this->button1->Visible = true;
+				  this->label3->Visible = true;
 				  this->Refresh();
 			 }
 			 else if(choice=='3'){
+				 read_codebook();
 				 this->button1->Visible = false;
 				  this->Refresh();
 					String ^s1;
 					int live = live_testing_helper();
-					string str = keywords[test_ans];
+					string str = keywords[live];
 					String^ str2 = gcnew String(str.c_str());
-					textBox6->Text=str2;
+					this->label11->Text=str2;
 					this->button1->Visible = true;
+					this->btn_cnf->Visible = true;
+					this->label4->Visible=true;
+					this->label11->Visible = true;
 			 }
 			 else if(choice=='4'){
+				 read_codebook();
 				 this->button1->Visible = false;
 				 this->Refresh();
 				 if(environment_known == 0){
@@ -445,13 +515,10 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 			
 		 }
 private: System::Void radioButton5_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			 
 			 textBox6->Text=" ";
-			 textBox4->Text=" ";
-			  label1->Visible=false;
-			   label6->Visible=false;
+			 label1->Visible=false;
+			 label6->Visible=false;
 			 choice='4';
-
 		 }
 private: System::Void checkedListBox1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 		 }
@@ -478,6 +545,15 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^  sender, Sy
 private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
 		 }
 private: System::Void label9_Click(System::Object^  sender, System::EventArgs^  e) {
+		 }
+private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
+		 }
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+			 perform(manual_test_result);
+		 }
+private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
+		 }
+private: System::Void label3_Click(System::Object^  sender, System::EventArgs^  e) {
 		 }
 };
 }

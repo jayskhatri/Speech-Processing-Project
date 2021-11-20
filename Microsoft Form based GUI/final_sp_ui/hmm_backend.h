@@ -349,7 +349,6 @@ int is_substring(string a, string b){
 
 //perform the operation according to detected operation
 void perform(int index){
-	//index = 13;
 	int x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11;
 	int i;
 	if (system(NULL))
@@ -433,10 +432,10 @@ void perform(int index){
 		//exit browser
 		case 3:
 			{
-				/*
-					x1 = MessageBox(nullptr, TEXT("Do you want to close browser?"), TEXT("Message"), MB_YESNOCANCEL);
+				
+					/*x1 = MessageBox(nullptr, TEXT("Do you want to close browser?"), TEXT("Message"), MB_YESNOCANCEL);
 					if (x1 == CONFIRM_BOX_YES)
-					{
+					{*/
 						system("taskkill /IM firefox.exe /F");
 						// close_flag = 0;
 						// read_flag = 0;
@@ -448,8 +447,8 @@ void perform(int index){
 								next_prob_word[i] = 1;
 						}
 
-					}
-					*/
+					
+					
 
 				// }
 				break;
@@ -701,7 +700,10 @@ void forward_procedure(int iteration, FILE *fp = NULL){
 	P_O_given_Model = 0;
 
 	for(i=1;i<=N;i++){
+		long double pi = Pi[i];
+		long double biind = B[i][index];
 		Alpha[1][i] = Pi[i]*B[i][index];
+		long double p = Alpha[1][i];
 	}
 	
 	for (t = 1; t < T; t++){
@@ -1004,10 +1006,11 @@ bool readB(string filename){
 	while(fin>>words){
 		col = 1;
 		B[row][col++] = words;
-
+		long double brc = B[row][col-1];
 		for(int i=1; i<M; i++){
 			fin>>words;
 			B[row][col++] = words;
+			brc = B[row][col-1];
 		}
 		row++;
 	}
@@ -1144,20 +1147,9 @@ void initialize_model(int digit, int seq, char *filename = "--"){
 		readA(A_file);
 		readB(B_file);
 		readPi(PI_file);
-	}else if(filename  == "avg")
-	{
+	}else if(filename  == "avg"){
 		read_average_model(digit);
-		
 	}
-	// else if(filename == "init"){
-	// 	sprintf(a_file, "validation/Digit %d/A_%d.txt", digit, digit);
-	// 	sprintf(b_file, "validation/Digit %d/B_%d.txt", digit, digit);
-	// 	sprintf(pi_file, "validation/Digit %d/pi_%d.txt", digit, digit);
-
-	// 	readA(a_file);
-	// 	readB(b_file);
-	// 	readPi(pi_file);
-	// z
 }
 
 //adding current model values to avg model
@@ -1941,7 +1933,6 @@ void read_codebook(){
 	in.close();
 }
 
-
 //runs prediction by loading the model and running solution to prob1
 int test_prediction(){
 	test_ans = 0;
@@ -1949,7 +1940,6 @@ int test_prediction(){
 	int total_words = sizeof(keywords)/sizeof(keywords[0]);
 	//checking for all the models
 	for(int k = 0; k<total_words; k++){
-		cout<<"hi";
 		if(next_prob_word[k] == 1){
 			read_average_model(k);
 			solution_to_prob1(k);
@@ -1965,9 +1955,9 @@ int live_testing(){
 	printf("\n----------Live testing----------\n");
 
 	system("Recording_Module.exe 3 input.wav input_file.txt");
-	initialize_model(0, 0, "--");
+	//initialize_model(0, 0, "--");
 
-	FILE *f = fopen("input_file.txt", "r");
+	FILE *f = fopen("input_file.txt", "r");//"input_file.txt"
 	if(f == NULL){
 		printf("Issue in opening file input_file.txt");
 		exit(1);
@@ -1991,6 +1981,10 @@ int live_testing(){
 	}
 	fclose(f);
 	generate_obs_sequence("output/live_test/obs_seq.txt");
+
+	for(int i=1; i<=T; i++){
+		int o = O[i];
+	}
 	
 	return test_prediction();
 }
@@ -2209,7 +2203,6 @@ double testing(){
 					int y = atof(line);
 					double normalizedX = floor((y-dcShift)*nFactor);
 					sample[sSize++] = normalizedX;
-					int z = sample[sSize-1];
 				}
 			}
 			fclose(f);
@@ -2251,9 +2244,11 @@ double testing(){
 }
 
 //testing particular file only
-void test_file(char *filename, char *test){
+int test_file(char *filename, char *test){
 	char line[100], test_file[100];
 	int correctAns = 0, totalCorrectAns = 0;
+
+	int total_words = sizeof(keywords)/sizeof(keywords[0]);
 
 	sprintf(test_file, "results/testing/offline/%s.txt", test);
 	FILE *fp = fopen(test_file, "w");
@@ -2288,30 +2283,32 @@ void test_file(char *filename, char *test){
 
 	fprintf(fp, "observation seq obtained -- ");
 	for(int i=1; i<=T; i++){
-		fprintf(fp, "%d\t", O[i]);
+		int o = O[i];
+		//fprintf(fp, "%d\t", O[i]);
 	}
 	fprintf(fp, "\n");
 
 	test_ans = 0;
 	max_pobs_model = 0;
-	for(int k = 0; k<=9; k++){
+	for(int k = 0; k<total_words; k++){
 		read_average_model(k);
 		solution_to_prob1(k, fp);
-		erase_avg_model();
+		//erase_avg_model();
 	}
 			
-	printf("\nPredicted utterance: %d\n", test_ans);
+	printf("\nPredicted utterance: %d\n", keywords[test_ans]);
 
 	fprintf(fp, "Predicted utterance: %d\n", test_ans);
 	fclose(fp);
 
-	manual_test_result = test_ans;
+	return test_ans;
 }
 
 //function to call the test_file
-void test_file_helper(){
+int test_file_helper(){
+	read_codebook();
 	char filename[100]="input/input_file.txt", test_1[100]="manual_testing_result.txt";
-	test_file(filename,test_1);
+	return test_file(filename,test_1);
 }
 
 //live training of a word
@@ -2411,6 +2408,7 @@ void live_training(int choice){
 }
 
 int live_testing_helper(){
+	read_codebook();
 	for(int i=0; i<16; i++){
 		if(i == 1 || i == 3 || i==2 || i==6 || i==14)
 			next_prob_word[i] = 0;
@@ -2426,6 +2424,8 @@ int live_testing_helper(){
 	is_live_testing = 1;
 	int live_ans = live_testing();
 	is_live_testing = 0;
+	test_ans = live_ans;
+	manual_test_result = live_ans;
 	return live_ans;
 }
 
