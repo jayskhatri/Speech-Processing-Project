@@ -362,7 +362,7 @@ void perform(int index){
 			{
 				open_calendar();
 				for(int i = 0; i<16; i++){
-					if(i == 14 || i==0){
+					if(i==0 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -441,7 +441,7 @@ void perform(int index){
 						// read_flag = 0;
 						// stop_flag = 0;
 						for(int i = 0; i<16; i++){
-							if(i == 3)
+							if(i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13)
 								next_prob_word[i] = 0;
 							else
 								next_prob_word[i] = 1;
@@ -458,7 +458,7 @@ void perform(int index){
 			{
 				open_faculty_page();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==4){
+					if(i == 8 || i==4 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -472,7 +472,7 @@ void perform(int index){
 			{
 				open_github();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==5){
+					if(i==5 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -513,7 +513,7 @@ void perform(int index){
 			{
 				open_jobs();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 7){
+					if( i == 7 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -529,7 +529,7 @@ void perform(int index){
 			{
 				system("start https://www.google.com/");
 				for (i = 0; i < 11; i++){
-					if ((i == 8))
+					if (i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13)
 						next_prob_word[i] = 0;
 					else
 						next_prob_word[i] = 1;
@@ -541,7 +541,7 @@ void perform(int index){
 			{
 				open_outlook();
 				for(int i=0; i<16; i++){
-					if( i == 9 || i == 8){
+					if( i == 9 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -555,7 +555,7 @@ void perform(int index){
 			{
 				open_payments();
 				for(int i=0; i<16; i++){
-					if( i==8 || i == 10 ){
+					if(i == 10 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -569,7 +569,7 @@ void perform(int index){
 			{
 				open_portal();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 11){
+					if(i == 11 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -583,7 +583,7 @@ void perform(int index){
 			{
 				open_quora();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 12){
+					if(i == 12 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -597,7 +597,7 @@ void perform(int index){
 			{
 				search_google();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 13){
+					if(i == 13 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -645,7 +645,7 @@ void perform(int index){
 			{
 				search_video();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i == 15){
+					if(i == 15 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -1512,13 +1512,13 @@ void calculate_c_prime(double *samp){
 	applyingRaisedSinWindow();
 
 	//code for universe generation
-	for(int i=1; i<=P; i++){
-		if(i == P)
-			uni<<setw(10)<<Ci[i];
-		else
-			uni<<setw(10)<<Ci[i]<<", ";
-	}
-	uni<<endl;
+	// for(int i=1; i<=P; i++){
+	// 	if(i == P)
+	// 		uni<<setw(10)<<Ci[i];
+	// 	else
+	// 		uni<<setw(10)<<Ci[i]<<", ";
+	// }
+	// uni<<endl;
 	
 }
 
@@ -1570,82 +1570,6 @@ void trim_word(){
 	//system("pause");
 }
 
-//[not using]
-double* trim(){
-	int i;
-	long double total_energy, current_value;
-	char trimmed_file[100];
-	int start_marker = 0, end_marker = 0;
-	
-	total_energy = 0;
-	int interval = WIN_SIZE, index_count = 0, arr_index = 0;
-	double samp[WIN_SIZE] = {0};
-	long double total_max_energy = 0;
-	int initial_shift_pointer = 0, shift_pointer_count = 0, writing_count = 0;
-	long double arr_energy[50];
-	long count1 = 0;
-	string temp = "";
-	//cout << "\n................Trimming Waveform..................." << endl;
-	int count = interval;
-	//in.open(normalized_file);
-	ofstream out("energy_trim.txt");
-
-	//window shifting logic
-	for (i = 0; i < sSize; i++){
-		count1++;
-		//if (shift_pointer_count >= initial_shift_pointer){
-
-		//current_value = stold(temp);
-		current_value = sample[i];
-		current_value *= 0.1;
-		total_energy += (current_value*current_value);
-		count--;
-		if (!count){
-
-			out << to_string(total_energy) << endl;
-
-			if (total_energy > total_max_energy){
-				total_max_energy = total_energy;
-				start_marker = initial_shift_pointer;
-				end_marker = initial_shift_pointer + interval;
-			}
-
-			total_energy = 0;
-			count = interval;
-			initial_shift_pointer += 500;
-			i = initial_shift_pointer - 1;
-			shift_pointer_count = 0;
-		}
-	}
-	out.close();
-	
-	//cout << "Start Marker : " << start_marker << endl;
-	//cout << "End Marker : " << end_marker << endl;
-
-	if(end_marker > sSize){
-		start_marker -= (end_marker - sSize);
-		end_marker = sSize;
-	}
-	
-	
-	sprintf(trimmed_file, "trim.txt");
-	ofstream out1(trimmed_file);
-	for(int i=0; i<sSize; i++){
-		index_count++;
-		current_value = sample[i]; //stold(temp);
-		//current_value = current_value - dc_shift_value;
-		//current_value = current_value * normalization_ratio;
-
-		if (index_count >= start_marker && index_count < end_marker){
-			samp[arr_index++] = current_value;
-			out1 << samp[arr_index - 1] << endl;
-		}
-	}
-
-	out1.close();
-	return samp;
-}
-
 //generate observation sequence
 void generate_obs_sequence(char *filename){
 	int obs_ind = 1;
@@ -1679,7 +1603,7 @@ void generate_obs_sequence(char *filename){
 //generate observation sequence[not using]
 void generate_obs_sequence(char *filename, FILE *op){
 	int obs_ind = 1;	
-	double *frame_samples = trim();
+	double *frame_samples = trim_word();
 	double fsamp[FRAME_SIZE];
 
 	for(int i=0; i<WIN_SIZE; i++){
@@ -1690,71 +1614,6 @@ void generate_obs_sequence(char *filename, FILE *op){
 		calculate_tokhura_distance(Ci, obs_ind++, op);
 	}
 	cout<<"wrote observation seq in file: "<<filename<<"\n";
-}
-
-//training particular file [not using]
-void train_file(char *filename, int digit){
-	char line[100], obs_file[100];
-	// for(int d = 0; d<=1; d++){
-		erase_model();
-		
-		// for(int u = 1; u<=20; u++){
-		// sprintf(filename, "input/recordings/Digit %d/rec_%d.txt", d, u);
-
-		FILE *f = fopen(filename, "r");
-
-		if(f == NULL){
-			printf("Issue in opening file %s", filename);
-			exit(1);
-		}
-		
-		//setting dcshift and nfactor
-		setupGlobal(filename);
-
-		sSize = 0;
-		//reading the samples and normalizing them
-		while(!feof(f)){
-			fgets(line, 100, f);
-			
-			//input file may contain header, so we skip it
-			if(!isalpha(line[0])){
-				int y = atof(line);
-				double normalizedX = floor((y-dcShift)*nFactor);
-				//if(abs(normalizedX) > 1)
-				sample[sSize++] = normalizedX;
-			}
-		}
-		fclose(f);
-
-		//framing
-		sprintf(obs_file, "output/delete/digit_%d_obs_seq.txt", digit);
-		generate_obs_sequence(obs_file);
-		initialize_model(digit, 1, "--");
-
-		int iteration = 1;
-		while(iteration <= CONVERGE_ITERATIONS){
-			//cout<<"iteration: "<<iteration++<<endl;
-			iteration++;
-			forward_procedure(0);
-			backward_procedure();
-			viterbi();
-			calculate_xi();
-			calculate_gamma();
-			reevaluate_model_parameters();
-			//print();
-		}
-
-		char a_file_final[100], b_file_final[100], pi_file_final[100];
-
-		sprintf(a_file_final, "output/delete/digit_%d_model_A.txt", digit);
-		write_final_A_values(a_file_final);
-		sprintf(b_file_final, "output/digit_%d_model_B.txt", digit);
-		write_final_B_values(b_file_final);
-		sprintf(pi_file_final, "output/digit_%d_model_PI.txt", digit);
-		write_final_pi_values(pi_file_final);
-
-		system("pause");
-	// }
 }
 
 //making only observation sequence from the recordings folder [not using]
@@ -2016,155 +1875,6 @@ void print(){
 	}
 }
 
-//function to validate output each model
-void validation(){
-	char filename[100], line[100];
-	initialize_model(1, 0);
-
-	int iteration = 0;
-	ofstream dump("dump.txt");
-
-
-	////////////////////////////////Block to use sir's data/////////////////////////////////////
-
-	// ifstream fin("validation/Digit 1/obs_seq_1.txt");
-	// int temp;
-	// int obs_ind = 1;
-	// while(fin >> temp){
-	// 	O[obs_ind] = temp;
-
-	// 	for(int i=2; i<=85; i++){
-	// 		fin>>temp;
-	// 		O[i] = temp;
-	// 	}
-	// 	break;
-	// }
-
-	// cout<<"Observation seq\n";
-	// for(int i=1; i<=85; i++){
-	// 	cout<<O[i]<<"   ";
-	// }
-	// cout<<endl;
-
-	///////////////////////////////////////////////////////////////////////////////////////////
-
-
-	/////////////////////////////Block to use own recordings //////////////////////////////////
-	sprintf(filename, "input/recordings/Digit 0/rec_1.txt");
-
-	FILE *f = fopen(filename, "r");
-
-	if(f == NULL){
-		printf("Issue in opening file %s", filename);
-		exit(1);
-	}
-	
-	//setting dcshift and nfactor
-	setupGlobal(filename);
-
-	sSize = 0;
-	//reading the samples and normalizing them
-	while(!feof(f)){
-		fgets(line, 100, f);
-		
-		//input file may contain header, so we skip it
-		if(!isalpha(line[0])){
-			int y = atof(line);
-			double normalizedX = floor((y-dcShift)*nFactor);
-			//if(abs(normalizedX) > 1)
-			sample[sSize++] = normalizedX;
-		}
-	}
-	fclose(f);
-
-	char obs_file[100];
-	sprintf(obs_file, "output/delete/HMM_OBS_SEQ_delete.txt");
-	generate_obs_sequence(obs_file);
-
-	///////////////////////////////////////////////////////////////////////////////////////////
-
-	//convergence of the model
-	while(pstar > prev_p_star){
-		//cout<<"iteration: "<<iteration++<<endl;
-		iteration++;
-		prev_p_star = pstar; 
-		forward_procedure(0);
-		backward_procedure();
-		viterbi();
-		dump<<"Pstar: "<<pstar<<endl;
-		dump<<"Qstar: ";
-		for(int i=1; i<=T; i++){
-			dump<<Q[i]<<"   ";
-		}
-		dump<<endl;
-		calculate_xi();
-		calculate_gamma();
-		cout<<"difference: "<<prev_p_star - pstar<<endl;
-		reevaluate_model_parameters();
-	}
-
-	cout<<"Output converged on iteration: "<<iteration<<endl;
-	dump<<"Output converged on iteration: "<<iteration<<endl;
-
-	dump<<"----------------------Alpha values--------------------------\n";
-	for(int i = 1; i<=T; i++){
-		for(int j = 1; j<=N; j++){
-			dump<<Alpha[i][j]<<"   ";
-		}
-		dump<<endl;
-	}
-
-	dump<<"------------------------Beta values--------------------------\n";
-	for(int i = 1; i<=T; i++){
-		for(int j = 1; j<=N; j++){
-			dump<<Beta[i][j]<<"   ";
-		}
-		dump<<endl;
-	}
-
-	dump<<"-----------------------------Gamma values----------------------\n";
-	for(int i = 1; i<=T; i++){
-		for(int j = 1; j<=N; j++){
-			dump<<Gamma[i][j]<<"   ";
-		}
-		dump<<endl;
-	}
-
-	dump<<"------------------------------Xi values ------------------------\n";
-	for(int i=1; i<=T; i++){
-		for(int j = 1; j<=N; j++){
-			for(int k = 1; k<=N; k++){
-				dump<<Xi[i][j][k]<<"   ";
-			}
-			dump<<endl;
-		}
-		dump<<"---\n\n";
-	}
-
-	dump<<"------------------------------Model ----------------------------\n";
-	dump<<"------------------------------A matrix --------------------------\n";
-	for (int i = 1; i <= N; i++){
-		for (int j = 1; j <= N; j++){
-			dump << A[i][j] << "   ";
-		}
-		dump<<endl;
-	}
-
-	dump<<"------------------------------B matrix ----------------------------\n";
-	for (int i = 1; i <= N; i++){
-		for (int j = 1; j <= M; j++){
-			dump << B[i][j] << "   ";
-		}
-		dump<<endl;
-	}
-
-	dump<<"------------------------------Pi matrix ----------------------------\n";
-	for (int i = 1; i <= N; i++){
-		dump<<Pi[i]<<"   ";
-	}
-
-}
-
 //function to test the models
 double testing(){
 	double acc;
@@ -2219,11 +1929,9 @@ double testing(){
 			test_ans = 0;
 			max_pobs_model = 0;
 			for(int k = 0; k<total_words; k++){
-				//if(next_prob_word[k] == 1){
 				read_average_model_for_testing(k);
 				solution_to_prob1(k);
 				erase_avg_model();
-				//}
 			}
 			
 			printf("\nPredicted utterance: %s\n", keywords[test_ans]);
@@ -2407,10 +2115,12 @@ void live_training(int choice){
 	erase_avg_model();
 }
 
+//live testing helper funciton to gui
 int live_testing_helper(){
 	read_codebook();
 	for(int i=0; i<16; i++){
-		if(i == 1 || i == 3 || i==2 || i==6 || i==14)
+		//windows.h functions removing to be used
+		if(i == 1 || i == 3 || i==2 || i==6 || i==14 || i==13 || i==15)
 			next_prob_word[i] = 0;
 		else
 			next_prob_word[i] = 1;
@@ -2424,7 +2134,6 @@ int live_testing_helper(){
 	is_live_testing = 1;
 	int live_ans = live_testing();
 	is_live_testing = 0;
-	test_ans = live_ans;
 	manual_test_result = live_ans;
 	return live_ans;
 }
