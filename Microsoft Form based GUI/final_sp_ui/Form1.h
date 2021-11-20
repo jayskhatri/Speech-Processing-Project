@@ -56,7 +56,7 @@ namespace final_sp_ui {
 	private: System::Windows::Forms::CheckBox^  checkBox1;
 	private: System::Windows::Forms::ComboBox^  comboBox1;
 	private: System::Windows::Forms::Label^  label5;
-	private: System::Windows::Forms::TextBox^  textBox6;
+
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label6;
 	private: System::Windows::Forms::Label^  label7;
@@ -96,7 +96,6 @@ namespace final_sp_ui {
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
@@ -262,15 +261,6 @@ namespace final_sp_ui {
 			this->label5->Text = L"Select Word to be Trained!!";
 			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// textBox6
-			// 
-			this->textBox6->Location = System::Drawing::Point(341, 345);
-			this->textBox6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(164, 22);
-			this->textBox6->TabIndex = 20;
-			this->textBox6->TextChanged += gcnew System::EventHandler(this, &Form1::textBox6_TextChanged);
-			// 
 			// label1
 			// 
 			this->label1->Location = System::Drawing::Point(13, 295);
@@ -327,7 +317,7 @@ namespace final_sp_ui {
 			// 
 			// btn_cnf
 			// 
-			this->btn_cnf->Location = System::Drawing::Point(523, 345);
+			this->btn_cnf->Location = System::Drawing::Point(476, 342);
 			this->btn_cnf->Name = L"btn_cnf";
 			this->btn_cnf->Size = System::Drawing::Size(75, 23);
 			this->btn_cnf->TabIndex = 26;
@@ -358,7 +348,7 @@ namespace final_sp_ui {
 			// label11
 			// 
 			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(656, 346);
+			this->label11->Location = System::Drawing::Point(357, 346);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(54, 17);
 			this->label11->TabIndex = 29;
@@ -379,7 +369,6 @@ namespace final_sp_ui {
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->textBox6);
 			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->checkBox3);
@@ -408,7 +397,6 @@ namespace final_sp_ui {
 			 }
 	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 				 choice='1';
-				 this->textBox6->Text=" ";
 				 this->label1->Visible=false;
 				 this->label6->Visible=false;
 				 this->label3->Visible = false;
@@ -418,7 +406,6 @@ namespace final_sp_ui {
 			 }
 private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			 this->label3->Visible = false;
-			 this->textBox6->Text=" ";
 			 this->label1->Visible=false;
 			 this->label6->Visible=true;
 			 this->label10->Visible = false;
@@ -515,7 +502,6 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 			
 		 }
 private: System::Void radioButton5_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			 textBox6->Text=" ";
 			 label1->Visible=false;
 			 label6->Visible=false;
 			 choice='4';

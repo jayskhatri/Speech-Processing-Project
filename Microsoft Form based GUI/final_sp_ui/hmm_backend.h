@@ -1603,12 +1603,12 @@ void generate_obs_sequence(char *filename){
 //generate observation sequence[not using]
 void generate_obs_sequence(char *filename, FILE *op){
 	int obs_ind = 1;	
-	double *frame_samples = trim_word();
+	trim_word();
 	double fsamp[FRAME_SIZE];
 
 	for(int i=0; i<WIN_SIZE; i++){
 		for(int j = 0; j<320; j++)
-			fsamp[j] = frame_samples[i++];
+			fsamp[j] = steadySamp[i++];
 
 		calculate_c_prime(fsamp);
 		calculate_tokhura_distance(Ci, obs_ind++, op);
