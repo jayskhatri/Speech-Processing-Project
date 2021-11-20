@@ -2187,10 +2187,10 @@ void testing(){
 			test_ans = 0;
 			max_pobs_model = 0;
 			for(int k = 0; k<total_words; k++){
-				//if(k != 12){
-				read_average_model_for_testing(k);
-				solution_to_prob1(k);
-				erase_avg_model();
+				//if(next_prob_word[k] == 1){
+					read_average_model_for_testing(k);
+					solution_to_prob1(k);
+					erase_avg_model();
 				//}
 			}
 			
@@ -2389,7 +2389,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 		switch(choice){
 			case 't':
 				{
-					for(int i=0; i<4; i++)
+					for(int i=0; i<3; i++)
 						training();
 					break;
 				}

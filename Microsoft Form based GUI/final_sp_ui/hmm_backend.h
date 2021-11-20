@@ -9,7 +9,6 @@
 #include <vector>
 #include <algorithm>
 #include <sstream>
-#include <winuser.h>
 
 #define CONVERGE_ITERATIONS 200
 #define M 32 //Number of obsevation symbols per state
@@ -33,6 +32,7 @@ long double const threshold = 1e-30;   //Min threshold to be assigned to zero va
 long int sSize = 0, sampSize = 0, enSize = 0;
 long double max_pobs_model = 0;
 int test_ans = 0, fake = 0;
+int live_model=0;
 long double k;
 
 //Globally defined arrays
@@ -82,6 +82,9 @@ char* B_file = "b_i_j.txt";
 char* PI_file = "pi.txt";
 
 int cnt = 1, train = 0;
+int live_update=0;
+int train_index=-1;
+int itr_count=0;
 long double P_O_given_Model = 0;
 ofstream uni, dump;
 FILE *common_dump;
@@ -349,7 +352,7 @@ int is_substring(string a, string b){
 
 //perform the operation according to detected operation
 void perform(int index){
-	int x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11;
+	
 	int i;
 	if (system(NULL))
 		puts("Proceed");
@@ -362,7 +365,7 @@ void perform(int index){
 			{
 				open_calendar();
 				for(int i = 0; i<16; i++){
-					if(i==0 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if(i==0 || i == 1 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -458,7 +461,7 @@ void perform(int index){
 			{
 				open_faculty_page();
 				for(int i = 0; i<16; i++){
-					if(i == 8 || i==4 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==13){
+					if(i == 8 || i==4 || i == 1 || i==2 || i==6 || i==14 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -472,7 +475,7 @@ void perform(int index){
 			{
 				open_github();
 				for(int i = 0; i<16; i++){
-					if(i==5 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if(i==5 || i == 1 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -513,7 +516,7 @@ void perform(int index){
 			{
 				open_jobs();
 				for(int i = 0; i<16; i++){
-					if( i == 7 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if( i == 7 || i == 1 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -529,7 +532,7 @@ void perform(int index){
 			{
 				system("start https://www.google.com/");
 				for (i = 0; i < 11; i++){
-					if (i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13)
+					if (i == 1 || i==2 || i==6 || i==14 || i==8 || i==13)
 						next_prob_word[i] = 0;
 					else
 						next_prob_word[i] = 1;
@@ -541,7 +544,7 @@ void perform(int index){
 			{
 				open_outlook();
 				for(int i=0; i<16; i++){
-					if( i == 9 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if( i == 9 || i == 1|| i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -555,7 +558,7 @@ void perform(int index){
 			{
 				open_payments();
 				for(int i=0; i<16; i++){
-					if(i == 10 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if(i == 10 || i == 1 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -569,7 +572,7 @@ void perform(int index){
 			{
 				open_portal();
 				for(int i = 0; i<16; i++){
-					if(i == 11 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if(i == 11 || i == 1 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -583,7 +586,7 @@ void perform(int index){
 			{
 				open_quora();
 				for(int i = 0; i<16; i++){
-					if(i == 12 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if(i == 12 || i == 1 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -597,7 +600,7 @@ void perform(int index){
 			{
 				search_google();
 				for(int i = 0; i<16; i++){
-					if(i == 13 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8){
+					if(i == 13 || i == 1 || i==2 || i==6 || i==14 || i==8){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -645,7 +648,7 @@ void perform(int index){
 			{
 				search_video();
 				for(int i = 0; i<16; i++){
-					if(i == 15 || i == 1 || i == 3 || i==2 || i==6 || i==14 || i==8 || i==13){
+					if(i == 15 || i == 1 || i==2 || i==6 || i==14 || i==8 || i==13){
 						next_prob_word[i] = 0;
 					}
 					else {
@@ -1112,6 +1115,20 @@ void erase_avg_model(){
 }
 
 //reading average model
+void read_average_model_for_live_testing(int digit){
+	
+	char filename[100];
+	sprintf(filename, "output/custom_models/word_%s_A.txt", keywords[digit]);
+	readA(filename);
+
+	sprintf(filename, "output/custom_avgmodels/word_%s_B.txt", keywords[digit]);
+	readB(filename);
+
+	sprintf(filename, "output/custom_avgmodels/word_%s_PI.txt", keywords[digit]);
+	readPi(filename);
+}
+
+//reading average model
 void read_average_model(int digit){
 	
 	char filename[100];
@@ -1241,6 +1258,40 @@ void average_of_avg_model(int total_iterations){
 			b_average[i][j] /= total_iterations;
 		}
 	}
+}
+
+void dump_avg_model_live_save(int digit){
+	char a_file_avg[100], b_file_avg[100], pi_file_avg[100], ind[3];
+
+	sprintf(a_file_avg, "output/custom_models/word_%s_A.txt", keywords[digit]);
+	FILE *fp = fopen(a_file_avg, "w");
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=N; j++){
+			fprintf(fp, "%Le   ", a_average[i][j]);
+		}
+		fprintf(fp, "\n");
+	}
+	fclose(fp);
+
+	
+	sprintf(b_file_avg, "output/custom_models/word_%s_B.txt", keywords[digit]);
+	ofstream fout(b_file_avg);
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=M; j++){
+			//fprintf(fp, "%Le   ", b_average[i][j]);
+			fout<<b_average[i][j]<<"   ";
+		}
+		fout<<endl;
+		//fprintf(fp, "\n");
+	}
+	fout.close();
+
+	sprintf(pi_file_avg, "output/custom_models/word_%s_PI.txt", keywords[digit]);
+	fp = fopen(pi_file_avg, "w");
+	for(int i=1; i<=N; i++){
+		fprintf(fp, "%Le   ", pi_average[i]);
+	}
+	fclose(fp);
 }
 
 // dumping average model to file
@@ -1540,10 +1591,6 @@ void trim_word(){
 		cEnergySum += cEnergy;
 	}
 	
-	//printf("\nenergy - \n");
-	for(int i=0; i<enSize; i++){
-		//printf("%d: %lf\n", i, energy[i]);
-	}
 	int min_samples = 11200;
 
 	for(int i=0; i<enSize-4; i++){
@@ -1673,7 +1720,7 @@ void training(){
 		sprintf(dump_file, "results/training/training_word_%s.txt", keywords[d]);
 		FILE *dig_dump = fopen(dump_file, "w");
 
-		fprintf(common_dump, "\n------------------------------------------------> Word %s <------------------------------------------------\n", keywords[d]);
+		//fprintf(common_dump, "\n------------------------------------------------> Word %s <------------------------------------------------\n", keywords[d]);
 		fprintf(dig_dump, "\n------------------------------------------------> Word %s <------------------------------------------------\n", keywords[d]);
 		
 		for(int u = 1; u <= total_files_trained; u++){
@@ -1688,7 +1735,7 @@ void training(){
 			}
 
 			fprintf(dig_dump, "\n------------------------------------------------ opening file %s ------------------------------------------------\n", filename);
-			fprintf(common_dump, "\n------------------------------------------------ opening file %s ------------------------------------------------\n", filename);
+			//fprintf(common_dump, "\n------------------------------------------------ opening file %s ------------------------------------------------\n", filename);
 			
 			//setting dcshift and nfactor
 			setupGlobal(filename);
@@ -1717,11 +1764,11 @@ void training(){
 
 			for(int i=1; i<=T; i++){
 				fprintf(dig_dump, "%4d ", O[i]);
-				fprintf(common_dump, "%4d ", O[i]);
+				//fprintf(common_dump, "%4d ", O[i]);
 			}
 
 			fprintf(dig_dump, "\n");
-			fprintf(common_dump, "\n");
+			//fprintf(common_dump, "\n");
 			
 			//initializing model
 			if(train == 0)
@@ -1756,17 +1803,17 @@ void training(){
 			}
 
 			//writing final state sequence
-			fprintf(common_dump, "-->qstar : ");
+			/*fprintf(common_dump, "-->qstar : ");
 			for(int i=1; i<=T; i++){
 				fprintf(common_dump, "%d ", Q[i]);
 			}
 			fprintf(common_dump, "\n");
-			
+			*/
 			//writing final model in the log file
 			fprintf(dig_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
-			fprintf(common_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
+			//fprintf(common_dump, "-------------------------------Final Model Lambda (Pi, A, B) after iterations %d--------------------------------\n", iteration);
 			dump_converged_model(dig_dump);
-			dump_converged_model(common_dump);
+			//dump_converged_model(common_dump);
 
 			add_to_avg_model();
 			dump_final_model(u, d);
@@ -2021,24 +2068,26 @@ int test_file_helper(){
 
 //live training of a word
 void live_training(int choice){
+	if(itr_count>10)
+		return;
 
 	//itr_count will keep track of no of times a particular word is recorded as part of live training.
-	int itr_count=10;
+	
 	int listen=0;
 	printf("---------------------------Live Training Module----------------------------------\n");
 	printf("Now you'll be asked to record your voice for %d times\n",itr_count);
-	system("pause");
+	//system("pause");
 
 	//Giving option for user.
 	//printf("Enter 1 to listen training audio else enter 2\n");
 	//scanf("%d",&listen);
 
-	for(int i=1; i<=itr_count; i++){
+	for(int i=1; i<=1; i++){
 		char command[500], filename[50], obs_file[100], line[50];
 		char save='a', save_file[100]="";
 		
-	    cout<<"Press s for saving training data else enter n"<<endl;
-		cin>>save;
+	   // cout<<"Press s for saving training data else enter n"<<endl;
+		//cin>>save;
 		//Will save the live training data.
 		if(save=='s'||save=='S'){
 			cout<<"Enter file name to be saved"<<endl;
@@ -2051,7 +2100,7 @@ void live_training(int choice){
 		    system(command);
 		}
 		else{
-			sprintf(filename, "input/live_training/rec_%d.txt" , i);
+			sprintf(filename, "input/live_training/rec_%d.txt" , itr_count);
 			sprintf(command, " Recording_Module.exe 3 input.wav ");
 			strcat(command, filename);
 			system(command);
@@ -2087,7 +2136,7 @@ void live_training(int choice){
 		fclose(f);
 
 		//framing
-		sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[choice], i);
+		sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[choice], itr_count);
 		generate_obs_sequence(obs_file);
 
 		initialize_model(choice, 1, "--");
@@ -2108,11 +2157,17 @@ void live_training(int choice){
 			reevaluate_model_parameters();
 		}
 		add_to_avg_model();
-		dump_final_model(i, choice);
+		dump_final_model(itr_count, choice);
 	}
-	average_of_avg_model(itr_count);
+	if(itr_count==10)
+	{
+	average_of_avg_model(10);
+	if(live_update==0)
 	dump_avg_model_live(choice); //check here
+	else
+	dump_avg_model_live_save(choice);
 	erase_avg_model();
+	}
 }
 
 //live testing helper funciton to gui
@@ -2137,105 +2192,3 @@ int live_testing_helper(){
 	manual_test_result = live_ans;
 	return live_ans;
 }
-
-
-/*
-//driver function
-int _tmain(int argc, _TCHAR* argv[]){
-
-	uni.open("universe.csv");
-	char com_dump[100];
-	sprintf(com_dump, "results/training/common_dump.txt");
-	common_dump = fopen(com_dump, "w");
-	
-	read_codebook();
-
-	for(int i=0; i<16; i++){
-		if(i == 1 || i == 3 || i==2 || i==6 || i==14)
-			next_prob_word[i] = 0;
-		else
-			next_prob_word[i] = 1;
-	}
-	
-	//training();
-	char choice;
-	
-	while(1){
-		cout<<"\nPress 1. for automated test on test files\nPress 2. for manual test using the file\nPress 3. for live testing\nPress 4. for live training\nPress 0. to exit\nEnter your choice: "; cin>>choice;
-
-		switch(choice){
-			case 't':
-				{
-					for(int i=0; i<3; i++)
-						training();
-					break;
-				}
-			case '1':
-				{
-					
-					testing();
-
-					break;
-				}
-
-			case '2':
-				{
-					char filename[100], test[100], test_fn[100];
-					printf("Make sure file is available in input/manual_testing/ folder and write .txt (extension in the input)\nEnter the filename you want to test  - ");
-					scanf("%s", &test_fn);
-					sprintf(filename, "input/manual_testing/%s", test_fn);
-
-					printf("Enter the filename to store the results in - ");
-					scanf("%s", &test);
-
-					test_file(filename, test);
-					break;
-				}
-			case '3':
-				{
-					if(environment_known == 0){
-						printf("--------------Recording silence--------------\n");
-						system("Recording_Module.exe 3 silence.wav silence_file.txt");	
-						environment_known = 1;
-					}
-					is_live_testing = 1;
-					live_testing();
-					is_live_testing = 0;
-					break;
-				}
-			
-			case '4':
-				{
-					if(environment_known == 0){
-						printf("--------------Recording silence--------------\n");
-						system("Recording_Module.exe 1 silence.wav silence_file.txt");	
-						environment_known = 1;
-					}
-					int choice;
-					cout<<endl;
-					for(int i=0;i<16;i++){
-						cout<<"Enter "<<i+1<<" for training "<<keywords[i]<<endl;
-					}
-					cout<<"Enter your choice: ";
-					cin>>choice;
-					choice--;
-					
-					live_training(choice);
-				break;
-					
-
-					
-
-				}
-			case '0':
-				{
-					cout<<"Exiting the program\n";
-					return 0;
-				}
-		}
-	}
-	
-	uni.close();
-	return 0;
-}
-*/
