@@ -2,7 +2,7 @@
 ---------> Reading file input/input_file.txt <---------
 observation seq obtained -- 
 ---> Word calendar ----- P(Obs/Model) : 8.46256e-084
----> Word close ----- P(Obs/Model) : 3.60054e-033
+---> Word close ----- P(Obs/Model) : 8.46256e-084
 ---> Word down ----- P(Obs/Model) : 2.23633e-040
 ---> Word exit ----- P(Obs/Model) : 6.62368e-074
 ---> Word faculties ----- P(Obs/Model) : 8.85236e-112

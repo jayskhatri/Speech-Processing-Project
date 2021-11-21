@@ -1169,8 +1169,37 @@ void initialize_model(int digit, int seq, char *filename = "--"){
 	}
 }
 
+//initialize model according to parameters
+void initialize_model_live_train(int digit, int seq, char *filename = "--"){
+	char a_file[100], b_file[100], pi_file[100], obs_file[100];
+
+        readA(A_file);
+		readB(B_file);
+		readPi(PI_file);
+}
+
+
 //adding current model values to avg model
 void add_to_avg_model(){
+	int i, j;
+	for (i = 1; i <= N; i++){
+		for (j = 1; j <= N; j++){
+			a_average[i][j] += A[i][j];
+		}
+	}
+	for (i = 1; i <= N; i++){
+		pi_average[i] += Pi[i];
+	}
+	for (int i = 1; i <= N; i++){
+		for (int j = 1; j <= M; j++){
+			b_average[i][j] += B[i][j];
+		}
+	}
+}
+
+
+//adding current model values to avg model
+void add_to_avg_model_live_train(){
 	int i, j;
 	for (i = 1; i <= N; i++){
 		for (j = 1; j <= N; j++){
@@ -2076,7 +2105,7 @@ void live_training(int choice){
 	int listen=0;
 	printf("---------------------------Live Training Module----------------------------------\n");
 	printf("Now you'll be asked to record your voice for %d times\n",itr_count);
-	//system("pause");
+	system("pause");
 
 	//Giving option for user.
 	//printf("Enter 1 to listen training audio else enter 2\n");
@@ -2089,22 +2118,11 @@ void live_training(int choice){
 	   // cout<<"Press s for saving training data else enter n"<<endl;
 		//cin>>save;
 		//Will save the live training data.
-		if(save=='s'||save=='S'){
-			cout<<"Enter file name to be saved"<<endl;
-			cin>>save_file;
-			sprintf(filename,"input/live_training/");
-			strcat(filename,save_file);
-			strcat(filename,".txt");
-			sprintf(command, " Recording_Module.exe 3 o.wav ");
-	        strcat(command, filename);
-		    system(command);
-		}
-		else{
+		
 			sprintf(filename, "input/live_training/rec_%d.txt" , itr_count);
 			sprintf(command, " Recording_Module.exe 3 input.wav ");
 			strcat(command, filename);
 			system(command);
-		}
 
 		//Will playback the audio.
 		//if(listen==1)
@@ -2139,12 +2157,12 @@ void live_training(int choice){
 		sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%s_%d.txt", keywords[choice], itr_count);
 		generate_obs_sequence(obs_file);
 
-		initialize_model(choice, 1, "--");
+		initialize_model_live_train(choice, 1, "--");
 
 		int iteration = 1;
 		//starts converging model upto CONVERGE_ITERATIONS or till convergence whichever reach early
 		pstar = 0, prev_p_star = -1;
-		while(pstar > prev_p_star && iteration < 1000){
+		while( pstar > prev_p_star &&iteration < 1000){
 			//cout<<"iteration: "<<iteration++<<endl;
 			iteration++;
 			prev_p_star = pstar; 
@@ -2156,19 +2174,22 @@ void live_training(int choice){
 			//cout<<"difference: "<<prev_p_star - pstar<<endl;
 			reevaluate_model_parameters();
 		}
-		add_to_avg_model();
+		add_to_avg_model_live_train();
 		dump_final_model(itr_count, choice);
 	}
+
 	if(itr_count==10)
 	{
 	average_of_avg_model(10);
 	if(live_update==0)
 	dump_avg_model_live(choice); //check here
-	else
+	else if(live_update=1)
 	dump_avg_model_live_save(choice);
+
 	erase_avg_model();
 	}
 }
+
 
 //live testing helper funciton to gui
 int live_testing_helper(){
