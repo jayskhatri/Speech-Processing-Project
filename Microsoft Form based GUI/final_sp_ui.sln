@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "final_sp_ui", "final_sp_ui\final_sp_ui.vcxproj", "{6F3E36ED-FEC2-42A6-AB96-B3FFE3CAB7F0}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SpeechBrowser", "SpeechBrowser\SpeechBrowser.vdproj", "{4926F91D-FD92-415C-8C9F-071EF8DF91A3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,8 +13,6 @@ Global
 		{6F3E36ED-FEC2-42A6-AB96-B3FFE3CAB7F0}.Debug|Win32.Build.0 = Debug|Win32
 		{6F3E36ED-FEC2-42A6-AB96-B3FFE3CAB7F0}.Release|Win32.ActiveCfg = Release|Win32
 		{6F3E36ED-FEC2-42A6-AB96-B3FFE3CAB7F0}.Release|Win32.Build.0 = Release|Win32
-		{4926F91D-FD92-415C-8C9F-071EF8DF91A3}.Debug|Win32.ActiveCfg = Debug
-		{4926F91D-FD92-415C-8C9F-071EF8DF91A3}.Release|Win32.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
