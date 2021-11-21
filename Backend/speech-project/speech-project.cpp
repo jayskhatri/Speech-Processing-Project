@@ -1721,48 +1721,6 @@ void train_file(char *filename, int digit){
 	// }
 }
 
-//making only observation sequence from the recordings folder [not using]
-void make_all_obs_seq(){
-	char filename[100], line[100], obs_file[100];
-	for(int d = 0; d<=9; d++){
-
-		sprintf(obs_file, "output/obs_seq/HMM_OBS_SEQ_%d.txt", d);
-		FILE *op = fopen(obs_file, "w");
-		
-		for(int u = 1; u<=20; u++){
-			sprintf(filename, "input/recordings/Digit %d/rec_%d.txt", d, u);
-
-			FILE *f = fopen(filename, "r");
-
-			if(f == NULL){
-				printf("Issue in opening file %s", filename);
-				exit(1);
-			}
-			
-			//setting dcshift and nfactor
-			setupGlobal(filename);
-
-			sSize = 0;
-			//reading the samples and normalizing them
-			while(!feof(f)){
-				fgets(line, 100, f);
-				
-				//input file may contain header, so we skip it
-				if(!isalpha(line[0])){
-					int y = atof(line);
-					double normalizedX = floor((y-dcShift)*nFactor);
-					//if(abs(normalizedX) > 1)
-					sample[sSize++] = normalizedX;
-				}
-			}
-			fclose(f);
-			//calling helper function to generate observation seq
-			generate_obs_sequence(obs_file, op);
-			fprintf(op, "\n");
-		}
-		fclose(op);
-	}
-}
 
 //trains the 20 files
 void training(){

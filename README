@@ -1,0 +1,19 @@
+# GROUP NUMBER 28
+
+## PROJECT - Speech based browser
+## Submitted By - Jay Khatri (214101023), V. Abhijith (214101059) 
+
+# Steps to run the project
+1. Download zip and extract it
+2. Now you can see two folder named as 'Backend' and 'Microsoft Form based GUI'
+3. Open Microsoft visual studio and press "Ctrl + Shift + O" and browse to the folder where you extracted the zip.
+4. select the "Backend/speech-project.sln" or "Microsoft Form based GUI/final_sp_ui.sln" file, it will launch the project.
+5. press F5 to run the project
+
+# NOTE
+- Please don't change/delete any existing folder.
+- Read document for extra information.
+- SendInput(), GetforgroundWindow(), GetWindowTextA() etc. functions are used to control the browser and it wasn't working in microsoft form application
+
+# Project Video Link
+https://bit.ly/grp_28_sp
